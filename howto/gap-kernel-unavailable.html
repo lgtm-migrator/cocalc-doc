@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Install compiled software &mdash; CoCalc Manual  documentation</title>
+  <title>GAP Jupyter kernel not available &mdash; CoCalc Manual  documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/sudo-make-install.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/gap-kernel-unavailable.html"/>
   
 
   
@@ -44,13 +44,13 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Jupyter Kernel Terminated" href="jupyter-kernel-terminated.html" />
-    <link rel="prev" title="GAP kernel not available" href="gap-kernel-unavailable.html" />
+    <link rel="next" title="Install compiled software" href="sudo-make-install.html" />
+    <link rel="prev" title="File Too Large" href="file-too-large.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/sudo-make-install.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/gap-kernel-unavailable.html"/>
   
 
 </head>
@@ -131,8 +131,8 @@
 <li class="toctree-l2"><a class="reference internal" href="clock-is-off.html">CoCalc says your clock is off</a></li>
 <li class="toctree-l2"><a class="reference internal" href="connectivity-issues.html">Debugging connectivity issues</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file-too-large.html">File Too Large</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gap-kernel-unavailable.html">GAP kernel not available</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Install compiled software</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">GAP Jupyter kernel not available</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sudo-make-install.html">Install compiled software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jupyter-kernel-terminated.html">Jupyter Kernel Terminated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="license-doesnt-work.html">License Doesn’t Work</a></li>
 <li class="toctree-l2"><a class="reference internal" href="low-memory.html">Low Memory Problems</a></li>
@@ -198,14 +198,14 @@
         
           <li><a href="trouble.html">Troubleshooting</a> &raquo;</li>
         
-      <li>Install compiled software</li>
+      <li>GAP Jupyter kernel not available</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/sudo-make-install.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/gap-kernel-unavailable.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -219,25 +219,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="install-compiled-software">
-<span id="sudo-make-install"></span><span id="index-0"></span><h1>Install compiled software<a class="headerlink" href="#install-compiled-software" title="Permalink to this headline">¶</a></h1>
-<p>By default, it is not possible to install any software globally via <code class="docutils literal notranslate"><span class="pre">sudo</span></code> or other mechanisms.</p>
-<p>However, standard <a class="reference external" href="https://www.gnu.org/software/make/">GNU Make</a> (and other) build frameworks allow to customize the install target,
-by setting a <code class="docutils literal notranslate"><span class="pre">prefix</span></code> for the <code class="docutils literal notranslate"><span class="pre">bin</span></code>, <code class="docutils literal notranslate"><span class="pre">lib</span></code>, <code class="docutils literal notranslate"><span class="pre">share</span></code>, … directories.</p>
-<p>This means, modifying instructions like this:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ ./configure
-$ make
-$ sudo make install
+  <div class="section" id="gap-jupyter-kernel-not-available">
+<span id="gap-kernel-unavailable"></span><span id="index-0"></span><h1>GAP Jupyter kernel not available<a class="headerlink" href="#gap-jupyter-kernel-not-available" title="Permalink to this headline">¶</a></h1>
+<p>For persons wanting to use <a class="reference external" href="https://www.gap-system.org/">GAP - Groups, Algorithms, Programming</a>, note that there is a <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/1706">long-standing bug</a>. For that reason, we removed the GAP Jupyter kernel from CoCalc.</p>
+<p>As a workaround, you can work with GAP in a <a class="reference internal" href="../sagews.html"><span class="doc">Sage worksheet</span></a> (file in CoCalc ending in .sagews). Start that file in a single block of code with:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>%auto
+%default_mode gap
 </pre></div>
 </div>
-<p>to be similar to the following:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ ./configure --prefix=$HOME/.local
-$ make
-$ make install
-</pre></div>
-</div>
-<p>should work!</p>
-<p>Then, the compiled software will end up in your <code class="docutils literal notranslate"><span class="pre">~/.local</span></code> directory, i.e. binaries will be in <code class="docutils literal notranslate"><span class="pre">~/.local/bin/…</span></code> and hence be in your <code class="docutils literal notranslate"><span class="pre">$PATH</span></code>.</p>
+<p>and then run it via shift-return. At this point, you are working with GAP in Sage.</p>
 </div>
 
 
@@ -248,10 +238,10 @@ $ make install
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="jupyter-kernel-terminated.html" class="btn btn-neutral float-right" title="Jupyter Kernel Terminated" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sudo-make-install.html" class="btn btn-neutral float-right" title="Install compiled software" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="gap-kernel-unavailable.html" class="btn btn-neutral float-left" title="GAP kernel not available" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="file-too-large.html" class="btn btn-neutral float-left" title="File Too Large" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
