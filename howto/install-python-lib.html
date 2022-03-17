@@ -348,8 +348,8 @@ or – as we do here – tell it to only have explicitly installed ones on board
 ~$ cd my-special-env
 </pre></div>
 </div>
-<p>Then we run <code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">install</span></code> without site packages. Install pandas below version <code class="docutils literal notranslate"><span class="pre">1.2</span></code> and the juypter kernel:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~/my-special-env$ pipenv install --no-site-packages ipykernel &#39;pandas&lt;1.2&#39;
+<p>Then we run <code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">install</span></code> without site packages and specifying the python interpreter to use (Note: by default it might pick up <code class="docutils literal notranslate"><span class="pre">pypy3</span></code>, which is not a good idea in general). Install pandas below version <code class="docutils literal notranslate"><span class="pre">1.2</span></code> and the juypter kernel:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~/my-special-env$ pipenv install --python /usr/bin/python3 --no-site-packages ipykernel &#39;pandas&lt;1.2&#39;
 [output is abbreviated ...]
 Creating a virtualenv for this project...
 ✔ Successfully created virtual environment!
