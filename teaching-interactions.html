@@ -281,11 +281,18 @@ If one of your collaborators updates a notebook, the rest can see the changes as
 <p>To create a shared project you need to go to your <strong>.course</strong> file and click on the <strong>Shared Project</strong> button.</p>
 <a class="reference internal image-reference" href="_images/shared1.png"><img alt="_images/shared1.png" src="_images/shared1.png" style="width: 100%;" /></a>
 <p>If you create a <strong>.sage-chat</strong> file here, all students will receive automatic notifications when questions are posted on the chat.</p>
-<p>If you want to make a file or an assignment <strong>read only</strong> so that students cannot modify it, you need to modify the file permissions. Launch a terminal and type <cite>chmod a-w filename</cite> (in this example the filename is <cite>Assignment1</cite>).</p>
-<a class="reference internal image-reference" href="_images/read_only.png"><img alt="_images/read_only.png" src="_images/read_only.png" style="width: 100%;" /></a>
-<p>If you want to check the access permissions of all the files contained in a given directory, use the command <cite>ls -l</cite> on the terminal.</p>
-<a class="reference internal image-reference" href="_images/ls_assignment.png"><img alt="_images/ls_assignment.png" src="_images/ls_assignment.png" style="width: 100%;" /></a>
-<p>In case you want to change a read only file into a read and write, type <cite>chmod a+w filename</cite> on the terminal.</p>
+<p>If you want to make a file or an assignment <strong>read-only</strong> so that students cannot modify it, you need to modify the file permissions. Launch a terminal and type:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>chmod a-w filename
+</pre></div>
+</div>
+<p>If you want to check the access permissions of all the files contained in a given directory, use the following:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ls -l
+</pre></div>
+</div>
+<p>In case you want to change a read only file into a read and write, type:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>chmod a+w filename
+</pre></div>
+</div>
 </div>
 <div class="section" id="group-projects">
 <h2><a class="toc-backref" href="#id7">Group Projects</a><a class="headerlink" href="#group-projects" title="Permalink to this headline">¶</a></h2>
