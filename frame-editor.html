@@ -115,14 +115,14 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Frame Editor</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#supported-file-types">Supported file types</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#markdown">Markdown</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#plaintext-source-code">Plaintext / Source Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#text-and-other-file-types">Text and other file types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#html">HTML</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#r-markdown">R Markdown</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#latex">LaTeX</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#text">Text</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#multiple-cursors">Multiple Cursors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spell-checker">Spell checker</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
@@ -217,23 +217,29 @@
             
   <div class="section" id="frame-editor">
 <span id="index-0"></span><span id="id1"></span><h1>Frame Editor<a class="headerlink" href="#frame-editor" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#supported-file-types" id="id4">Supported file types</a></li>
+<li><a class="reference internal" href="#multiple-cursors" id="id5">Multiple Cursors</a></li>
+<li><a class="reference internal" href="#spell-checker" id="id6">Spell checker</a></li>
+</ul>
+</div>
 <p>This guide explains how to work with the <strong>frame editor</strong> for editing source code, <a class="reference internal" href="latex.html"><span class="doc">LaTeX documents</span></a>, <a class="reference internal" href="terminal.html"><span class="doc">Command-line terminal</span></a> etc. The screenshot below shows a Python file and a Terminal. In order to get that view, the frame editor is split vertically first, and then the right frame is splitted horizontally. After that, the bottom right frame is changed to a <a class="reference internal" href="terminal.html"><span class="doc">Terminal</span></a>.</p>
 <p>Therefore, you can not only view the same Python source code file in two places, but you can also work with e.g. <a class="reference external" href="https://www.ipython.org">IPython</a> on the command-line in the same directory.</p>
 <a class="reference internal image-reference" href="_images/frame-editor-python.png"><img alt="split screen with two views of source file plus terminal running ipython" src="_images/frame-editor-python.png" style="width: 100%;" /></a>
 <div class="section" id="supported-file-types">
-<h2>Supported file types<a class="headerlink" href="#supported-file-types" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Supported file types</a><a class="headerlink" href="#supported-file-types" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="index-1"></span><div class="section" id="markdown">
 <span id="index-2"></span><h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h3>
 <p>If you open/create a file ending with <code class="docutils literal notranslate"><span class="pre">*.md</span></code>, you’re presented by default with a split view of <a class="reference external" href="https://www.markdowntutorial.com/">Markdown</a> code on the left and HTML rendered output on the right hand side.
 You can also write <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX formulas</a> between <code class="docutils literal notranslate"><span class="pre">$</span></code> signs, e.g. <code class="docutils literal notranslate"><span class="pre">$\frac{1}{1+x^2}$</span></code>.</p>
 <p id="index-3">The markdown editor supports <strong>inverse search</strong> when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.</p>
 <span class="target" id="index-4"></span></div>
-<div class="section" id="plaintext-source-code">
-<span id="index-5"></span><h3>Plaintext / Source Code<a class="headerlink" href="#plaintext-source-code" title="Permalink to this headline">¶</a></h3>
-<p>A file ending in <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> is a plaintext file, which does not have any formatting.
-Similarly, you can also edit plaintext files with a special purpose, e.g. <code class="docutils literal notranslate"><span class="pre">*.csv</span></code> for CSV data,
-<code class="docutils literal notranslate"><span class="pre">*.yaml</span></code> for structured data, and for source-code of software programs, there is
-<code class="docutils literal notranslate"><span class="pre">*.c</span></code>, <code class="docutils literal notranslate"><span class="pre">*.c++</span></code>, <code class="docutils literal notranslate"><span class="pre">*.sage</span></code>, <code class="docutils literal notranslate"><span class="pre">*.java</span></code>, <code class="docutils literal notranslate"><span class="pre">*.py</span></code>, <code class="docutils literal notranslate"><span class="pre">*.adb</span></code> and many more!</p>
+<div class="section" id="text-and-other-file-types">
+<span id="index-5"></span><h3>Text and other file types<a class="headerlink" href="#text-and-other-file-types" title="Permalink to this headline">¶</a></h3>
+<p>The frame editor lets you edit text files, i.e. files whose name ends in <code class="docutils literal notranslate"><span class="pre">*.txt</span></code>.</p>
+<p>You can also use it to edit source code in many programming languages, including file types <code class="docutils literal notranslate"><span class="pre">*.c</span></code>, <code class="docutils literal notranslate"><span class="pre">*.c++</span></code>, <code class="docutils literal notranslate"><span class="pre">*.sage</span></code>, <code class="docutils literal notranslate"><span class="pre">*.java</span></code>, <code class="docutils literal notranslate"><span class="pre">*.py</span></code>, and <code class="docutils literal notranslate"><span class="pre">*.adb</span></code>.</p>
+<p>And you can use the frame editor to edit common data formats, including <code class="docutils literal notranslate"><span class="pre">*.csv</span></code>, <code class="docutils literal notranslate"><span class="pre">*.yaml</span></code>, and <code class="docutils literal notranslate"><span class="pre">.json</span></code>.</p>
 <span class="target" id="index-6"></span></div>
 <div class="section" id="html">
 <span id="edit-html"></span><span id="index-7"></span><h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
@@ -249,15 +255,33 @@ Do not forget to switch the panel for the rendered output accordingly.
 <div class="section" id="latex">
 <h3>LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="latex.html"><span class="doc">LaTeX Editor</span></a>.</p>
-</div>
-<div class="section" id="text">
-<h3>Text<a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h3>
 <span class="target" id="index-10"></span><span class="target" id="index-11"></span></div>
 </div>
 <div class="section" id="multiple-cursors">
-<span id="index-12"></span><h2>Multiple Cursors<a class="headerlink" href="#multiple-cursors" title="Permalink to this headline">¶</a></h2>
+<span id="index-12"></span><h2><a class="toc-backref" href="#id5">Multiple Cursors</a><a class="headerlink" href="#multiple-cursors" title="Permalink to this headline">¶</a></h2>
 <p>You can get multiple cursors while editing any file in the frame editor using the mouse and ctrl+click (cmd+click on Mac).</p>
 <p>If you switch to Sublime keybindings in “Account” &gt; “Preferences” &gt; “Editor settings”, you can select text and then use ctrl-D (cmd-D on Mac) to multi-select the next occurrence of the same text.</p>
+</div>
+<div class="section" id="spell-checker">
+<h2><a class="toc-backref" href="#id6">Spell checker</a><a class="headerlink" href="#spell-checker" title="Permalink to this headline">¶</a></h2>
+<p>Here are two ways to spell-check your documents in CoCalc.</p>
+<p><strong>Use your browser’s native spell checker.</strong></p>
+<p>The CoCalc frame editor supports the browser’s native spell checker for varying file types, including <code class="docutils literal notranslate"><span class="pre">.md</span></code>, <code class="docutils literal notranslate"><span class="pre">.rmd</span></code>, and <code class="docutils literal notranslate"><span class="pre">.html</span></code>. See the documentation for your specific browser for information on how to enable and configure spell checking. You may have to save your file before the spell checker is activated.</p>
+<p id="use-aspell"><strong>Use the ``aspell`` Linux command.</strong></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">aspell</span></code> utility will find possible misspellings and offer corrections. Here’s how to use it:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Open a <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a></li>
+<li><code class="docutils literal notranslate"><span class="pre">aspell</span> <span class="pre">-t</span> <span class="pre">-c</span> <span class="pre">&lt;filename.tex&gt;</span></code></li>
+</ol>
+</div></blockquote>
+<p>You can add words for <code class="docutils literal notranslate"><span class="pre">aspell</span></code> to ignore using <a class="reference external" href="http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html#Format-of-the-Personal-and-Replacement-Dictionaries">personal dictionaries</a>. These words won’t be underlined red. To do this create the file <code class="docutils literal notranslate"><span class="pre">~/.aspell.lang.pws</span></code>, where <code class="docutils literal notranslate"><span class="pre">lang</span></code> is the choice of langauge. The first line of this file should be <code class="docutils literal notranslate"><span class="pre">personal_ws-1.1</span> <span class="pre">lang</span> <span class="pre">0</span></code>, where <code class="docutils literal notranslate"><span class="pre">lang</span></code> is the choice of language. Then add one word per line for <code class="docutils literal notranslate"><span class="pre">aspell</span></code> to ignore. For example, to ignore the words ‘bijection’ and ‘surjection’ in an English document, create the file <code class="docutils literal notranslate"><span class="pre">~/.aspell.en.pws</span></code> with the content:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>personal_ws-1.1 en 0
+bijection
+surjection
+</pre></div>
+</div>
+<p>The changes will take place the next time <code class="docutils literal notranslate"><span class="pre">aspell</span></code> is run on the document.</p>
 </div>
 </div>
 

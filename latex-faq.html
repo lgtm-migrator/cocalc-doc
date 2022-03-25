@@ -130,7 +130,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#setup-texmf-in-a-project">Setup <code class="docutils literal notranslate"><span class="pre">texmf</span></code> in a project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#turn-off-automatic-build-and-pdf-preview">Turn off automatic build and PDF preview</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#the-pdf-cannot-be-built-what-s-the-problem">The PDF cannot be built. What’s the problem?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#spell-check-my-latex-document">Spell check my LaTeX document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spell-check-a-latex-document">Spell check a LaTeX document</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#install-packages-in-a-project">Install packages in a project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-documents-in-hebrew">Create Documents in Hebrew</a></li>
 </ul>
@@ -251,7 +251,7 @@
 <li><a class="reference internal" href="#setup-texmf-in-a-project" id="id12">Setup <code class="docutils literal notranslate"><span class="pre">texmf</span></code> in a project</a></li>
 <li><a class="reference internal" href="#turn-off-automatic-build-and-pdf-preview" id="id13">Turn off automatic build and PDF preview</a></li>
 <li><a class="reference internal" href="#the-pdf-cannot-be-built-what-s-the-problem" id="id14">The PDF cannot be built. What’s the problem?</a></li>
-<li><a class="reference internal" href="#spell-check-my-latex-document" id="id15">Spell check my LaTeX document</a></li>
+<li><a class="reference internal" href="#spell-check-a-latex-document" id="id15">Spell check a LaTeX document</a></li>
 <li><a class="reference internal" href="#install-packages-in-a-project" id="id16">Install packages in a project</a></li>
 <li><a class="reference internal" href="#create-documents-in-hebrew" id="id17">Create Documents in Hebrew</a></li>
 </ul>
@@ -515,25 +515,12 @@ You can find an example in the CoCalc Library. In a project, click on <code clas
 <li>If you need more detailed help, make sure to open the <code class="docutils literal notranslate"><span class="pre">.tex</span></code> file and make a support request by clicking the <code class="docutils literal notranslate"><span class="pre">Help</span></code> button at the top right.</li>
 </ul>
 </div>
-<div class="section" id="spell-check-my-latex-document">
-<span id="index-20"></span><h2><a class="toc-backref" href="#id15">Spell check my LaTeX document</a><a class="headerlink" href="#spell-check-my-latex-document" title="Permalink to this headline">¶</a></h2>
-<p>Whenever you save the LaTeX document, it will run a spell checker and underline the words that are not spelled correctly.  By default, it uses the language you’ve set in your web browser.</p>
+<div class="section" id="spell-check-a-latex-document">
+<span id="index-20"></span><h2><a class="toc-backref" href="#id15">Spell check a LaTeX document</a><a class="headerlink" href="#spell-check-a-latex-document" title="Permalink to this headline">¶</a></h2>
+<p>Whenever you save a LaTeX document, it will run a spell checker and underline the words that are not spelled correctly.  By default, it uses the language you’ve set in your web browser.</p>
 <p>You can change the autosave interval to be very short in account settings (under editor) if you need the spell checking to update frequently.</p>
 <p>Seeing a list of alternative words (correct spellings) isn’t supported directly in the editor yet <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/3461">Issue #3461</a>.
-For now, a workaround is to run LaTeX-aware <code class="docutils literal notranslate"><span class="pre">aspell</span></code>, e.g.</p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>Open a <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a></li>
-<li><code class="docutils literal notranslate"><span class="pre">aspell</span> <span class="pre">-t</span> <span class="pre">-c</span> <span class="pre">&lt;filename.tex&gt;</span></code></li>
-</ol>
-</div></blockquote>
-<p>You can add words for <code class="docutils literal notranslate"><span class="pre">aspell</span></code> to ignore using <a class="reference external" href="http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html#Format-of-the-Personal-and-Replacement-Dictionaries">personal dictionaries</a>. These words won’t be underlined red. To do this create the file <code class="docutils literal notranslate"><span class="pre">~/.aspell.lang.pws</span></code>, where <code class="docutils literal notranslate"><span class="pre">lang</span></code> is the choice of langauge. The first line of this file should be <code class="docutils literal notranslate"><span class="pre">personal_ws-1.1</span> <span class="pre">lang</span> <span class="pre">0</span></code>, where <code class="docutils literal notranslate"><span class="pre">lang</span></code> is the choice of language. Then add one word per line for <code class="docutils literal notranslate"><span class="pre">aspell</span></code> to ignore. For example, to ignore the words ‘bijection’ and ‘surjection’ in an English document, create the file <code class="docutils literal notranslate"><span class="pre">~/.aspell.en.pws</span></code> with the content:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>personal_ws-1.1 en 0
-bijection
-surjection
-</pre></div>
-</div>
-<p>The changes will take place the next time <code class="docutils literal notranslate"><span class="pre">aspell</span></code> is run on the document. You may force this by clicking the build button.</p>
+For now, a workaround is to run LaTeX-aware <code class="docutils literal notranslate"><span class="pre">aspell</span></code>. See <a class="reference internal" href="frame-editor.html#use-aspell"><span class="std std-ref">Use the aspell Linux command</span></a> for details.</p>
 <span class="target" id="install-latex-packages"><span id="index-21"></span></span></div>
 <div class="section" id="install-packages-in-a-project">
 <span id="index-22"></span><h2><a class="toc-backref" href="#id16">Install packages in a project</a><a class="headerlink" href="#install-packages-in-a-project" title="Permalink to this headline">¶</a></h2>
