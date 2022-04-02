@@ -115,14 +115,15 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Frame Editor</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#supported-file-types">Supported file types</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#markdown">Markdown</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#text-and-other-file-types">Text and other file types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#text-and-other-file-types">Text and Other File Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#html">HTML</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#r-markdown">R Markdown</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#latex">LaTeX</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#multiple-cursors">Multiple Cursors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#spell-checker">Spell checker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spell-checker">Spell Checker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#side-chat">Side Chat</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
@@ -219,9 +220,17 @@
 <span id="index-0"></span><span id="id1"></span><h1>Frame Editor<a class="headerlink" href="#frame-editor" title="Permalink to this headline">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#supported-file-types" id="id4">Supported file types</a></li>
-<li><a class="reference internal" href="#multiple-cursors" id="id5">Multiple Cursors</a></li>
-<li><a class="reference internal" href="#spell-checker" id="id6">Spell checker</a></li>
+<li><a class="reference internal" href="#supported-file-types" id="id4">Supported file types</a><ul>
+<li><a class="reference internal" href="#markdown" id="id5">Markdown</a></li>
+<li><a class="reference internal" href="#text-and-other-file-types" id="id6">Text and Other File Types</a></li>
+<li><a class="reference internal" href="#html" id="id7">HTML</a></li>
+<li><a class="reference internal" href="#r-markdown" id="id8">R Markdown</a></li>
+<li><a class="reference internal" href="#latex" id="id9">LaTeX</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#multiple-cursors" id="id10">Multiple Cursors</a></li>
+<li><a class="reference internal" href="#spell-checker" id="id11">Spell Checker</a></li>
+<li><a class="reference internal" href="#side-chat" id="id12">Side Chat</a></li>
 </ul>
 </div>
 <p>This guide explains how to work with the <strong>frame editor</strong> for editing source code, <a class="reference internal" href="latex.html"><span class="doc">LaTeX documents</span></a>, <a class="reference internal" href="terminal.html"><span class="doc">Command-line terminal</span></a> etc. The screenshot below shows a Python file and a Terminal. In order to get that view, the frame editor is split vertically first, and then the right frame is splitted horizontally. After that, the bottom right frame is changed to a <a class="reference internal" href="terminal.html"><span class="doc">Terminal</span></a>.</p>
@@ -230,40 +239,50 @@
 <div class="section" id="supported-file-types">
 <h2><a class="toc-backref" href="#id4">Supported file types</a><a class="headerlink" href="#supported-file-types" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="index-1"></span><div class="section" id="markdown">
-<span id="index-2"></span><h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h3>
-<p>If you open/create a file ending with <code class="docutils literal notranslate"><span class="pre">*.md</span></code>, you’re presented by default with a split view of <a class="reference external" href="https://www.markdowntutorial.com/">Markdown</a> code on the left and HTML rendered output on the right hand side.
-You can also write <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX formulas</a> between <code class="docutils literal notranslate"><span class="pre">$</span></code> signs, e.g. <code class="docutils literal notranslate"><span class="pre">$\frac{1}{1+x^2}$</span></code>.</p>
-<p id="index-3">The markdown editor supports <strong>inverse search</strong> when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.</p>
-<span class="target" id="index-4"></span></div>
+<span id="frame-editor-markdown"></span><span id="index-2"></span><h3><a class="toc-backref" href="#id5">Markdown</a><a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h3>
+<p>If you open/create a file ending with <code class="docutils literal notranslate"><span class="pre">*.md</span></code>, you’re presented by default with a split view of <a class="reference external" href="https://www.markdowntutorial.com/">Markdown</a> code on the left and HTML rendered output on the right hand side.</p>
+<p>There’s an entire page in this guide dedicated to <a class="reference internal" href="howto/markdown.html"><span class="doc">Markdown</span></a>.</p>
+<span class="target" id="index-3"></span></div>
 <div class="section" id="text-and-other-file-types">
-<span id="index-5"></span><h3>Text and other file types<a class="headerlink" href="#text-and-other-file-types" title="Permalink to this headline">¶</a></h3>
+<span id="index-4"></span><h3><a class="toc-backref" href="#id6">Text and Other File Types</a><a class="headerlink" href="#text-and-other-file-types" title="Permalink to this headline">¶</a></h3>
 <p>The frame editor lets you edit text files, i.e. files whose name ends in <code class="docutils literal notranslate"><span class="pre">*.txt</span></code>.</p>
 <p>You can also use it to edit source code in many programming languages, including file types <code class="docutils literal notranslate"><span class="pre">*.c</span></code>, <code class="docutils literal notranslate"><span class="pre">*.c++</span></code>, <code class="docutils literal notranslate"><span class="pre">*.sage</span></code>, <code class="docutils literal notranslate"><span class="pre">*.java</span></code>, <code class="docutils literal notranslate"><span class="pre">*.py</span></code>, and <code class="docutils literal notranslate"><span class="pre">*.adb</span></code>.</p>
 <p>And you can use the frame editor to edit common data formats, including <code class="docutils literal notranslate"><span class="pre">*.csv</span></code>, <code class="docutils literal notranslate"><span class="pre">*.yaml</span></code>, and <code class="docutils literal notranslate"><span class="pre">.json</span></code>.</p>
-<span class="target" id="index-6"></span></div>
+<span class="target" id="index-5"></span></div>
 <div class="section" id="html">
-<span id="edit-html"></span><span id="index-7"></span><h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
+<span id="edit-html"></span><span id="index-6"></span><h3><a class="toc-backref" href="#id7">HTML</a><a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
 <p>Open/create a <code class="docutils literal notranslate"><span class="pre">*.html</span></code> file and you’ll see the rendered output on the right hand side. You can switch the rendered view between “Preview” (which is faster) or “iframe” (which renderes the page as it is) depending on your needs. You can even close the editor pane, to just see the rendered HTML.</p>
-<span class="target" id="index-8"></span></div>
+<span class="target" id="index-7"></span></div>
 <div class="section" id="r-markdown">
-<span id="edit-rmd"></span><span id="index-9"></span><h3>R Markdown<a class="headerlink" href="#r-markdown" title="Permalink to this headline">¶</a></h3>
+<span id="edit-rmd"></span><span id="index-8"></span><h3><a class="toc-backref" href="#id8">R Markdown</a><a class="headerlink" href="#r-markdown" title="Permalink to this headline">¶</a></h3>
 <p>Open a <code class="docutils literal notranslate"><span class="pre">*.Rmd</span></code> or <code class="docutils literal notranslate"><span class="pre">*.rmd</span></code> file to work with <a class="reference external" href="https://rmarkdown.rstudio.com/">R Markdown</a>.
 Depending on the configuration in the preamble, you either produce an HTML or PDF output.
-Do not forget to switch the panel for the rendered output accordingly.
-(In case you produce PDF and HTML output, you can even see both after splitting the panel.)</p>
+Do not forget to switch the panel for the rendered output accordingly. Here is an example of R markdown producing a pdf file:</p>
+<a class="reference internal image-reference" href="_images/rmd-pdf-example.png"><img alt="example of R markdown producing a pdf file" src="_images/rmd-pdf-example.png" style="width: 100%;" /></a>
+<p>If you produce PDF and HTML output, you can see both after splitting the panel.</p>
+<p>There is a brief tutorial on R Markdown in the <a class="reference internal" href="project-library.html"><span class="doc">Project Library</span></a>. To view the sample files, do the following:</p>
+<ol class="arabic simple">
+<li>Open a project where you want the copied files to be placed.</li>
+<li>Open the Files tab.</li>
+<li>Click “Library” at upper right.</li>
+<li>Select “RMarkdown in CoCalc”.</li>
+<li>Click “Get a copy”.</li>
+</ol>
+<a class="reference internal image-reference" href="_images/r-markdown-library.png"><img alt="fetching R Markdown intro from the project library" src="_images/r-markdown-library.png" style="width: 100%;" /></a>
 </div>
 <div class="section" id="latex">
-<h3>LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">LaTeX</a><a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="latex.html"><span class="doc">LaTeX Editor</span></a>.</p>
-<span class="target" id="index-10"></span><span class="target" id="index-11"></span></div>
+<span class="target" id="index-9"></span><span class="target" id="index-10"></span></div>
 </div>
 <div class="section" id="multiple-cursors">
-<span id="index-12"></span><h2><a class="toc-backref" href="#id5">Multiple Cursors</a><a class="headerlink" href="#multiple-cursors" title="Permalink to this headline">¶</a></h2>
+<span id="index-11"></span><h2><a class="toc-backref" href="#id10">Multiple Cursors</a><a class="headerlink" href="#multiple-cursors" title="Permalink to this headline">¶</a></h2>
 <p>You can get multiple cursors while editing any file in the frame editor using the mouse and ctrl+click (cmd+click on Mac).</p>
 <p>If you switch to Sublime keybindings in “Account” &gt; “Preferences” &gt; “Editor settings”, you can select text and then use ctrl-D (cmd-D on Mac) to multi-select the next occurrence of the same text.</p>
+<p>The frame editor also supports simultaneous editing by more than one user. In this case, separate cursors are displayed for each user.</p>
 </div>
 <div class="section" id="spell-checker">
-<h2><a class="toc-backref" href="#id6">Spell checker</a><a class="headerlink" href="#spell-checker" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Spell Checker</a><a class="headerlink" href="#spell-checker" title="Permalink to this headline">¶</a></h2>
 <p>Here are two ways to spell-check your documents in CoCalc.</p>
 <p><strong>Use your browser’s native spell checker.</strong></p>
 <p>The CoCalc frame editor supports the browser’s native spell checker for varying file types, including <code class="docutils literal notranslate"><span class="pre">.md</span></code>, <code class="docutils literal notranslate"><span class="pre">.rmd</span></code>, and <code class="docutils literal notranslate"><span class="pre">.html</span></code>. See the documentation for your specific browser for information on how to enable and configure spell checking. You may have to save your file before the spell checker is activated.</p>
@@ -282,6 +301,10 @@ surjection
 </pre></div>
 </div>
 <p>The changes will take place the next time <code class="docutils literal notranslate"><span class="pre">aspell</span></code> is run on the document.</p>
+</div>
+<div class="section" id="side-chat">
+<h2><a class="toc-backref" href="#id12">Side Chat</a><a class="headerlink" href="#side-chat" title="Permalink to this headline">¶</a></h2>
+<p>You can share comments on a CoCalc file using a side chat panel. For more information, see <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a>.</p>
 </div>
 </div>
 
