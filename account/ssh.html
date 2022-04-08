@@ -120,7 +120,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Platform</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html"><strong>new</strong>: Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files-toolbar.html">Files Toolbar</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a><ul class="current">
@@ -129,8 +129,10 @@
 <li class="toctree-l2"><a class="reference internal" href="purchases.html">Purchases</a></li>
 <li class="toctree-l2"><a class="reference internal" href="upgrades.html">Upgrades</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">SSH keys</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">SSH keys</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#add-an-ssh-key">Add an SSH key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-ssh-public-keys-for-your-account">Add SSH public keys for your account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ssh-login-for-a-project">SSH login for a project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#view-account-ssh-keys">View account SSH keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#display-local-public-key-fingerprints">Display local public key fingerprints</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="support.html">Support</a></li>
@@ -222,21 +224,43 @@
   <div class="section" id="ssh-keys">
 <span id="account-ssh"></span><span id="index-0"></span><h1>SSH keys<a class="headerlink" href="#ssh-keys" title="Permalink to this headline">¶</a></h1>
 <p>This section assumes you have created an SSH key pair as described in <a class="reference internal" href="../project-settings.html#ssh-keys"><span class="std std-ref">SSH Keys</span></a>.</p>
-<p>Click the gear icon next to your name at upper right to open Account Settings.
-Choose the tab “SSH Keys” and note the form for adding a key at right.
-Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example John’s CoCalc Key.
-Copy the public key into the Key field. To do this, open the file for your public key on your local computer. For example, if you are using macOS or Ubuntu, you could open a terminal and type something like the following, depending on the name of your public key file.
-cat ~/.ssh/id_ed25519.pub
-Use your mouse to highlight the contents of the key file, then copy and paste it into the Key area. saving the entry.</p>
-<p>Click Add SSH Key. Your key is now saved for that account and will work for all projects for which that account has owner or collaborator status.
-As with the previous section, the <a class="reference external" href="mailto:user&#37;&#52;&#48;hostname">user<span>&#64;</span>hostname</a> string needed for the ssh command consists of the project id with hyphens removed for the user, and ‘ssh.cocalc.com’ for the hostname, and can be found just below the caption Use the following <a class="reference external" href="mailto:username&#37;&#52;&#48;host">username<span>&#64;</span>host</a>: in the ‘SSH Keys’ section of project status tab.</p>
-<div class="section" id="id1">
-<h2>SSH keys<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">SSH</span> <span class="pre">keys</span></code></p>
+<div class="section" id="add-ssh-public-keys-for-your-account">
+<span id="add-account-ssh-keys"></span><h2>Add SSH public keys for your account<a class="headerlink" href="#add-ssh-public-keys-for-your-account" title="Permalink to this headline">¶</a></h2>
+<p>To add SSH public keys for your CoCalc account you can either browse to <a class="reference external" href="https://cocalc.com/settings/ssh-keys">https://cocalc.com/settings/ssh-keys</a>, or open the <a class="reference internal" href="../account-dropdown.html"><span class="doc">Account Dropdown Menu</span></a> and select “SSH keys”:</p>
+<a class="reference internal image-reference" href="../_images/ssh-keys-in-dropdown.png"><img alt="account dropdown menu with SSH keys circled" class="align-center" src="../_images/ssh-keys-in-dropdown.png" style="width: 100%;" /></a>
+<p>Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example, “John’s CoCalc Key”.
+Copy the public key into the Key field. To do this, open the file for your public key on your local computer. For example, if you are using macOS or Ubuntu, you could open a terminal and type something like the following, depending on the name of your public key file:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cat ~/.ssh/id_ed25519.pub
+</pre></div>
 </div>
-<div class="section" id="add-an-ssh-key">
-<h2>Add an SSH key<a class="headerlink" href="#add-an-ssh-key" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">copy/paste</span></code> your ssh key</p>
+<p>Use your mouse to highlight the contents of the key file, then copy and paste it into the Key area.
+Click “Add SSH Key”.</p>
+<a class="reference internal image-reference" href="../_images/add-ssh-keys.png"><img alt="enter title and public ssh key" class="align-center" src="../_images/add-ssh-keys.png" style="width: 50%;" /></a>
+<p>Your key is now saved for that account and will work for all projects for which that account has owner or collaborator status.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you want to add an SSH key that applies to just one project, and not to all the projects your account has access to see: <a class="reference internal" href="../project-settings.html#project-settings-ssh-keys"><span class="std std-ref">Configuring SSH Keys for a Single Project</span></a>.</p>
+</div>
+</div>
+<div class="section" id="ssh-login-for-a-project">
+<h2>SSH login for a project<a class="headerlink" href="#ssh-login-for-a-project" title="Permalink to this headline">¶</a></h2>
+<p>To connect to a project from your local computer, use  the project id with hyphens removed for the user, followed by ‘ssh.cocalc.com’ as the hostname. This string can be found at under Project settings, as shown here: <a class="reference internal" href="../project-settings.html#ssh-user"><span class="std std-ref">ssh user</span></a>.</p>
+</div>
+<div class="section" id="view-account-ssh-keys">
+<h2>View account SSH keys<a class="headerlink" href="#view-account-ssh-keys" title="Permalink to this headline">¶</a></h2>
+<p>To view SSH keys configured for your account, open the same screen that you would to add keys for your account: <a class="reference internal" href="#add-account-ssh-keys"><span class="std std-ref">Add SSH public keys for your account</span></a>.</p>
+<p>SSH keys configured for a single project are viewed under Project settings.</p>
+</div>
+<div class="section" id="display-local-public-key-fingerprints">
+<h2>Display local public key fingerprints<a class="headerlink" href="#display-local-public-key-fingerprints" title="Permalink to this headline">¶</a></h2>
+<p>When you upload SSH public keys to your CoCalc account, CoCalc displays a fingerprint to identify the key. If you have a large number of public keys on your local computer, it may help to run a command to display the hexadecimal fingerprints locally, so that you can see which local public key file corresponds to a certain key fingerprint in your CoCalc account. Here is a command you can run if you have the OpenSSH tools installed, for example on Linux or macOS:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ssh-keygen -l -E md5 -f &lt;filename&gt;.pub
+</pre></div>
+</div>
+<p>If your public keys are stored under <cite>.ssh</cite> in your home directory, the following script will display the name of each public key file followed by its fingerprint:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>for k in ~/.ssh/*.pub; do echo $k;ssh-keygen -l  -E md5 -f $k;echo;done
+</pre></div>
+</div>
 </div>
 </div>
 
