@@ -44,7 +44,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Time Travel" href="time-travel.html" />
+    <link rel="next" title="wysiwyg editing" href="wysiwyg.html" />
     <link rel="prev" title="Frame Editor" href="frame-editor.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -106,6 +106,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
@@ -116,10 +117,24 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Markdown</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#where-markdown-can-be-used-in-cocalc">Where Markdown can be used in CoCalc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#special-features-in-cocalc-markdown">Special features in CoCalc Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#enhanced-features-in-cocalc-markdown">Enhanced features in CoCalc Markdown</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#collaborative-editing">Collaborative editing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#embedded-latex">Embedded LaTeX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#emojis">Emojis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#checkboxes">Checkboxes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hashtags">Hashtags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mentions">&#64;-mentions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wysiwyg">WYSIWYG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inverse-search">Inverse search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-to-pdf">Export to PDF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-to-html">Export to HTML</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#about-the-cocalc-implementation-of-markdown">About the CoCalc Implementation of Markdown</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="wysiwyg.html">wysiwyg editing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
@@ -216,8 +231,21 @@
 <ul class="simple">
 <li><a class="reference internal" href="#introduction" id="id1">Introduction</a></li>
 <li><a class="reference internal" href="#where-markdown-can-be-used-in-cocalc" id="id2">Where Markdown can be used in CoCalc</a></li>
-<li><a class="reference internal" href="#special-features-in-cocalc-markdown" id="id3">Special features in CoCalc Markdown</a></li>
-<li><a class="reference internal" href="#about-the-cocalc-implementation-of-markdown" id="id4">About the CoCalc Implementation of Markdown</a></li>
+<li><a class="reference internal" href="#enhanced-features-in-cocalc-markdown" id="id3">Enhanced features in CoCalc Markdown</a><ul>
+<li><a class="reference internal" href="#collaborative-editing" id="id4">Collaborative editing</a></li>
+<li><a class="reference internal" href="#embedded-latex" id="id5">Embedded LaTeX</a></li>
+<li><a class="reference internal" href="#emojis" id="id6">Emojis</a></li>
+<li><a class="reference internal" href="#checkboxes" id="id7">Checkboxes</a></li>
+<li><a class="reference internal" href="#hashtags" id="id8">Hashtags</a></li>
+<li><a class="reference internal" href="#mentions" id="id9">&#64;-mentions</a></li>
+<li><a class="reference internal" href="#wysiwyg" id="id10">WYSIWYG</a></li>
+<li><a class="reference internal" href="#inverse-search" id="id11">Inverse search</a></li>
+<li><a class="reference internal" href="#export-to-pdf" id="id12">Export to PDF</a></li>
+<li><a class="reference internal" href="#export-to-html" id="id13">Export to HTML</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#limitations" id="id14">Limitations</a></li>
+<li><a class="reference internal" href="#about-the-cocalc-implementation-of-markdown" id="id15">About the CoCalc Implementation of Markdown</a></li>
 </ul>
 </div>
 <div class="section" id="introduction">
@@ -246,30 +274,54 @@
 <li>Markdown mode (“%md”) in <a class="reference internal" href="sagews.html#what-is-sagews"><span class="std std-ref">Sage worksheets</span></a></li>
 <li><a class="reference internal" href="frame-editor.html#edit-rmd"><span class="std std-ref">R Markdown</span></a> (“.Rmd” and “.rmd” files)</li>
 <li><a class="reference internal" href="tasks.html"><span class="doc">Task Lists</span></a> (“.tasks” files, also known as “Todo lists”)</li>
-<li><em>Coming soon:</em> <a class="reference external" href="https://cocalc.com/features/whiteboard">CoCalc whiteboard</a>, in text, sticky notes, Jupyter cells, etc.</li>
+<li><a class="reference internal" href="whiteboard.html"><span class="doc">Whiteboard</span></a> (text, sticky notes, Jupyter cells)</li>
 </ul>
 </div>
-<div class="section" id="special-features-in-cocalc-markdown">
-<span id="cocalc-markdown-features"></span><h2><a class="toc-backref" href="#id3">Special features in CoCalc Markdown</a><a class="headerlink" href="#special-features-in-cocalc-markdown" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="enhanced-features-in-cocalc-markdown">
+<span id="cocalc-markdown-features"></span><h2><a class="toc-backref" href="#id3">Enhanced features in CoCalc Markdown</a><a class="headerlink" href="#enhanced-features-in-cocalc-markdown" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="collaborative-editing">
+<h3><a class="toc-backref" href="#id4">Collaborative editing</a><a class="headerlink" href="#collaborative-editing" title="Permalink to this headline">¶</a></h3>
+<p>Multiple users can edit CoCalc Markdown at the same time. In fact, one user can have several browser windows open to the same Markdown content and edit from them all simultaneously (we sometimes use this feature to test collaboration while developing CoCalc).</p>
+</div>
+<div class="section" id="embedded-latex">
+<h3><a class="toc-backref" href="#id5">Embedded LaTeX</a><a class="headerlink" href="#embedded-latex" title="Permalink to this headline">¶</a></h3>
+<p>You can write <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX formulas</a> between <code class="docutils literal notranslate"><span class="pre">$</span></code> signs, e.g. <code class="docutils literal notranslate"><span class="pre">$\frac{1}{1+x^2}$</span></code>.</p>
+</div>
+<div class="section" id="emojis">
+<h3><a class="toc-backref" href="#id6">Emojis</a><a class="headerlink" href="#emojis" title="Permalink to this headline">¶</a></h3>
+<p>View the list of supported emojis in the <a class="reference external" href="https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json">markdown-it-emojis GitHub repository</a>.</p>
+</div>
+<div class="section" id="checkboxes">
+<h3><a class="toc-backref" href="#id7">Checkboxes</a><a class="headerlink" href="#checkboxes" title="Permalink to this headline">¶</a></h3>
+<p>Type ” [ ] ” to create an unchecked checkbox. Note the single space between the square brackets. Type ” [x] ” to create a checked box. In both unchecked and checked boxes, there is a space before the first bracket and a space after the closed bracket.</p>
+</div>
+<div class="section" id="hashtags">
+<h3><a class="toc-backref" href="#id8">Hashtags</a><a class="headerlink" href="#hashtags" title="Permalink to this headline">¶</a></h3>
+<p>Precede a word with a hash sign (“#”) and it is formatted to stand out as a hashtag.</p>
+</div>
+<div class="section" id="mentions">
+<h3><a class="toc-backref" href="#id9">&#64;-mentions</a><a class="headerlink" href="#mentions" title="Permalink to this headline">¶</a></h3>
+<p>See <a class="reference internal" href="teaching-interactions.html#at-mention-chat"><span class="std std-ref">&#64;Mention collaborators in chat</span></a>.</p>
+</div>
+<div class="section" id="wysiwyg">
+<h3><a class="toc-backref" href="#id10">WYSIWYG</a><a class="headerlink" href="#wysiwyg" title="Permalink to this headline">¶</a></h3>
+<p>What-you-see-is-what-you-get editing…</p>
+<p>See <a class="reference internal" href="wysiwyg.html"><span class="doc">wysiwyg editing</span></a>.</p>
+</div>
+<div class="section" id="inverse-search">
+<h3><a class="toc-backref" href="#id11">Inverse search</a><a class="headerlink" href="#inverse-search" title="Permalink to this headline">¶</a></h3>
+<p>The markdown editor supports <strong>inverse search</strong> when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.</p>
+<p>If you are using a split view with Markdown Code in one pane and Editable Text in the other, you can use the sync button: <a class="reference internal" href="_images/sync-icon.png"><img alt="sync icon" src="_images/sync-icon.png" style="width: 24px;" /></a> at the top from either pane to synchronize the cursor in the other pane.</p>
+</div>
+<div class="section" id="export-to-pdf">
+<h3><a class="toc-backref" href="#id12">Export to PDF</a><a class="headerlink" href="#export-to-pdf" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>To export a markdown (“.md”) file as pdf, open the file, select “Locked” from the view pulldown menu and click the “Print” button.</li>
+</ul>
+</div>
+<div class="section" id="export-to-html">
+<h3><a class="toc-backref" href="#id13">Export to HTML</a><a class="headerlink" href="#export-to-html" title="Permalink to this headline">¶</a></h3>
 <ul>
-<li><p class="first">Collaborative editing. Multiple users can edit CoCalc Markdown at the same time. In fact, one user can have several browser windows open to the same Markdown content and edit from them all simultaneously (we sometimes use this feature to test collaboration while developing CoCalc).</p>
-</li>
-<li><p class="first">Embedded LaTeX. You can write <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX formulas</a> between <code class="docutils literal notranslate"><span class="pre">$</span></code> signs, e.g. <code class="docutils literal notranslate"><span class="pre">$\frac{1}{1+x^2}$</span></code>.</p>
-</li>
-<li><p class="first">Emojis. View the list of supported emojis in the <a class="reference external" href="https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json">markdown-it-emojis GitHub repository</a>.</p>
-</li>
-<li><p class="first">Checkboxes. Type ” [ ] ” to create an unchecked checkbox; ” [x] ” to create a checked box.</p>
-</li>
-<li><p class="first">Hashtags. Precede a word with a hash sign (“#”) and it is formatted to stand out as a hashtag.</p>
-</li>
-<li><p class="first">&#64;-mentions. See <a class="reference internal" href="teaching-interactions.html#at-mention-chat"><span class="std std-ref">&#64;Mention collaborators in chat</span></a>.</p>
-</li>
-<li><p class="first">WYSIWYG (what you see is what you get) editing. This feature is under development at present, but already quite usable. Select the “Editable” option in the pulldown menu at upper right.</p>
-</li>
-<li><p class="first">Inverse search in Markdown frame editor. The markdown editor supports <strong>inverse search</strong> when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.</p>
-</li>
-<li><p class="first">To export a markdown (“.md”) file as pdf, open the file, select “Locked” from the view pulldown menu and click the “Print” button.</p>
-</li>
 <li><p class="first">To create html from a markdown file, open a <a class="reference internal" href="terminal.html"><span class="doc">Linux terminal</span></a>. If your file is “filename.md”, run the command:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pandoc filename.md -o filename.html
 </pre></div>
@@ -277,8 +329,14 @@
 </li>
 </ul>
 </div>
+</div>
+<div class="section" id="limitations">
+<h2><a class="toc-backref" href="#id14">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<p>At present, the markdown “Editable Text” editor does not offer an easy way to add a link. And adding an image is limited to copying an image that has been added to the paste buffer. To add a link, or to add an image from a file at this time, choose “Markdown Code” in the pulldown menu at the top.</p>
+<a class="reference internal image-reference" href="_images/md-text-vs-code.png"><img alt="choosing Markdown Code vs. Editable Text while editing an md file" src="_images/md-text-vs-code.png" style="width: 70%;" /></a>
+</div>
 <div class="section" id="about-the-cocalc-implementation-of-markdown">
-<span id="cocalc-markdown-impl"></span><h2><a class="toc-backref" href="#id4">About the CoCalc Implementation of Markdown</a><a class="headerlink" href="#about-the-cocalc-implementation-of-markdown" title="Permalink to this headline">¶</a></h2>
+<span id="cocalc-markdown-impl"></span><h2><a class="toc-backref" href="#id15">About the CoCalc Implementation of Markdown</a><a class="headerlink" href="#about-the-cocalc-implementation-of-markdown" title="Permalink to this headline">¶</a></h2>
 <p>CoCalc uses <a class="reference external" href="https://github.com/markdown-it/markdown-it">markdown-it</a>, with plug-ins and some customizations. Details are in the CoCalc source code at GitHub in file <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/index.ts">src/packages/frontend/markdown/index.ts</a>.</p>
 </div>
 </div>
@@ -291,7 +349,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="time-travel.html" class="btn btn-neutral float-right" title="Time Travel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="wysiwyg.html" class="btn btn-neutral float-right" title="wysiwyg editing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="frame-editor.html" class="btn btn-neutral float-left" title="Frame Editor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
