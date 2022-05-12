@@ -113,7 +113,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wysiwyg.html">wysiwyg editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wysiwyg.html">WYSIWYG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
@@ -210,8 +210,16 @@
 <p>Additional notes:</p>
 <ul class="simple">
 <li>Your project must have network access for Streamlit to work.</li>
+<li>The streamlit package must be in your computing environment.</li>
 <li>Streamlit supports displaying markdown and latex text formats.</li>
 </ul>
+<div class="section" id="streamlit-package-availability">
+<h2>streamlit package availability<a class="headerlink" href="#streamlit-package-availability" title="Permalink to this headline">¶</a></h2>
+<p>In a linux terminal, run <cite>which streamlit</cite>. If you get an empty response and not a path to an executable file, you will need to install the Python package. To do this, in the linux terminal run the command:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="n">streamlit</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="configuration-baseurlpath">
 <h2>Configuration: baseUrlPath<a class="headerlink" href="#configuration-baseurlpath" title="Permalink to this headline">¶</a></h2>
 <p>To run Streamlit in a CoCalc project, you need to configure <cite>baseUrlPath</cite>. Here are two ways to do this.</p>
