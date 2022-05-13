@@ -4,6 +4,23 @@
 Rich Text Editing
 ========================
 
+With *Rich text editing*, as you enter content, your work is displayed in a form that resembles the final result, i.e. you do not see formatting commands mixed in with text.
+
+Here is how some sample content will appear as you enter it **with rich text editing**:
+
+.. image:: img/yes-rich.png
+    :width: 50%
+    :align: center
+    :alt: rich text editing does not show formatting commands
+
+And here is how it would appear if you type the same markdown code **without rich text editing**:
+
+.. image:: img/not-rich.png
+    :width: 50%
+    :align: center
+    :alt: markdown commands are displayed when not using rich text editing
+
+With rich text editing, you see the final result right away.
 
 #####################################
 Where Rich Text Editing is Available
@@ -27,7 +44,7 @@ Features
 Real-time Collaboration
 """""""""""""""""""""""
 
-Multiple users can use rich text editing on a file, and see one another's work, at the same time.
+Multiple users can use rich text editing on a file, and see one another's work at the same time.
 
 """""""""""""""""""""""
 Markdown
