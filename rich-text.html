@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Project Library &mdash; CoCalc Manual  documentation</title>
+  <title>Rich Text Editing &mdash; CoCalc Manual  documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/project-library.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/rich-text.html"/>
   
 
   
@@ -44,13 +44,13 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Project Initialization Scripts" href="project-init.html" />
-    <link rel="prev" title="Project Upgrades" href="upgrade-guide.html" />
+    <link rel="next" title="Time Travel" href="time-travel.html" />
+    <link rel="prev" title="Markdown" href="markdown.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/project-library.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/rich-text.html"/>
   
 
 </head>
@@ -104,18 +104,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Features</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="project.html">Projects</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="project-files.html">Project Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plus-new.html">(+) New</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project-log.html">Project Log</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project-settings.html">Project Settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrade-guide.html">Project Upgrades</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Project Library</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project-init.html">Project Initialization Scripts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project-faq.html">Projects FAQ</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
@@ -126,7 +115,17 @@
 <li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Rich Text Editing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#where-rich-text-editing-is-available">Where Rich Text Editing is Available</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#real-time-collaboration">Real-time Collaboration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#markdown">Markdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#latex">LaTeX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#font-options">Font options</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
@@ -196,16 +195,14 @@
     
       <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="project.html">Projects</a> &raquo;</li>
-        
-      <li>Project Library</li>
+      <li>Rich Text Editing</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/project-library.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/rich-text.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -219,22 +216,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="project-library">
-<span id="index-0"></span><span id="id1"></span><h1>Project Library<a class="headerlink" href="#project-library" title="Permalink to this headline">¶</a></h1>
-<p>The <em>Library</em> is a collection of material, which you can copy into your project.
-You open up the dialog, explore and select an interesting element,
-and then click the <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">a</span> <span class="pre">Copy</span></code> button.
-This copies over the snapshot of files hosted on CoCalc into the current directory of your project.</p>
-<p>In “Introduction” it contains a couple of documents to learn more about CoCalc.
-You can explore its capabilities by opening the respective files.
-More advanced topics are covered in “Mathematics”, “Physics”, “Statistics” and “Data science”.
-There are also collections of <a class="reference internal" href="latex.html"><span class="doc">LaTeX</span></a> templates.</p>
-<p>The screenshot below outlines the steps to
-open the library (1);
-select a specific entry (2), and (3);
-and then copy over the files (4).</p>
-<a class="reference internal image-reference" href="_images/project-library.png"><img alt="project library categories and topics" class="align-center" src="_images/project-library.png" style="width: 100%;" /></a>
-<p>All material is managed by this repository: &lt;<a class="reference external" href="https://github.com/sagemathinc/cocalc-examples">https://github.com/sagemathinc/cocalc-examples</a>&gt;.</p>
+  <div class="section" id="rich-text-editing">
+<span id="index-0"></span><h1>Rich Text Editing<a class="headerlink" href="#rich-text-editing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="where-rich-text-editing-is-available">
+<h2>Where Rich Text Editing is Available<a class="headerlink" href="#where-rich-text-editing-is-available" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a>: when editing Markdown (.md) files. Select “Editable Text”.</li>
+<li><a class="reference internal" href="chat.html"><span class="doc">Chatrooms</span></a> as well as <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a>.</li>
+<li><a class="reference internal" href="tasks.html"><span class="doc">Task Lists</span></a>.</li>
+<li><a class="reference internal" href="whiteboard.html"><span class="doc">Whiteboard</span></a> In text, sticky notes, and task lists.</li>
+<li><a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebooks</span></a> In text or Markdown cell types.</li>
+</ul>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="real-time-collaboration">
+<h3>Real-time Collaboration<a class="headerlink" href="#real-time-collaboration" title="Permalink to this headline">¶</a></h3>
+<p>Multiple users can use rich text editing on a file, and see one another’s work, at the same time.</p>
+</div>
+<div class="section" id="markdown">
+<h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h3>
+<p>See <a class="reference internal" href="markdown.html"><span class="doc">Markdown</span></a>.</p>
+</div>
+<div class="section" id="latex">
+<h3>LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h3>
+<p>When using rich text editing, you can embed LaTeX directives between dollar signs ($) <em>followed by a space</em>. You must add a space to cause conversion to mathematical characters.</p>
+<p>Here is an example of latex entry in <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a> for a file, before typing a space after the second $:</p>
+<a class="reference internal image-reference" href="_images/rich-text-latex-1.png"><img alt="rich text editing with latex, before final space" class="align-center" src="_images/rich-text-latex-1.png" style="width: 60%;" /></a>
+<p>Here is the formatting that results after typing the space:</p>
+<a class="reference internal image-reference" href="_images/rich-text-latex-2.png"><img alt="rich text editing with latex, after final space" class="align-center" src="_images/rich-text-latex-2.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="font-options">
+<h3>Font options<a class="headerlink" href="#font-options" title="Permalink to this headline">¶</a></h3>
+<p>You can specify font family, face (bold, italics, etc.), size, and color.</p>
+<p>If you select “Text” mode (instead of Markdown) for editing content between code cells,
+then you can highlight any text and click the color palette icon, then set the color of that text.</p>
+<p>For a markdown file: select “Editable Text” for font options.</p>
+<a class="reference internal image-reference" href="_images/font-options-md.png"><img alt="font options while editing a .md file" class="align-center" src="_images/font-options-md.png" style="width: 60%;" /></a>
+<p>For a Jupyter cell: select “Text” cell type, then “Edit” for font options.</p>
+<a class="reference internal image-reference" href="_images/font-options-ipynb1.png"><img alt="font options while editing a .md file" class="align-center" src="_images/font-options-ipynb1.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="_images/font-options-ipynb2.png"><img alt="font options while editing a .md file" class="align-center" src="_images/font-options-ipynb2.png" style="width: 60%;" /></a>
+<p>(Implementation note: rich text font options use &lt;span class=’color:#0000ff’&gt;…&lt;/span&gt;
+under the hood.
+The format is sufficiently well-defined that it doesn’t get removed by CoCalc XSS processing. So it works even if e.g., a student opens the file and doesn’t switch to trusted mode.)</p>
+</div>
+</div>
 </div>
 
 
@@ -245,10 +271,10 @@ and then copy over the files (4).</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="project-init.html" class="btn btn-neutral float-right" title="Project Initialization Scripts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="time-travel.html" class="btn btn-neutral float-right" title="Time Travel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="upgrade-guide.html" class="btn btn-neutral float-left" title="Project Upgrades" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="markdown.html" class="btn btn-neutral float-left" title="Markdown" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

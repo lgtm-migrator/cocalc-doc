@@ -113,7 +113,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wysiwyg.html">wysiwyg editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
@@ -206,8 +206,16 @@
             
   <span class="target" id="index-0"></span><span class="target" id="index-1"></span><div class="section" id="plot-ly-s-dash-server">
 <h1>Plot.ly’s Dash Server<a class="headerlink" href="#plot-ly-s-dash-server" title="Permalink to this headline">¶</a></h1>
-<p id="plotly-dash">This is a simple example how to run <a class="reference external" href="https://dash.plotly.com/">dash</a> by plot.ly in CoCalc.
-This is taken from the <a class="reference external" href="https://dash.plotly.com/layout">dash introduction</a>.</p>
+<p id="plotly-dash">This is based on simple example how to run <a class="reference external" href="https://dash.plotly.com/">dash</a> by plot.ly in CoCalc.
+This is taken from the <a class="reference external" href="https://dash.plotly.com/layout">dash introduction</a>.
+A lot more sophisticated dashboards with interactive sliders, selection boxes,
+and linked plots are possible!</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The main modification is telling Plot.ly to listen on <code class="docutils literal notranslate"><span class="pre">0.0.0.0</span></code> and to
+compose the URL based on the domain name, the project ID and the port number!</p>
+<p class="last">Access to this endpoint is only allowed for authenticated collaborators on that project!</p>
+</div>
 <ol class="arabic">
 <li><p class="first">Create a file named <code class="docutils literal notranslate"><span class="pre">dash_01.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -246,7 +254,7 @@ This is taken from the <a class="reference external" href="https://dash.plotly.c
     <span class="nb">print</span><span class="p">(</span>
         <span class="sa">f</span><span class="s1">&#39;You might have to refresh once or twice in case it takes time to load!</span><span class="se">\n\n</span><span class="s1">&#39;</span>
     <span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;       http://cocalc.com</span><span class="si">{</span><span class="n">base_url</span><span class="si">}</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;       https://cocalc.com</span><span class="si">{</span><span class="n">base_url</span><span class="si">}</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="n">dash_app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -264,7 +272,14 @@ This is taken from the <a class="reference external" href="https://dash.plotly.c
 </ol>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">You might have to refresh the page once or twice to get it loaded up properly!</p>
+<p class="last">Initially, you might have to wait a few seconds until it shows up or
+refresh the page once to get the plot.ly server fully started and the page properly loaded!</p>
+</div>
+<ol class="arabic simple" start="4">
+<li>This is how the dashboard looks like:</li>
+</ol>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/plotly-dash.png"><img alt="../_images/plotly-dash.png" src="../_images/plotly-dash.png" style="width: 100%;" /></a>
 </div>
 </div>
 

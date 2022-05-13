@@ -114,7 +114,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#forward-inverse-search">Forward &amp; Inverse Search</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#spellcheck">Spellcheck</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#word-count">Word count</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#latex-engines">LaTeX Engines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#build-command">Build command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#encoding">Encoding</a></li>
 </ul>
 </li>
@@ -129,7 +129,7 @@
 <li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wysiwyg.html">wysiwyg editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
@@ -264,13 +264,40 @@ In order to see them, change one of the frames or created a new one in the <a cl
 Select <strong>“Word Count”</strong> as shown below:</p>
 <a class="reference internal image-reference" href="_images/latex-word-count.png"><img alt="_images/latex-word-count.png" class="align-center" src="_images/latex-word-count.png" style="width: 50%;" /></a>
 </div>
-<div class="section" id="latex-engines">
-<span id="latex-build-engine"></span><span id="index-3"></span><h2>LaTeX Engines<a class="headerlink" href="#latex-engines" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="build-command">
+<span id="latex-build-engine"></span><span id="index-3"></span><h2>Build command<a class="headerlink" href="#build-command" title="Permalink to this headline">¶</a></h2>
+<p>In the build panel, you can use the “Engine” dropdown menu to select a supported LaTeX engine.
+This replaces the current build command with a generic one, that’s know to work well in many situations!
+These options are available:</p>
 <ul class="simple">
 <li><strong>latexmk</strong> + <strong>PDFlatex</strong>: the default configuration, works in most cases</li>
 <li><strong>latexmk</strong> + <strong>XeLaTeX</strong>: this is useful for foreign languages with many special characters.</li>
 <li><strong>latexmk</strong> + <strong>LuaTex</strong>: uses the <a class="reference external" href="http://www.luatex.org">LuaLaTeX</a> engine.</li>
 </ul>
+<p><strong>Output Directory</strong></p>
+<p>By default, an <code class="docutils literal notranslate"><span class="pre">-output-directory=...</span></code> is set,
+such that your current directory is kept clean of temporary files.
+Instead, the actual build process happens in a temporary in-memory directory.</p>
+<p>Some packages do not work under these circumstances,
+hence there are <code class="docutils literal notranslate"><span class="pre">(no</span> <span class="pre">bulid</span> <span class="pre">dir)</span></code> variants, which do not set a temporary output directory flag.</p>
+<p><strong>Bring your own command</strong></p>
+<p>More general, you can also specify your own build command.
+To avoid any processing of your build command, append a “;” semicolon at the end of your command or
+even specify several commands separated by semicolons.
+You could also use GNU Makefiles and call <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">...;</span></code> from here.</p>
+<p><strong>Default build command</strong></p>
+<p>The selected build command is stored in a companion file in the project.
+You can also store the default engine or even hardcode the build command in the LaTeX document itself.
+There are two relevant directives, which are special comment lines at the beginning of your file.</p>
+<ol class="arabic">
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">!TeX</span> <span class="pre">program</span> <span class="pre">=</span> <span class="pre">xelatex</span></code>: upon opening the file the first time, the <code class="docutils literal notranslate"><span class="pre">XeLaTeX</span></code> engine is selected. This is one of the default engine directives known from other latex editors. Later on, this line has no effect and your engine selection in CoCalc takes precedence. This could also be <code class="docutils literal notranslate"><span class="pre">pdflatex</span></code> or <code class="docutils literal notranslate"><span class="pre">luatex</span></code>.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">!TeX</span> <span class="pre">cocalc</span> <span class="pre">=</span> <span class="pre">...</span> <span class="pre">file.tex</span></code>: This takes precedence over any other build command configurations. The command after the equal sign is used to build your document. Without a semicolon, the last token is replaced by the current file name, hence it is ok to just add <code class="docutils literal notranslate"><span class="pre">file.tex</span></code>. If there is a semicolon, no processing takes place. A suitable standard build command could be:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>% !TeX cocalc = latexmk -pdf -f -g -bibtex -deps -synctex=1 -interaction=nonstopmode file.tex
+</pre></div>
+</div>
+</li>
+</ol>
 </div>
 <div class="section" id="encoding">
 <h2>Encoding<a class="headerlink" href="#encoding" title="Permalink to this headline">¶</a></h2>
