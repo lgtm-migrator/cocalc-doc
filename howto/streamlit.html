@@ -273,6 +273,43 @@
 </div>
 <p>If you make a change to file “st-hello.py”, you don’t have to restart the linux script. Simply refresh the browser tab showing the Streamlit display.</p>
 </div>
+<div class="section" id="streamlit-example">
+<h2>Streamlit Example<a class="headerlink" href="#streamlit-example" title="Permalink to this headline">¶</a></h2>
+<p>Here is an example of a streamlit python script to display exoplanet counts:</p>
+<a class="reference internal image-reference" href="../_images/exoplanets-streamlit.png"><img alt="sample plot showing number of exoplanets discovered per year" src="../_images/exoplanets-streamlit.png" style="width: 100%;" /></a>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># file exoplanets-per-year.py</span>
+
+<span class="c1"># run this from a cocalc terminal with</span>
+<span class="c1">#   streamlit run exoplanets-per-year.py</span>
+<span class="c1"># make sure you have baseUrlPath set as in</span>
+<span class="c1">#   https://doc.cocalc.com/howto/streamlit.html</span>
+<span class="c1"># after launching streamlit, point your browser at</span>
+<span class="c1">#   https://cocalc.com/&lt;project-id&gt;/port/8501/</span>
+
+<span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">from</span> <span class="nn">matplotlib.figure</span> <span class="kn">import</span> <span class="n">Figure</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="s1">&#39;# Exoplanets Found Each Year&#39;</span><span class="p">)</span>
+
+<span class="c1"># csv file is generated here:</span>
+<span class="c1"># https://cocalc.com/drxyzzy/experimental/exoplanets</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;exo.csv&quot;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">],</span>
+            <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">],</span>  <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="c1">#g.set_yscale(&quot;log&quot;)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Number of exoplanets confirmed&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">(),</span><span class="n">rotation</span> <span class="o">=</span> <span class="mi">80</span><span class="p">)</span>
+<span class="n">st</span><span class="o">.</span><span class="n">pyplot</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
