@@ -18,7 +18,7 @@ Read more about `Whiteboard on the CoCalc website <https://cocalc.com/features/w
     :alt: large sample cocalc whiteboard.
 
 ##########################
-General Features
+List of Features
 ##########################
 
 CoCalc's collaborative mathematical whiteboard supports an infinite canvas with these features:
@@ -39,9 +39,9 @@ CoCalc's collaborative mathematical whiteboard supports an infinite canvas with 
 * every change you make is recorded via browsable TimeTravel and you can copy/paste from any point in the history
 * publish your whiteboards to the CoCalc share server
 
-****************
+##########################
 To-do Lists
-****************
+##########################
 
 In a sticky note, text, etc., mark action items by placing a pair of brackets in the item, preceded and followed by a space and with a space between the brackets. The item will be displayed with an empty checkbox. Click the checkbox when the item is done, or place an "x" between the brackets, and it will show as a checked item.
 
@@ -59,9 +59,9 @@ In a sticky note, text, etc., mark action items by placing a pair of brackets in
 
     How the unchecked and checked boxes are displayed
 
-****************
+##########################
 Search View
-****************
+##########################
 
 *Search View* of a whiteboard gives you a panel that lists all text, sticky notes and code in order, with a search box at the top. You can search for text and click on any matching item to center the whiteboard on it.
 Search view can make your whiteboards easier to manage as they get larger.
