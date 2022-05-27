@@ -107,7 +107,11 @@
 <li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Whiteboard</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#general-features">General Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-features">General Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#to-do-lists">To-do Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#search-view">Search View</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#jupyter-cells">Jupyter Cells</a></li>
 </ul>
 </li>
@@ -216,21 +220,27 @@
 <p>Read more about <a class="reference external" href="https://cocalc.com/features/whiteboard">Whiteboard on the CoCalc website</a>.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#general-features" id="id1">General Features</a></li>
-<li><a class="reference internal" href="#jupyter-cells" id="id2">Jupyter Cells</a></li>
+<li><a class="reference internal" href="#general-features" id="id4">General Features</a><ul>
+<li><a class="reference internal" href="#to-do-lists" id="id5">To-do Lists</a></li>
+<li><a class="reference internal" href="#search-view" id="id6">Search View</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#jupyter-cells" id="id7">Jupyter Cells</a></li>
 </ul>
 </div>
 <a class="reference internal image-reference" href="_images/whiteboard-sage.png"><img alt="large sample cocalc whiteboard." class="align-center" src="_images/whiteboard-sage.png" style="width: 90%;" /></a>
 <div class="section" id="general-features">
-<h2><a class="toc-backref" href="#id1">General Features</a><a class="headerlink" href="#general-features" title="Permalink to this headline">¶</a></h2>
-<p>CoCalc’s collaborative mathematical whiteboard supports an infinite canvas with</p>
+<h2><a class="toc-backref" href="#id4">General Features</a><a class="headerlink" href="#general-features" title="Permalink to this headline">¶</a></h2>
+<p>CoCalc’s collaborative mathematical whiteboard supports an infinite canvas with these features:</p>
 <ul class="simple">
 <li>text with mathematical LaTeX expressions</li>
 <li>sticky notes</li>
 <li>sketching with pens</li>
 <li>chat conversations with collaborators</li>
 <li>hundreds of icons</li>
+<li>manage to-do lists with whiteboards</li>
 <li>copy and paste between whiteboards</li>
+<li>search view of whiteboard contents (see below)</li>
 <li>frames to group objects and organize the whiteboard into sections</li>
 <li>stopwatches and countdown timers to organize and track work.</li>
 <li>create edges between all objects</li>
@@ -239,9 +249,34 @@
 <li>every change you make is recorded via browsable TimeTravel and you can copy/paste from any point in the history</li>
 <li>publish your whiteboards to the CoCalc share server</li>
 </ul>
+<div class="section" id="to-do-lists">
+<h3><a class="toc-backref" href="#id5">To-do Lists</a><a class="headerlink" href="#to-do-lists" title="Permalink to this headline">¶</a></h3>
+<p>In a sticky note, text, etc., mark action items by placing a pair of brackets in the item, preceded and followed by a space and with a space between the brackets. The item will be displayed with an empty checkbox. Click the checkbox when the item is done, or place an “x” between the brackets, and it will show as a checked item.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/wb-tasks-code.png"><img alt="code for to-do list in a whiteboard sticky note" src="_images/wb-tasks-code.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Code for an unchecked box and a checked box in a sticky note.</span></p>
+</div>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/wb-tasks-rendered.png"><img alt="rendered list in a whiteboard sticky note" src="_images/wb-tasks-rendered.png" style="width: 50%;" /></a>
+<p class="caption"><span class="caption-text">How the unchecked and checked boxes are displayed</span></p>
+</div>
+</div>
+<div class="section" id="search-view">
+<h3><a class="toc-backref" href="#id6">Search View</a><a class="headerlink" href="#search-view" title="Permalink to this headline">¶</a></h3>
+<p><em>Search View</em> of a whiteboard gives you a panel that lists all text, sticky notes and code in order, with a search box at the top. You can search for text and click on any matching item to center the whiteboard on it.
+Search view can make your whiteboards easier to manage as they get larger.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/wb-search-view.png"><img alt="example search view of a whiteboard" src="_images/wb-search-view.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Whiteboard, showing search view in right panel</span></p>
+</div>
+<p>Search view works well with to-do lists. To find all not done items, put <code class="code docutils literal notranslate"><span class="pre">&quot;[</span> <span class="pre">]&quot;</span></code> (note the quotes) in the search box. To find all completed items, search for <code class="code docutils literal notranslate"><span class="pre">&quot;[x]&quot;</span></code>.</p>
+<p>You can put hashtags on notes, e.g. <code class="code docutils literal notranslate"><span class="pre">#foo</span></code> and search for those as well, or put <code class="code docutils literal notranslate"><span class="pre">-</span></code> (minus sign) in front to exclude matching items from search, e.g. <code class="code docutils literal notranslate"><span class="pre">-#foo</span></code>.</p>
+<p>If you don’t see a menu choice for Search View in a current whiteboard, then refresh your browser, click the “split vertically” button (upper right), then click the dropdown that says “Whiteboard” and change it to “Search”.</p>
+<p>By default, the search panel is open to the right for new whiteboards.</p>
+</div>
 </div>
 <div class="section" id="jupyter-cells">
-<h2><a class="toc-backref" href="#id2">Jupyter Cells</a><a class="headerlink" href="#jupyter-cells" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Jupyter Cells</a><a class="headerlink" href="#jupyter-cells" title="Permalink to this headline">¶</a></h2>
 <p>A CoCalc whiteboard can include Jupyter code cells. Whiteboard code cells allow:</p>
 <ul class="simple">
 <li>over a dozen supported kernels</li>
