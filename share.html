@@ -118,15 +118,24 @@
 <li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Shared Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#viewing-files-on-the-share-server">Viewing Files on the Share Server</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Shared Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#viewing-files-on-the-share-server">Viewing Files on the Share Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#publishing-files">Publishing Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#vanity-urls">Vanity URLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#view-your-file-on-the-share-server">View Your File on the Share Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#starring-shared-files">Starring Shared Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sharing-rendered-notebooks">Sharing Rendered Notebooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#file-types">File Types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#jupyter-notebook">Jupyter notebook</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#github-repo">GitHub Repo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#github-gist">GitHub Gist</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#view-your-file-on-the-share-server">View Your File on the Share Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#differences-relative-to-nbviewer">Differences Relative to nbviewer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notes-on-url-proxying">Notes on URL proxying</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#file-sharing-tips">File Sharing Tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#starring-shared-files">Starring Shared Files</a></li>
 </ul>
 </li>
 </ul>
@@ -218,27 +227,43 @@
             
   <span class="target" id="index-0"></span><div class="section" id="shared-files">
 <span id="sharing-files"></span><span id="index-1"></span><h1>Shared Files<a class="headerlink" href="#shared-files" title="Permalink to this headline">¶</a></h1>
-<p>Files and folders published (shared) to CoCalc’s <a class="reference external" href="https://cocalc.com/share">share server</a> are viewable by the public with no login required.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#viewing-files-on-the-share-server" id="id11">Viewing Files on the Share Server</a></li>
+<li><a class="reference internal" href="#publishing-files" id="id12">Publishing Files</a></li>
+<li><a class="reference internal" href="#vanity-urls" id="id13">Vanity URLs</a></li>
+<li><a class="reference internal" href="#view-your-file-on-the-share-server" id="id14">View Your File on the Share Server</a></li>
+<li><a class="reference internal" href="#starring-shared-files" id="id15">Starring Shared Files</a></li>
+<li><a class="reference internal" href="#sharing-rendered-notebooks" id="id16">Sharing Rendered Notebooks</a><ul>
+<li><a class="reference internal" href="#file-types" id="id17">File Types</a></li>
+<li><a class="reference internal" href="#differences-relative-to-nbviewer" id="id18">Differences Relative to nbviewer</a></li>
+<li><a class="reference internal" href="#notes-on-url-proxying" id="id19">Notes on URL proxying</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#file-sharing-tips" id="id20">File Sharing Tips</a></li>
+</ul>
 </div>
+<p>Files and folders published (shared) to CoCalc’s <a class="reference external" href="https://cocalc.com/share">share server</a> are viewable by the public with no login required.</p>
 <div class="section" id="viewing-files-on-the-share-server">
-<h1>Viewing Files on the Share Server<a class="headerlink" href="#viewing-files-on-the-share-server" title="Permalink to this headline">¶</a></h1>
+<h2><a class="toc-backref" href="#id11">Viewing Files on the Share Server</a><a class="headerlink" href="#viewing-files-on-the-share-server" title="Permalink to this headline">¶</a></h2>
 <p>To see CoCalc files that people have shared, browse to <a class="reference external" href="https://cocalc.com/share">https://cocalc.com/share</a>. You can search for text in the title and contents of shared files using the search box at upper right. You can sort the list of files by any of the columns listed, in increasing or decreasing order, by clicking in the column headings.</p>
 <div class="figure align-center" id="id4">
-<a class="reference internal image-reference" href="_images/share-home-page.png"><img alt="share server home page" src="_images/share-home-page.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/share-home-page.png"><img alt="share server home page" src="_images/share-home-page.png" style="width: 90%;" /></a>
 <p class="caption"><span class="caption-text">search and sort shared files at share server home page</span></p>
 </div>
 <p>There is also a preview at the CoCalc home page, allowing people who are just learning about CoCalc to view a sample of shared files:</p>
 <div class="figure align-center" id="id5">
-<a class="reference internal image-reference" href="_images/share-at-landing.png"><img alt="share server preview at CoCalc home page" src="_images/share-at-landing.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/share-at-landing.png"><img alt="share server preview at CoCalc home page" src="_images/share-at-landing.png" style="width: 90%;" /></a>
 <p class="caption"><span class="caption-text">preview of shared files on CoCalc home page</span></p>
 </div>
 <p>When you select a shared folder, you get a view of the contents. Click “Edit” to copy a shared file or folder to a project that you own or collaborate on.</p>
 <div class="figure align-center" id="id6">
-<a class="reference internal image-reference" href="_images/shared-folder.png"><img alt="share server showing shared folder &quot;k3d&quot;" src="_images/shared-folder.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/shared-folder.png"><img alt="share server showing shared folder &quot;k3d&quot;" src="_images/shared-folder.png" style="width: 90%;" /></a>
 <p class="caption"><span class="caption-text">listing of shared folder “k3d”</span></p>
 </div>
+</div>
 <div class="section" id="publishing-files">
-<span id="id1"></span><h2>Publishing Files<a class="headerlink" href="#publishing-files" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2><a class="toc-backref" href="#id12">Publishing Files</a><a class="headerlink" href="#publishing-files" title="Permalink to this headline">¶</a></h2>
 <p>You can make individual files and folders public.
 First, do either of the following:</p>
 <ul class="simple">
@@ -262,7 +287,7 @@ then click <code class="docutils literal notranslate"><span class="pre">Make</sp
 <a class="reference internal image-reference" href="_images/share-dialog.png"><img alt="Dialog which appears after clicking &quot;Share&quot;" class="align-center" src="_images/share-dialog.png" style="width: 100%;" /></a>
 </div>
 <div class="section" id="vanity-urls">
-<span id="index-2"></span><span id="id2"></span><h2>Vanity URLs<a class="headerlink" href="#vanity-urls" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><span id="id2"></span><h2><a class="toc-backref" href="#id13">Vanity URLs</a><a class="headerlink" href="#vanity-urls" title="Permalink to this headline">¶</a></h2>
 <p>You can now make it so
 <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/name-of-your-choice</span></code>&nbsp; (e.g.,
 <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/wstein</span></code>) lists all of the documents you have shared
@@ -276,24 +301,15 @@ publicly.</p>
 <p>If you set all these you get a nice url, e.g.,
 <a class="reference external" href="https://cocalc.com/wstein/support/examples">https://cocalc.com/wstein/support/examples</a></p>
 </div>
-</div>
 <div class="section" id="view-your-file-on-the-share-server">
-<span id="id3"></span><span id="index-3"></span><h1>View Your File on the Share Server<a class="headerlink" href="#view-your-file-on-the-share-server" title="Permalink to this headline">¶</a></h1>
+<span id="id3"></span><span id="index-3"></span><h2><a class="toc-backref" href="#id14">View Your File on the Share Server</a><a class="headerlink" href="#view-your-file-on-the-share-server" title="Permalink to this headline">¶</a></h2>
 <p>After clicking <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">item</span> <span class="pre">public</span></code> as above, the <strong>public URL</strong> will be displayed under <code class="docutils literal notranslate"><span class="pre">Shared</span> <span class="pre">publicly</span></code>.
 You can click the <a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/external-link.png"><img alt="Icon for external link" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/external-link.png" style="width: 16px;" /></a> button to open it at the share server.</p>
 <p>With that link, a read-only copy of your file is available on the CoCalc  <a class="reference external" href="https://cocalc.com/share">share server</a>.
 Files on the share server are <a class="reference external" href="https://www.google.com/search?q=site%3Acocalc.com%2Fshare">indexed by Google</a> unless you click the checkbox next to “Unlisted: Only allow those with a link to view this.”.</p>
-<div class="section" id="file-sharing-tips">
-<span id="index-4"></span><h2>File Sharing Tips<a class="headerlink" href="#file-sharing-tips" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>You can now share files from a free CoCalc account. At one time, the <a class="reference internal" href="project-settings.html#view-resources"><span class="std std-ref">Internet access</span></a> upgrade was required in order to share files; this is no longer the case.</li>
-<li>If your document depends on auxiliary files (e.g., images embedded in a markdown file) make sure these auxiliary files are also published. A convenient way to do this is to have auxiliary files in a common folder and share that folder.</li>
-<li>Serving raw files: you can host arbitrary html, etc. through the share server. Files can be viewed in “raw” form, i.e. without CoCalc controls, by opening in the share server and clicking “Raw” at upper right.</li>
-<li>Interactive elements that use server processes, such as notebooks with Jupyter widgets and worksheets with Sage <code class="docutils literal notranslate"><span class="pre">&#64;interact</span></code>, will not operate in files viewed from the share server. That is because documents on the share server are truly static. There is no kernel or Sage server running in the background to facilitate any sort of interactive computing. Controls that run completely in the browser work when served from the share server, for example 3d plots like <a class="reference external" href="https://cocalc.com/share/public_paths/7eee8ccdeb4acf37e6c258df1cd973871373df05">this cardioid</a>.</li>
-</ul>
 </div>
 <div class="section" id="starring-shared-files">
-<span id="star-shared-file"></span><h2>Starring Shared Files<a class="headerlink" href="#starring-shared-files" title="Permalink to this headline">¶</a></h2>
+<span id="star-shared-file"></span><h2><a class="toc-backref" href="#id15">Starring Shared Files</a><a class="headerlink" href="#starring-shared-files" title="Permalink to this headline">¶</a></h2>
 <p>You can star shared public files on the share server and see everything you starred here: <a class="reference external" href="https://cocalc.com/stars">https://cocalc.com/stars</a>.</p>
 <div class="figure align-center" id="id9">
 <a class="reference internal image-reference" href="_images/add-star.png"><img alt="star a file on the share server" src="_images/add-star.png" style="width: 80%;" /></a>
@@ -304,6 +320,57 @@ Files on the share server are <a class="reference external" href="https://www.go
 <a class="reference internal image-reference" href="_images/remove-star.png"><img alt="remove previously-added star from a file on the share server" src="_images/remove-star.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">click “starred” to remove a previously-added star</span></p>
 </div>
+</div>
+<div class="section" id="sharing-rendered-notebooks">
+<span id="share-rendered-notebook"></span><span id="url-proxy"></span><h2><a class="toc-backref" href="#id16">Sharing Rendered Notebooks</a><a class="headerlink" href="#sharing-rendered-notebooks" title="Permalink to this headline">¶</a></h2>
+<p>CoCalc’s share server offers a simple way to share fully-rendered Jupyter notebooks and certain other file types. All you need is a URL to the file, folder, or repository you want to share. Rendered document sharing is done by means of URL proxying (see <a class="reference internal" href="#url-proxy-notes"><span class="std std-ref">Notes on URL proxying</span></a> below).</p>
+<p>The URL schema is exactly the same as what <a class="reference external" href="https://nbviewer.org">https://nbviewer.org</a> uses, i.e., github/&lt;github url&gt;, url/&lt;anything on the internet&gt; and gist/[github user]/[gist id].</p>
+<div class="section" id="file-types">
+<h3><a class="toc-backref" href="#id17">File Types</a><a class="headerlink" href="#file-types" title="Permalink to this headline">¶</a></h3>
+<p>In addition to the file types shown below, any file that CoCalc can render is sharable in rendered form. See <a class="reference internal" href="#url-proxy-cocalc-diff"><span class="std std-ref">Differences Relative to nbviewer</span></a>.</p>
+<div class="section" id="jupyter-notebook">
+<h4>Jupyter notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://cocalc.com/url/archive.org/download/musing_math/Volume_Solutions_To_Snub_Dodecahedron.ipynb">https://cocalc.com/url/archive.org/download/musing_math/Volume_Solutions_To_Snub_Dodecahedron.ipynb</a></p>
+</div>
+<div class="section" id="github-repo">
+<h4>GitHub Repo<a class="headerlink" href="#github-repo" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://cocalc.com/github/sagemanifolds/IntroToManifolds">https://cocalc.com/github/sagemanifolds/IntroToManifolds</a></p>
+</div>
+<div class="section" id="github-gist">
+<h4>GitHub Gist<a class="headerlink" href="#github-gist" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://cocalc.com/gist/darribas/4121857">https://cocalc.com/gist/darribas/4121857</a></p>
+</div>
+</div>
+<div class="section" id="differences-relative-to-nbviewer">
+<span id="url-proxy-cocalc-diff"></span><h3><a class="toc-backref" href="#id18">Differences Relative to nbviewer</a><a class="headerlink" href="#differences-relative-to-nbviewer" title="Permalink to this headline">¶</a></h3>
+<p>The main differences are:</p>
+<ul class="simple">
+<li>You can put a URL to any file CoCalc can render or edit, and you’ll see it:<ul>
+<li>Here’s a <strong>markdown file</strong>: <a class="reference external" href="https://cocalc.com/github/sagemathinc/cocalc/blob/master/README.md">https://cocalc.com/github/sagemathinc/cocalc/blob/master/README.md</a> which nbviewer doesn’t render (it only renders ipynb).</li>
+<li>Here’s a <strong>whiteboard</strong>: <a class="reference external" href="https://cocalc.com/github/williamstein/scratch/blob/main/2022-06-27-ws.board">https://cocalc.com/github/williamstein/scratch/blob/main/2022-06-27-ws.board</a></li>
+<li>And a <strong>Sage worksheet</strong>: <a class="reference external" href="https://cocalc.com/github/williamstein/scratch/blob/main/2022-06-30-061806.sagews">https://cocalc.com/github/williamstein/scratch/blob/main/2022-06-30-061806.sagews</a></li>
+</ul>
+</li>
+<li>When you click Edit (analogue of mybinder for some nbviewer content), the content is copied to a project in CoCalc and you can use it. E.g., Sage notebooks actually work, since Sage is installed. The mybinder flakiness is avoided. Also, all content is editable, not just content that has been setup to work with mybinder.</li>
+</ul>
+</div>
+<div class="section" id="notes-on-url-proxying">
+<span id="url-proxy-notes"></span><h3><a class="toc-backref" href="#id19">Notes on URL proxying</a><a class="headerlink" href="#notes-on-url-proxying" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Editing whole git repositories isn’t implemented yet. In CoCalc, any time anybody views one of these URL proxies in the share server, a new entry is created in the list of shared documents starting at <a class="reference external" href="https://cocalc.com/share/public_paths/page/1">https://cocalc.com/share/public_paths/page/1</a></li>
+<li>Anybody can star a document shared in this way, to make it easy to come back to it later (via <a class="reference external" href="https://cocalc.com/stars">https://cocalc.com/stars</a>), and also to signify that it is interesting.</li>
+<li>See also the  <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/6015#issuecomment-1172967091">initial implementation comment</a> in the CoCalc sources.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="file-sharing-tips">
+<span id="index-4"></span><h2><a class="toc-backref" href="#id20">File Sharing Tips</a><a class="headerlink" href="#file-sharing-tips" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>You can share files from a free CoCalc account. At one time, the <a class="reference internal" href="project-settings.html#view-resources"><span class="std std-ref">Internet access</span></a> upgrade was required in order to share files; this is no longer the case.</li>
+<li>If your document depends on auxiliary files (e.g., images embedded in a markdown file) make sure these auxiliary files are also published. A convenient way to do this is to have auxiliary files in a common folder and share that folder.</li>
+<li>Serving raw files: you can host arbitrary html, etc. through the share server. Files can be viewed in “raw” form, i.e. without CoCalc controls, by opening in the share server and clicking “Raw” at upper right.</li>
+<li>Interactive elements that use server processes, such as notebooks with Jupyter widgets and worksheets with Sage <code class="docutils literal notranslate"><span class="pre">&#64;interact</span></code>, will not operate in files viewed from the share server. That is because documents on the share server are truly static. There is no kernel or Sage server running in the background to facilitate any sort of interactive computing. Controls that run completely in the browser work when served from the share server, for example 3d plots like <a class="reference external" href="https://cocalc.com/share/public_paths/7eee8ccdeb4acf37e6c258df1cd973871373df05">this cardioid</a>.</li>
+</ul>
 </div>
 </div>
 
