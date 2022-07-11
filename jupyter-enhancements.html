@@ -1,0 +1,396 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CoCalc Enhancements to Jupyter Notebooks &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/jupyter-enhancements.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Classical Versus CoCalc Jupyter Notebooks" href="jupyter-classical-vs-cocalc.html" />
+    <link rel="prev" title="Getting Started with Jupyter Notebooks" href="jupyter-start.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/jupyter-enhancements.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="jupyter-start.html">Getting Started with Jupyter Notebooks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CoCalc Enhancements to Jupyter Notebooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#drag-and-drop">drag-and-drop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#consecutive-cell-numbers">consecutive cell numbers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-time-for-compute-cells">run time for compute cells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nbgrader-integration">nbgrader integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#table-of-contents">table of contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#slideshow">slideshow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#widgets-in-cocalc">widgets in CoCalc</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-classical-vs-cocalc.html">Classical Versus CoCalc Jupyter Notebooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-tips-and-tricks.html">Jupyter Tips and Tricks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="whiteboard.html">Whiteboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Shared Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-toolbar.html">Project Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account-toolbar.html">Account Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="jupyter.html">Jupyter Notebooks</a> &raquo;</li>
+        
+      <li>CoCalc Enhancements to Jupyter Notebooks</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/jupyter-enhancements.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cocalc-enhancements-to-jupyter-notebooks">
+<span id="index-0"></span><h1>CoCalc Enhancements to Jupyter Notebooks<a class="headerlink" href="#cocalc-enhancements-to-jupyter-notebooks" title="Permalink to this headline">¶</a></h1>
+<p>These enhanced features are available in CoCalc Jupyter notebooks:</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#drag-and-drop" id="id8">drag-and-drop</a></li>
+<li><a class="reference internal" href="#consecutive-cell-numbers" id="id9">consecutive cell numbers</a></li>
+<li><a class="reference internal" href="#run-time-for-compute-cells" id="id10">run time for compute cells</a></li>
+<li><a class="reference internal" href="#nbgrader-integration" id="id11">nbgrader integration</a></li>
+<li><a class="reference internal" href="#table-of-contents" id="id12">table of contents</a></li>
+<li><a class="reference internal" href="#slideshow" id="id13">slideshow</a></li>
+<li><a class="reference internal" href="#widgets-in-cocalc" id="id14">widgets in CoCalc</a></li>
+</ul>
+</div>
+<div class="section" id="drag-and-drop">
+<span id="index-1"></span><h2><a class="toc-backref" href="#id8">drag-and-drop</a><a class="headerlink" href="#drag-and-drop" title="Permalink to this headline">¶</a></h2>
+<p>You can drag and drop images into markdown cells:</p>
+<p>1. If you have a markdown cell and are <em>not</em> actively editing it,
+there is an image icon/button on the far right of the cell.  Just
+click that and you can then select an image from your computer.  It’ll
+be uploaded and inserted into the cell.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/place-image.png"><img alt="drag and drop into drop zone of markdown cell" src="_images/place-image.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Click image icon to open a drop zone for image placement</span></p>
+</div>
+<p>2. If you have a markdown cell and <em>are</em> editing it, select “Edit –&gt;
+Insert image in selected markdown cell…” from the menu and proceed
+as above.</p>
+<p>3. The markdown editor in Jupyter doesn’t yet support direct drag-and-drop
+and copy/paste of images, but it probably will soon.
+See <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/4762">https://github.com/sagemathinc/cocalc/issues/4762</a></p>
+</div>
+<div class="section" id="consecutive-cell-numbers">
+<span id="index-2"></span><h2><a class="toc-backref" href="#id9">consecutive cell numbers</a><a class="headerlink" href="#consecutive-cell-numbers" title="Permalink to this headline">¶</a></h2>
+<p>Cells are numbered consecutively at upper right. Unlike execution numbers shown in brackets at left, these don’t change when you re-run a compute cell or go blank when you clear output, and markdown cells are numbered as well as code cells.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/jup-cell-num-timing.png"><img alt="compute cell with ordinal number and run time at right" src="_images/jup-cell-num-timing.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">compute cell consecutive numbers and run time</span></p>
+</div>
+</div>
+<div class="section" id="run-time-for-compute-cells">
+<span id="index-3"></span><h2><a class="toc-backref" href="#id10">run time for compute cells</a><a class="headerlink" href="#run-time-for-compute-cells" title="Permalink to this headline">¶</a></h2>
+<p>When a compute cell is executed, the amount of time it takes is displayed at upper right. See the preceding figure.</p>
+</div>
+<div class="section" id="nbgrader-integration">
+<h2><a class="toc-backref" href="#id11">nbgrader integration</a><a class="headerlink" href="#nbgrader-integration" title="Permalink to this headline">¶</a></h2>
+<p>CoCalc offers nbgrader support without adding separate Jupyter extensions. This ehancement is in under active development. See <a class="reference internal" href="teaching-nbgrader.html"><span class="doc">nbgrader in CoCalc</span></a> for more information.</p>
+</div>
+<div class="section" id="table-of-contents">
+<span id="index-4"></span><h2><a class="toc-backref" href="#id12">table of contents</a><a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<p>Table of contents sets the indentation level based on the markdown heading level, i.e. “#” for top level, “##” for second level, etc. Click the “Contents” button in the “Notebook” menu at the top of a notebook, or select “File –&gt; Table of Contents”, or split the frame and change one of the resulting frames to “Table of Contents”. Each entry in the table of contents is a clickable link that takes you to the corresponding cell in the notebook.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/jup-toc2.png"><img alt="jupyter notebook table of contents" src="_images/jup-toc2.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">table of contents</span></p>
+</div>
+</div>
+<div class="section" id="slideshow">
+<span id="index-5"></span><h2><a class="toc-backref" href="#id13">slideshow</a><a class="headerlink" href="#slideshow" title="Permalink to this headline">¶</a></h2>
+<p>CoCalc notebooks offer you a shortcut for making a slideshow. Select “View” &gt; “Cell Toolbar…” &gt; “Slideshow” to add a <code class="docutils literal notranslate"><span class="pre">Slide</span></code> button above the right of each cell. For each cell, you can specify whether it is a slide, subslide, or fragment. To view the slideshow, click the “Slideshow” in the “Notebook” menu at the top of a notebook, or select “File” &gt; “Slideshow”, or split the frame and change one of the resulting frames to “Slideshow”. The latter allows you to view the original notebook side-by-side with the slides.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/slideshow-1.png"><img alt="slide button in cell toolbar" src="_images/slideshow-1.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">enabling “Slide” button in cell toolbar</span></p>
+</div>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/slideshow-2.png"><img alt="selecting slide type" src="_images/slideshow-2.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">selecting slide type for each cell</span></p>
+</div>
+<p>When presenting, the next slide is to the right, while the next subslide is below. Fragments are revealed within the present slide. Click in the slideshow and then click “?” to see a list of keyboard shortcuts. If you modify the notebook, you can update the slideshow by clicking in the toolbar above the show and clicking “Build”, or by clicking “File” in the toolbar above the notebook and again selecting “Slideshow”.</p>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="_images/slideshow-3.png"><img alt="notebook side-by-side with slideshow" src="_images/slideshow-3.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">original notebook side by side with slideshow</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The legacy method of creating and presenting a slideshow by using a separate Linux terminal command and starting a small web server is still available by clicking “File” &gt; “Slideshow via nbconvert…”.*</p>
+</div>
+</div>
+<div class="section" id="widgets-in-cocalc">
+<span id="jupyter-interactive-widgets"></span><span id="index-6"></span><h2><a class="toc-backref" href="#id14">widgets in CoCalc</a><a class="headerlink" href="#widgets-in-cocalc" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/index.html">Jupyter Widgets</a> are Python objects that let you build interactive GUIs for your Jupyter notebooks. CoCalc Jupyter notebooks combine the interactive capabilities of Jupyter widgets with the usual advanced features of the CoCalc platform, including
+<a class="reference internal" href="teaching-interactions.html#multi-user-edit"><span class="std std-ref">real-time collaboration</span></a>, <a class="reference internal" href="time-travel.html"><span class="doc">TimeTravel</span></a>, and <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">side chat</span></a>.</p>
+<p>A good way to get started using Jupyter widgets is to go through the <a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html">Widget List</a> in the main widgets documentation.</p>
+<div class="figure align-center" id="id7">
+<a class="reference internal image-reference" href="_images/cocalc-widgets-a.png"><img alt="notebook with widgets" src="_images/cocalc-widgets-a.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">CoCalc Jupyter notebook with Jupyter Widgets</span></p>
+</div>
+<p>For more information on the implementation of Jupyter Widgets in Cocalc, including support for real-time collaboration, see this video presentation: <a class="reference external" href="https://www.youtube.com/watch?v=t4h5QrBKjyY">Jupyter Widgets in CoCalc</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="jupyter-classical-vs-cocalc.html" class="btn btn-neutral float-right" title="Classical Versus CoCalc Jupyter Notebooks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="jupyter-start.html" class="btn btn-neutral float-left" title="Getting Started with Jupyter Notebooks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please contact us for <a href="https://cocalc.com/support/new">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

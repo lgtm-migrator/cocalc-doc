@@ -118,16 +118,16 @@
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#where-markdown-can-be-used-in-cocalc">Where Markdown can be used in CoCalc</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#enhanced-features-in-cocalc-markdown">Enhanced features in CoCalc Markdown</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mentions">&#64;-mentions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#checkboxes">Checkboxes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#collaborative-editing">Collaborative editing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#embedded-latex">Embedded LaTeX</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#emojis">Emojis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#checkboxes">Checkboxes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hashtags">Hashtags</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mentions">&#64;-mentions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rich-text-editing">Rich Text Editing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#inverse-search">Inverse search</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-to-pdf">Export to PDF</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#export-to-html">Export to HTML</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-to-pdf">Export to PDF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hashtags">Hashtags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inverse-search">Inverse search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rich-text-editing">Rich Text Editing</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
@@ -232,16 +232,16 @@
 <li><a class="reference internal" href="#introduction" id="id1">Introduction</a></li>
 <li><a class="reference internal" href="#where-markdown-can-be-used-in-cocalc" id="id2">Where Markdown can be used in CoCalc</a></li>
 <li><a class="reference internal" href="#enhanced-features-in-cocalc-markdown" id="id3">Enhanced features in CoCalc Markdown</a><ul>
-<li><a class="reference internal" href="#collaborative-editing" id="id4">Collaborative editing</a></li>
-<li><a class="reference internal" href="#embedded-latex" id="id5">Embedded LaTeX</a></li>
-<li><a class="reference internal" href="#emojis" id="id6">Emojis</a></li>
-<li><a class="reference internal" href="#checkboxes" id="id7">Checkboxes</a></li>
-<li><a class="reference internal" href="#hashtags" id="id8">Hashtags</a></li>
-<li><a class="reference internal" href="#mentions" id="id9">&#64;-mentions</a></li>
-<li><a class="reference internal" href="#rich-text-editing" id="id10">Rich Text Editing</a></li>
-<li><a class="reference internal" href="#inverse-search" id="id11">Inverse search</a></li>
-<li><a class="reference internal" href="#export-to-pdf" id="id12">Export to PDF</a></li>
-<li><a class="reference internal" href="#export-to-html" id="id13">Export to HTML</a></li>
+<li><a class="reference internal" href="#mentions" id="id4">&#64;-mentions</a></li>
+<li><a class="reference internal" href="#checkboxes" id="id5">Checkboxes</a></li>
+<li><a class="reference internal" href="#collaborative-editing" id="id6">Collaborative editing</a></li>
+<li><a class="reference internal" href="#embedded-latex" id="id7">Embedded LaTeX</a></li>
+<li><a class="reference internal" href="#emojis" id="id8">Emojis</a></li>
+<li><a class="reference internal" href="#export-to-html" id="id9">Export to HTML</a></li>
+<li><a class="reference internal" href="#export-to-pdf" id="id10">Export to PDF</a></li>
+<li><a class="reference internal" href="#hashtags" id="id11">Hashtags</a></li>
+<li><a class="reference internal" href="#inverse-search" id="id12">Inverse search</a></li>
+<li><a class="reference internal" href="#rich-text-editing" id="id13">Rich Text Editing</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#limitations" id="id14">Limitations</a></li>
@@ -270,7 +270,7 @@
 <li>Editing a “.md” file with the <a class="reference internal" href="frame-editor.html#frame-editor-markdown"><span class="std std-ref">frame editor</span></a></li>
 <li><a class="reference internal" href="chat.html"><span class="doc">Chat rooms</span></a> (“.sage-chat” files)</li>
 <li><a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side chat</span></a> panel available with any file being edited</li>
-<li><a class="reference internal" href="jupyter.html#cocalc-jupyter-features"><span class="std std-ref">Text cells in Jupyter notebooks</span></a></li>
+<li><a class="reference internal" href="jupyter-start.html#cocalc-jupyter-features"><span class="std std-ref">Text cells in Jupyter notebooks</span></a></li>
 <li>Markdown mode (“%md”) in <a class="reference internal" href="sagews.html#what-is-sagews"><span class="std std-ref">Sage worksheets</span></a></li>
 <li><a class="reference internal" href="frame-editor.html#edit-rmd"><span class="std std-ref">R Markdown</span></a> (“.Rmd” and “.rmd” files)</li>
 <li><a class="reference internal" href="tasks.html"><span class="doc">Task Lists</span></a> (“.tasks” files, also known as “Todo lists”)</li>
@@ -279,47 +279,28 @@
 </div>
 <div class="section" id="enhanced-features-in-cocalc-markdown">
 <span id="cocalc-markdown-features"></span><h2><a class="toc-backref" href="#id3">Enhanced features in CoCalc Markdown</a><a class="headerlink" href="#enhanced-features-in-cocalc-markdown" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mentions">
+<h3><a class="toc-backref" href="#id4">&#64;-mentions</a><a class="headerlink" href="#mentions" title="Permalink to this headline">¶</a></h3>
+<p>See <a class="reference internal" href="teaching-interactions.html#at-mention-chat"><span class="std std-ref">&#64;Mention collaborators in chat</span></a>.</p>
+</div>
+<div class="section" id="checkboxes">
+<h3><a class="toc-backref" href="#id5">Checkboxes</a><a class="headerlink" href="#checkboxes" title="Permalink to this headline">¶</a></h3>
+<p>Type ” [ ] ” to create an unchecked checkbox. Note the single space between the square brackets. Type ” [x] ” to create a checked box. In both unchecked and checked boxes, there is a space before the first bracket and a space after the closed bracket.</p>
+</div>
 <div class="section" id="collaborative-editing">
-<h3><a class="toc-backref" href="#id4">Collaborative editing</a><a class="headerlink" href="#collaborative-editing" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Collaborative editing</a><a class="headerlink" href="#collaborative-editing" title="Permalink to this headline">¶</a></h3>
 <p>Multiple users can edit CoCalc Markdown at the same time. In fact, one user can have several browser windows open to the same Markdown content and edit from them all simultaneously (we sometimes use this feature to test collaboration while developing CoCalc).</p>
 </div>
 <div class="section" id="embedded-latex">
-<h3><a class="toc-backref" href="#id5">Embedded LaTeX</a><a class="headerlink" href="#embedded-latex" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Embedded LaTeX</a><a class="headerlink" href="#embedded-latex" title="Permalink to this headline">¶</a></h3>
 <p>You can write <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX formulas</a> between <code class="docutils literal notranslate"><span class="pre">$</span></code> signs, e.g. <code class="docutils literal notranslate"><span class="pre">$\frac{1}{1+x^2}$</span></code>.</p>
 </div>
 <div class="section" id="emojis">
-<h3><a class="toc-backref" href="#id6">Emojis</a><a class="headerlink" href="#emojis" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Emojis</a><a class="headerlink" href="#emojis" title="Permalink to this headline">¶</a></h3>
 <p>View the list of supported emojis in the <a class="reference external" href="https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json">markdown-it-emojis GitHub repository</a>.</p>
 </div>
-<div class="section" id="checkboxes">
-<h3><a class="toc-backref" href="#id7">Checkboxes</a><a class="headerlink" href="#checkboxes" title="Permalink to this headline">¶</a></h3>
-<p>Type ” [ ] ” to create an unchecked checkbox. Note the single space between the square brackets. Type ” [x] ” to create a checked box. In both unchecked and checked boxes, there is a space before the first bracket and a space after the closed bracket.</p>
-</div>
-<div class="section" id="hashtags">
-<span id="markdown-hashtags"></span><h3><a class="toc-backref" href="#id8">Hashtags</a><a class="headerlink" href="#hashtags" title="Permalink to this headline">¶</a></h3>
-<p>Precede a word with a hash sign (“#”) and it is formatted to stand out as a hashtag.</p>
-</div>
-<div class="section" id="mentions">
-<h3><a class="toc-backref" href="#id9">&#64;-mentions</a><a class="headerlink" href="#mentions" title="Permalink to this headline">¶</a></h3>
-<p>See <a class="reference internal" href="teaching-interactions.html#at-mention-chat"><span class="std std-ref">&#64;Mention collaborators in chat</span></a>.</p>
-</div>
-<div class="section" id="rich-text-editing">
-<h3><a class="toc-backref" href="#id10">Rich Text Editing</a><a class="headerlink" href="#rich-text-editing" title="Permalink to this headline">¶</a></h3>
-<p>See <a class="reference internal" href="rich-text.html"><span class="doc">Rich Text Editing</span></a>.</p>
-</div>
-<div class="section" id="inverse-search">
-<h3><a class="toc-backref" href="#id11">Inverse search</a><a class="headerlink" href="#inverse-search" title="Permalink to this headline">¶</a></h3>
-<p>The markdown editor supports <strong>inverse search</strong> when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.</p>
-<p>If you are using a split view with Markdown Code in one pane and Editable Text in the other, you can use the sync button: <a class="reference internal" href="_images/sync-icon.png"><img alt="sync icon" src="_images/sync-icon.png" style="width: 24px;" /></a> at the top from either pane to synchronize the cursor in the other pane.</p>
-</div>
-<div class="section" id="export-to-pdf">
-<h3><a class="toc-backref" href="#id12">Export to PDF</a><a class="headerlink" href="#export-to-pdf" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>To export a markdown (“.md”) file as pdf, open the file, select “Locked” from the view pulldown menu and click the “Print” button.</li>
-</ul>
-</div>
 <div class="section" id="export-to-html">
-<h3><a class="toc-backref" href="#id13">Export to HTML</a><a class="headerlink" href="#export-to-html" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Export to HTML</a><a class="headerlink" href="#export-to-html" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p class="first">To create html from a markdown file, open a <a class="reference internal" href="terminal.html"><span class="doc">Linux terminal</span></a>. If your file is “filename.md”, run the command:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pandoc filename.md -o filename.html
@@ -327,6 +308,25 @@
 </div>
 </li>
 </ul>
+</div>
+<div class="section" id="export-to-pdf">
+<h3><a class="toc-backref" href="#id10">Export to PDF</a><a class="headerlink" href="#export-to-pdf" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>To export a markdown (“.md”) file as pdf, open the file, select “Locked” from the view pulldown menu and click the “Print” button.</li>
+</ul>
+</div>
+<div class="section" id="hashtags">
+<span id="markdown-hashtags"></span><h3><a class="toc-backref" href="#id11">Hashtags</a><a class="headerlink" href="#hashtags" title="Permalink to this headline">¶</a></h3>
+<p>Precede a word with a hash sign (“#”) and it is formatted to stand out as a hashtag.</p>
+</div>
+<div class="section" id="inverse-search">
+<h3><a class="toc-backref" href="#id12">Inverse search</a><a class="headerlink" href="#inverse-search" title="Permalink to this headline">¶</a></h3>
+<p>The markdown editor supports <strong>inverse search</strong> when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.</p>
+<p>If you are using a split view with Markdown Code in one pane and Editable Text in the other, you can use the sync button: <a class="reference internal" href="_images/sync-icon.png"><img alt="sync icon" src="_images/sync-icon.png" style="width: 24px;" /></a> at the top from either pane to synchronize the cursor in the other pane.</p>
+</div>
+<div class="section" id="rich-text-editing">
+<h3><a class="toc-backref" href="#id13">Rich Text Editing</a><a class="headerlink" href="#rich-text-editing" title="Permalink to this headline">¶</a></h3>
+<p>See <a class="reference internal" href="rich-text.html"><span class="doc">Rich Text Editing</span></a>.</p>
 </div>
 </div>
 <div class="section" id="limitations">
