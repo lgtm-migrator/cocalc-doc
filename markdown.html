@@ -121,6 +121,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#mentions">&#64;-mentions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#checkboxes">Checkboxes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#collaborative-editing">Collaborative editing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#details-element">Details element</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#embedded-latex">Embedded LaTeX</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#emojis">Emojis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#export-to-html">Export to HTML</a></li>
@@ -130,7 +131,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#rich-text-editing">Rich Text Editing</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#about-the-cocalc-implementation-of-markdown">About the CoCalc Implementation of Markdown</a></li>
 </ul>
 </li>
@@ -229,27 +229,27 @@
 <span id="index-0"></span><h1>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#introduction" id="id1">Introduction</a></li>
-<li><a class="reference internal" href="#where-markdown-can-be-used-in-cocalc" id="id2">Where Markdown can be used in CoCalc</a></li>
-<li><a class="reference internal" href="#enhanced-features-in-cocalc-markdown" id="id3">Enhanced features in CoCalc Markdown</a><ul>
-<li><a class="reference internal" href="#mentions" id="id4">&#64;-mentions</a></li>
-<li><a class="reference internal" href="#checkboxes" id="id5">Checkboxes</a></li>
-<li><a class="reference internal" href="#collaborative-editing" id="id6">Collaborative editing</a></li>
-<li><a class="reference internal" href="#embedded-latex" id="id7">Embedded LaTeX</a></li>
-<li><a class="reference internal" href="#emojis" id="id8">Emojis</a></li>
-<li><a class="reference internal" href="#export-to-html" id="id9">Export to HTML</a></li>
-<li><a class="reference internal" href="#export-to-pdf" id="id10">Export to PDF</a></li>
-<li><a class="reference internal" href="#hashtags" id="id11">Hashtags</a></li>
-<li><a class="reference internal" href="#inverse-search" id="id12">Inverse search</a></li>
-<li><a class="reference internal" href="#rich-text-editing" id="id13">Rich Text Editing</a></li>
+<li><a class="reference internal" href="#introduction" id="id3">Introduction</a></li>
+<li><a class="reference internal" href="#where-markdown-can-be-used-in-cocalc" id="id4">Where Markdown can be used in CoCalc</a></li>
+<li><a class="reference internal" href="#enhanced-features-in-cocalc-markdown" id="id5">Enhanced features in CoCalc Markdown</a><ul>
+<li><a class="reference internal" href="#mentions" id="id6">&#64;-mentions</a></li>
+<li><a class="reference internal" href="#checkboxes" id="id7">Checkboxes</a></li>
+<li><a class="reference internal" href="#collaborative-editing" id="id8">Collaborative editing</a></li>
+<li><a class="reference internal" href="#details-element" id="id9">Details element</a></li>
+<li><a class="reference internal" href="#embedded-latex" id="id10">Embedded LaTeX</a></li>
+<li><a class="reference internal" href="#emojis" id="id11">Emojis</a></li>
+<li><a class="reference internal" href="#export-to-html" id="id12">Export to HTML</a></li>
+<li><a class="reference internal" href="#export-to-pdf" id="id13">Export to PDF</a></li>
+<li><a class="reference internal" href="#hashtags" id="id14">Hashtags</a></li>
+<li><a class="reference internal" href="#inverse-search" id="id15">Inverse search</a></li>
+<li><a class="reference internal" href="#rich-text-editing" id="id16">Rich Text Editing</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#limitations" id="id14">Limitations</a></li>
-<li><a class="reference internal" href="#about-the-cocalc-implementation-of-markdown" id="id15">About the CoCalc Implementation of Markdown</a></li>
+<li><a class="reference internal" href="#about-the-cocalc-implementation-of-markdown" id="id17">About the CoCalc Implementation of Markdown</a></li>
 </ul>
 </div>
 <div class="section" id="introduction">
-<h2><a class="toc-backref" href="#id1">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Wikipedia defines Markdown as “a lightweight markup language for creating formatted text using a plain-text editor” (<a class="reference external" href="https://en.wikipedia.org/wiki/Markdown">https://en.wikipedia.org/wiki/Markdown</a>).</p>
 <p>Markdown makes it easy to add basic structure, such as headings and lists, to a plaintext document. Use of Markdown is ubiquitous in CoCalc (see <a class="reference internal" href="#where-markdown-used"><span class="std std-ref">below</span></a>). When you start making notes into a text file, it is often most convenient to open the file as a Markdown document, i.e. a file with name ending in “.md”. It is easy to produce pdf and html files from markdown.</p>
 <p>There is a brief tutorial on Markdown in the <a class="reference internal" href="project-library.html"><span class="doc">Project Library</span></a>. To copy the introduction into a project of yours, open the project and follow the four steps below:</p>
@@ -265,7 +265,7 @@
 </ul>
 </div>
 <div class="section" id="where-markdown-can-be-used-in-cocalc">
-<span id="where-markdown-used"></span><h2><a class="toc-backref" href="#id2">Where Markdown can be used in CoCalc</a><a class="headerlink" href="#where-markdown-can-be-used-in-cocalc" title="Permalink to this headline">¶</a></h2>
+<span id="where-markdown-used"></span><h2><a class="toc-backref" href="#id4">Where Markdown can be used in CoCalc</a><a class="headerlink" href="#where-markdown-can-be-used-in-cocalc" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Editing a “.md” file with the <a class="reference internal" href="frame-editor.html#frame-editor-markdown"><span class="std std-ref">frame editor</span></a></li>
 <li><a class="reference internal" href="chat.html"><span class="doc">Chat rooms</span></a> (“.sage-chat” files)</li>
@@ -278,29 +278,48 @@
 </ul>
 </div>
 <div class="section" id="enhanced-features-in-cocalc-markdown">
-<span id="cocalc-markdown-features"></span><h2><a class="toc-backref" href="#id3">Enhanced features in CoCalc Markdown</a><a class="headerlink" href="#enhanced-features-in-cocalc-markdown" title="Permalink to this headline">¶</a></h2>
+<span id="cocalc-markdown-features"></span><h2><a class="toc-backref" href="#id5">Enhanced features in CoCalc Markdown</a><a class="headerlink" href="#enhanced-features-in-cocalc-markdown" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="mentions">
-<h3><a class="toc-backref" href="#id4">&#64;-mentions</a><a class="headerlink" href="#mentions" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">&#64;-mentions</a><a class="headerlink" href="#mentions" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="teaching-interactions.html#at-mention-chat"><span class="std std-ref">&#64;Mention collaborators in chat</span></a>.</p>
 </div>
 <div class="section" id="checkboxes">
-<h3><a class="toc-backref" href="#id5">Checkboxes</a><a class="headerlink" href="#checkboxes" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Checkboxes</a><a class="headerlink" href="#checkboxes" title="Permalink to this headline">¶</a></h3>
 <p>Type ” [ ] ” to create an unchecked checkbox. Note the single space between the square brackets. Type ” [x] ” to create a checked box. In both unchecked and checked boxes, there is a space before the first bracket and a space after the closed bracket.</p>
 </div>
 <div class="section" id="collaborative-editing">
-<h3><a class="toc-backref" href="#id6">Collaborative editing</a><a class="headerlink" href="#collaborative-editing" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Collaborative editing</a><a class="headerlink" href="#collaborative-editing" title="Permalink to this headline">¶</a></h3>
 <p>Multiple users can edit CoCalc Markdown at the same time. In fact, one user can have several browser windows open to the same Markdown content and edit from them all simultaneously (we sometimes use this feature to test collaboration while developing CoCalc).</p>
 </div>
+<div class="section" id="details-element">
+<h3><a class="toc-backref" href="#id9">Details element</a><a class="headerlink" href="#details-element" title="Permalink to this headline">¶</a></h3>
+<p>CoCalc markdown editing supports <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">The Details disclosure element</a>. Here is how a <cite>details</cite> element is entered:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;details&gt;
+    &lt;summary&gt;summary text&lt;/summary&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+&lt;/details&gt;
+</pre></div>
+</div>
+<p>You can put text that you want hidden inside the <cite>details</cite> element. When not expanded, only the summary text is displayed. To expand the content and show the hidden content, click anywhere in the summary. To hide the content, click the summary again.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/details-summary-only.png"><img alt="a details element with content hidden" src="_images/details-summary-only.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">details element with content hidden</span></p>
+</div>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/details-expanded.png"><img alt="a details element with content expanded" src="_images/details-expanded.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">details element with content expanded</span></p>
+</div>
+</div>
 <div class="section" id="embedded-latex">
-<h3><a class="toc-backref" href="#id7">Embedded LaTeX</a><a class="headerlink" href="#embedded-latex" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id10">Embedded LaTeX</a><a class="headerlink" href="#embedded-latex" title="Permalink to this headline">¶</a></h3>
 <p>You can write <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX formulas</a> between <code class="docutils literal notranslate"><span class="pre">$</span></code> signs, e.g. <code class="docutils literal notranslate"><span class="pre">$\frac{1}{1+x^2}$</span></code>.</p>
 </div>
 <div class="section" id="emojis">
-<h3><a class="toc-backref" href="#id8">Emojis</a><a class="headerlink" href="#emojis" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id11">Emojis</a><a class="headerlink" href="#emojis" title="Permalink to this headline">¶</a></h3>
 <p>View the list of supported emojis in the <a class="reference external" href="https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json">markdown-it-emojis GitHub repository</a>.</p>
 </div>
 <div class="section" id="export-to-html">
-<h3><a class="toc-backref" href="#id9">Export to HTML</a><a class="headerlink" href="#export-to-html" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12">Export to HTML</a><a class="headerlink" href="#export-to-html" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p class="first">To create html from a markdown file, open a <a class="reference internal" href="terminal.html"><span class="doc">Linux terminal</span></a>. If your file is “filename.md”, run the command:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pandoc filename.md -o filename.html
@@ -310,33 +329,37 @@
 </ul>
 </div>
 <div class="section" id="export-to-pdf">
-<h3><a class="toc-backref" href="#id10">Export to PDF</a><a class="headerlink" href="#export-to-pdf" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id13">Export to PDF</a><a class="headerlink" href="#export-to-pdf" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>To export a markdown (“.md”) file as pdf, open the file, select “Locked” from the view pulldown menu and click the “Print” button.</li>
 </ul>
 </div>
 <div class="section" id="hashtags">
-<span id="markdown-hashtags"></span><h3><a class="toc-backref" href="#id11">Hashtags</a><a class="headerlink" href="#hashtags" title="Permalink to this headline">¶</a></h3>
+<span id="markdown-hashtags"></span><h3><a class="toc-backref" href="#id14">Hashtags</a><a class="headerlink" href="#hashtags" title="Permalink to this headline">¶</a></h3>
 <p>Precede a word with a hash sign (“#”) and it is formatted to stand out as a hashtag.</p>
 </div>
 <div class="section" id="inverse-search">
-<h3><a class="toc-backref" href="#id12">Inverse search</a><a class="headerlink" href="#inverse-search" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id15">Inverse search</a><a class="headerlink" href="#inverse-search" title="Permalink to this headline">¶</a></h3>
 <p>The markdown editor supports <strong>inverse search</strong> when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.</p>
 <p>If you are using a split view with Markdown Code in one pane and Editable Text in the other, you can use the sync button: <a class="reference internal" href="_images/sync-icon.png"><img alt="sync icon" src="_images/sync-icon.png" style="width: 24px;" /></a> at the top from either pane to synchronize the cursor in the other pane.</p>
 </div>
 <div class="section" id="rich-text-editing">
-<h3><a class="toc-backref" href="#id13">Rich Text Editing</a><a class="headerlink" href="#rich-text-editing" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id16">Rich Text Editing</a><a class="headerlink" href="#rich-text-editing" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="rich-text.html"><span class="doc">Rich Text Editing</span></a>.</p>
 </div>
 </div>
-<div class="section" id="limitations">
-<h2><a class="toc-backref" href="#id14">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
-<p>At present, the markdown “Editable Text” editor does not offer an easy way to add a link. And adding an image is limited to copying an image that has been added to the paste buffer. To add a link, or to add an image from a file at this time, choose “Markdown Code” in the pulldown menu at the top.</p>
-<a class="reference internal image-reference" href="_images/md-text-vs-code.png"><img alt="choosing Markdown Code vs. Editable Text while editing an md file" src="_images/md-text-vs-code.png" style="width: 70%;" /></a>
-</div>
 <div class="section" id="about-the-cocalc-implementation-of-markdown">
-<span id="cocalc-markdown-impl"></span><h2><a class="toc-backref" href="#id15">About the CoCalc Implementation of Markdown</a><a class="headerlink" href="#about-the-cocalc-implementation-of-markdown" title="Permalink to this headline">¶</a></h2>
+<span id="cocalc-markdown-impl"></span><h2><a class="toc-backref" href="#id17">About the CoCalc Implementation of Markdown</a><a class="headerlink" href="#about-the-cocalc-implementation-of-markdown" title="Permalink to this headline">¶</a></h2>
 <p>CoCalc uses <a class="reference external" href="https://github.com/markdown-it/markdown-it">markdown-it</a>, with plug-ins and some customizations. Details are in the CoCalc source code at GitHub in file <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/index.ts">src/packages/frontend/markdown/index.ts</a>.</p>
+<p>CoCalc markdown is parsed using <cite>markdown-it</cite> with the linkify and html options set to true, so that patterns that look like URL’s are clickable and html blocks and fragments are parsed as html, according to the commonmark spec (which can be weird, subtle, and surprising). CoCalc’s markdown is also parsed with the following five plugins enabled. Except for the emoji plugin, these are all forks of upstreams plugins:</p>
+<ul class="simple">
+<li>math - <a class="reference external" href="https://cocalc.com/github/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/math-plugin.ts">math code</a>; this is a proper markdown-it plugin with rules designed to be as close to Jupyter classic’s math formula parsing as I could write. By default math is rendered using katex by default, then mathjax if that fails. There are also some hacks to extend katex support.</li>
+<li>emoji - <a class="reference external" href="https://github.com/markdown-it/markdown-it-emoji/blob/master/README.md">emoji docs</a>; configured with the defaults, so all github supported emojis. 😊</li>
+<li>checkbox - <a class="reference external" href="https://cocalc.com/github/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/checkbox-plugin.ts">checkbox code</a>; create checkbox anywhere via [ ] and checked box via [x]. Also supports github task lists.</li>
+<li>hashtag - <a class="reference external" href="https://cocalc.com/github/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/hashtag-plugin.ts">hashtag code</a>; create #hashtags anywhere that look like #hashtags. In some parts of cocalc, click on these to search for matches.</li>
+<li>mentions - <a class="reference external" href="https://cocalc.com/github/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/mentions-plugin.ts">mentions code</a>; type &#64; then select the name of one of your collaborators. They will receive an email pointing to your mention of them. For chat, the rest of the line is included as context in the &#64;mention.</li>
+</ul>
+<p>CoCalc’s markdown is only parsed using markdown-it. It is rendered using a custom React-based renderer that is built around slatejs, which we also use for direct rich text editing of markdown. Thus rendering is much more rigid and structured than most markdown renderers, which simply export an html string and let the browser interpret it. For example, rendering of code blocks (triple back ticks) is accomplished using CodeMirror’s parser and react to provide syntax highlighting for any mode we support. The html blocks are rendered using <cite>html-react-parser</cite>, so they will only work if they are valid complete html; moreover, in context like the share server or untrusted notebooks, where the HTML shouldn’t be trusted, our markdown renderer sanitizes the html using the <cite>xss</cite> module.</p>
 </div>
 </div>
 

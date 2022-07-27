@@ -116,14 +116,15 @@
 <li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Rich Text Editing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#where-rich-text-editing-is-available">Where Rich Text Editing is Available</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#real-time-collaboration">Real-time Collaboration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#markdown">Markdown</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#latex">LaTeX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#latex-in-rich-text-editing">LaTeX in Rich Text Editing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#font-options">Font options</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
@@ -218,6 +219,21 @@
             
   <div class="section" id="rich-text-editing">
 <span id="index-0"></span><h1>Rich Text Editing<a class="headerlink" href="#rich-text-editing" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#introduction" id="id1">Introduction</a></li>
+<li><a class="reference internal" href="#where-rich-text-editing-is-available" id="id2">Where Rich Text Editing is Available</a></li>
+<li><a class="reference internal" href="#features" id="id3">Features</a><ul>
+<li><a class="reference internal" href="#real-time-collaboration" id="id4">Real-time Collaboration</a></li>
+<li><a class="reference internal" href="#latex-in-rich-text-editing" id="id5">LaTeX in Rich Text Editing</a></li>
+<li><a class="reference internal" href="#font-options" id="id6">Font options</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#limitations" id="id7">Limitations</a></li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h2><a class="toc-backref" href="#id1">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>With <em>Rich text editing</em>, as you enter content, your work is displayed in a form that resembles the final result, i.e. you do not see formatting commands mixed in with text.</p>
 <p>Here is how some sample content will appear <strong>as you enter it</strong> with rich text editing. For each line, use the usual markdown formatting characters, i.e. start the first line with a “#” and a space:</p>
 <a class="reference internal image-reference" href="_images/yes-rich.png"><img alt="rich text editing does not show formatting commands" class="align-center" src="_images/yes-rich.png" style="width: 50%;" /></a>
@@ -225,10 +241,11 @@
 <a class="reference internal image-reference" href="_images/not-rich.png"><img alt="markdown commands are displayed when not using rich text editing" class="align-center" src="_images/not-rich.png" style="width: 50%;" /></a>
 <p>With rich text editing, you see the final result right away.</p>
 <p>Note that you can also set title and subtitle font size by selecting the text and using “H” (headings) in font options, as shown below.</p>
+</div>
 <div class="section" id="where-rich-text-editing-is-available">
-<h2>Where Rich Text Editing is Available<a class="headerlink" href="#where-rich-text-editing-is-available" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Where Rich Text Editing is Available</a><a class="headerlink" href="#where-rich-text-editing-is-available" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a>: when editing Markdown (.md) files. Select “Editable Text”.</li>
+<li><a class="reference internal" href="markdown.html"><span class="doc">Markdown</span></a> and <a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a>: when editing Markdown (.md) files. Select “Editable Text”.</li>
 <li><a class="reference internal" href="chat.html"><span class="doc">Chatrooms</span></a> as well as <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a>.</li>
 <li><a class="reference internal" href="tasks.html"><span class="doc">Task Lists</span></a>.</li>
 <li><a class="reference internal" href="whiteboard.html"><span class="doc">Whiteboard</span></a> In text, sticky notes, and task lists.</li>
@@ -236,17 +253,13 @@
 </ul>
 </div>
 <div class="section" id="features">
-<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Features</a><a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="real-time-collaboration">
-<h3>Real-time Collaboration<a class="headerlink" href="#real-time-collaboration" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Real-time Collaboration</a><a class="headerlink" href="#real-time-collaboration" title="Permalink to this headline">¶</a></h3>
 <p>Multiple users can use rich text editing on a file, and see one another’s work at the same time.</p>
 </div>
-<div class="section" id="markdown">
-<h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h3>
-<p>See <a class="reference internal" href="markdown.html"><span class="doc">Markdown</span></a>.</p>
-</div>
-<div class="section" id="latex">
-<h3>LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="latex-in-rich-text-editing">
+<h3><a class="toc-backref" href="#id5">LaTeX in Rich Text Editing</a><a class="headerlink" href="#latex-in-rich-text-editing" title="Permalink to this headline">¶</a></h3>
 <p>When using rich text editing, you can embed LaTeX directives between dollar signs ($) <em>followed by a space</em>. You must add a space to cause conversion to mathematical characters.</p>
 <p>Here is an example of latex entry in <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a> for a file, before typing a space after the second $:</p>
 <a class="reference internal image-reference" href="_images/rich-text-latex-1.png"><img alt="rich text editing with latex, before final space" class="align-center" src="_images/rich-text-latex-1.png" style="width: 60%;" /></a>
@@ -254,7 +267,7 @@
 <a class="reference internal image-reference" href="_images/rich-text-latex-2.png"><img alt="rich text editing with latex, after final space" class="align-center" src="_images/rich-text-latex-2.png" style="width: 60%;" /></a>
 </div>
 <div class="section" id="font-options">
-<h3>Font options<a class="headerlink" href="#font-options" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Font options</a><a class="headerlink" href="#font-options" title="Permalink to this headline">¶</a></h3>
 <p>You can specify font family, face (bold, italics, etc.), size, and color.</p>
 <p>If you select “Text” mode (instead of Markdown) for editing content between code cells,
 then you can highlight any text and click the color palette icon, then set the color of that text.</p>
@@ -267,6 +280,11 @@ then you can highlight any text and click the color palette icon, then set the c
 under the hood.
 The format is sufficiently well-defined that it doesn’t get removed by CoCalc XSS processing. So it works even if e.g., a student opens the file and doesn’t switch to trusted mode.)</p>
 </div>
+</div>
+<div class="section" id="limitations">
+<h2><a class="toc-backref" href="#id7">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<p>At present, the markdown “Editable Text” editor does not offer an easy way to add a link. And adding an image is limited to copying an image that has been added to the paste buffer. To add a link, or to add an image from a file at this time, choose “Markdown Code” in the pulldown menu at the top.</p>
+<a class="reference internal image-reference" href="_images/md-text-vs-code.png"><img alt="choosing Markdown Code vs. Editable Text while editing an md file" src="_images/md-text-vs-code.png" style="width: 70%;" /></a>
 </div>
 </div>
 
