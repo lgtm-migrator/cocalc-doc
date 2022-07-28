@@ -128,6 +128,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#export-to-pdf">Export to PDF</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hashtags">Hashtags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#inverse-search">Inverse search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reference-links">Reference links</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rich-text-editing">Rich Text Editing</a></li>
 </ul>
 </li>
@@ -242,10 +243,11 @@
 <li><a class="reference internal" href="#export-to-pdf" id="id13">Export to PDF</a></li>
 <li><a class="reference internal" href="#hashtags" id="id14">Hashtags</a></li>
 <li><a class="reference internal" href="#inverse-search" id="id15">Inverse search</a></li>
-<li><a class="reference internal" href="#rich-text-editing" id="id16">Rich Text Editing</a></li>
+<li><a class="reference internal" href="#reference-links" id="id16">Reference links</a></li>
+<li><a class="reference internal" href="#rich-text-editing" id="id17">Rich Text Editing</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#about-the-cocalc-implementation-of-markdown" id="id17">About the CoCalc Implementation of Markdown</a></li>
+<li><a class="reference internal" href="#about-the-cocalc-implementation-of-markdown" id="id18">About the CoCalc Implementation of Markdown</a></li>
 </ul>
 </div>
 <div class="section" id="introduction">
@@ -293,14 +295,14 @@
 </div>
 <div class="section" id="details-element">
 <h3><a class="toc-backref" href="#id9">Details element</a><a class="headerlink" href="#details-element" title="Permalink to this headline">¶</a></h3>
-<p>CoCalc markdown editing supports <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">The Details disclosure element</a>. Here is how a <cite>details</cite> element is entered:</p>
+<p>CoCalc markdown editing supports <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">The Details disclosure element</a>. Here is how a <cite>details</cite> element is entered, using Markdown code edit mode:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;details&gt;
     &lt;summary&gt;summary text&lt;/summary&gt;
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
 &lt;/details&gt;
 </pre></div>
 </div>
-<p>You can put text that you want hidden inside the <cite>details</cite> element. When not expanded, only the summary text is displayed. To expand the content and show the hidden content, click anywhere in the summary. To hide the content, click the summary again.</p>
+<p>You can put text that you want hidden inside the <cite>details</cite> element. When not expanded, only the summary text is displayed. To expand the content and show the hidden content, click anywhere in the summary. To hide the content, click the summary again. If you do not specify summary text, the word “Details” is used.</p>
 <div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="_images/details-summary-only.png"><img alt="a details element with content hidden" src="_images/details-summary-only.png" style="width: 60%;" /></a>
 <p class="caption"><span class="caption-text">details element with content hidden</span></p>
@@ -342,14 +344,33 @@
 <h3><a class="toc-backref" href="#id15">Inverse search</a><a class="headerlink" href="#inverse-search" title="Permalink to this headline">¶</a></h3>
 <p>The markdown editor supports <strong>inverse search</strong> when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.</p>
 <p>If you are using a split view with Markdown Code in one pane and Editable Text in the other, you can use the sync button: <a class="reference internal" href="_images/sync-icon.png"><img alt="sync icon" src="_images/sync-icon.png" style="width: 24px;" /></a> at the top from either pane to synchronize the cursor in the other pane.</p>
+<p>See <a class="reference internal" href="rich-text.html"><span class="doc">Rich Text Editing</span></a>.</p>
+</div>
+<div class="section" id="reference-links">
+<h3><a class="toc-backref" href="#id16">Reference links</a><a class="headerlink" href="#reference-links" title="Permalink to this headline">¶</a></h3>
+<p>CoCalc will gather hyperlinks in a <cite>References</cite> section at the bottom of the file if you use either of the following formats to enter hyperlinks while in Markdown code edit mode. The input format for reference links follows the specification here, <a class="reference external" href="https://daringfireball.net/projects/markdown/syntax#link">markdown reference links</a> (with the enhancement that with implicit link names, an empty pair of brackets is not needed).</p>
+<p>Implicit link name. In the body of your document, enclose the text reference to the link in square brackets. Then include a definition of the link on a separate line. You may append an optional title string, surrounded by single or double quotes, to the definition. The definition does not have to be next to the reference; for example, you could gather definitions at the bottom of your document. Here is an example of a link reference line and a corresponding definition line:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Here is some text with a link to [CoCalc]
+
+[CoCalc]: https://cocalc.com &#39;optional added text&#39;
+</pre></div>
+</div>
+<p>Link id. Here’s another example of a link reference line followed by the corresponding definition. In this case the link id is numeric:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Use [Sagemath][1] for numeric and symbolic mathematics.
+
+[1]: https://sagemath.com &#39;sagemath site&#39;
+</pre></div>
+</div>
+<p>CoCalc will create the following <cite>References</cite> section at the bottom of the markdown file from the sample links above.</p>
+<a class="reference internal image-reference" href="_images/reference-links.png"><img alt="References section at bottom of file" class="align-center" src="_images/reference-links.png" style="width: 60%;" /></a>
 </div>
 <div class="section" id="rich-text-editing">
-<h3><a class="toc-backref" href="#id16">Rich Text Editing</a><a class="headerlink" href="#rich-text-editing" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id17">Rich Text Editing</a><a class="headerlink" href="#rich-text-editing" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="rich-text.html"><span class="doc">Rich Text Editing</span></a>.</p>
 </div>
 </div>
 <div class="section" id="about-the-cocalc-implementation-of-markdown">
-<span id="cocalc-markdown-impl"></span><h2><a class="toc-backref" href="#id17">About the CoCalc Implementation of Markdown</a><a class="headerlink" href="#about-the-cocalc-implementation-of-markdown" title="Permalink to this headline">¶</a></h2>
+<span id="cocalc-markdown-impl"></span><h2><a class="toc-backref" href="#id18">About the CoCalc Implementation of Markdown</a><a class="headerlink" href="#about-the-cocalc-implementation-of-markdown" title="Permalink to this headline">¶</a></h2>
 <p>CoCalc uses <a class="reference external" href="https://github.com/markdown-it/markdown-it">markdown-it</a>, with plug-ins and some customizations. Details are in the CoCalc source code at GitHub in file <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/index.ts">src/packages/frontend/markdown/index.ts</a>.</p>
 <p>CoCalc markdown is parsed using <cite>markdown-it</cite> with the linkify and html options set to true, so that patterns that look like URL’s are clickable and html blocks and fragments are parsed as html, according to the commonmark spec (which can be weird, subtle, and surprising). CoCalc’s markdown is also parsed with the following five plugins enabled. Except for the emoji plugin, these are all forks of upstreams plugins:</p>
 <ul class="simple">
