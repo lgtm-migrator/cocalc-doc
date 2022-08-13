@@ -293,6 +293,11 @@ A full example might look like this
 <h2>IFrame communication<a class="headerlink" href="#iframe-communication" title="Permalink to this headline">¶</a></h2>
 <p>This is a communication channel to improve working with an embedded CoCalc instance.
 It gives the parent page the ability to send command-messages to CoCalc (e.g. opening a specific page, etc.) and receiving responses.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The IFrame communication might be currently broken.
+Please check <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/6059">issue #6059</a> for the current status.</p>
+</div>
 <p>The underlying technology is <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">window.postMessage</a>.</p>
 <p>The parent page must be served using <code class="docutils literal notranslate"><span class="pre">https</span></code>!</p>
 <div class="admonition note">
