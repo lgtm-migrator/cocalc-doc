@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -87,7 +90,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,12 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -118,7 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -129,11 +132,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -205,24 +209,24 @@
            <div itemprop="articleBody">
             
   <div class="section" id="setup-jupyter-extensions">
-<span id="jupyter-extensions"></span><span id="index-0"></span><h1>Setup Jupyter Extensions<a class="headerlink" href="#setup-jupyter-extensions" title="Permalink to this headline">¶</a></h1>
+<span id="jupyter-extensions"></span><span id="index-0"></span><h1>Setup Jupyter Extensions<a class="headerlink" href="#setup-jupyter-extensions" title="Permalink to this heading">¶</a></h1>
 <p>Besides <a class="reference internal" href="../jupyter.html"><span class="doc">CoCalc’s own implementation</span></a> of the <a class="reference external" href="https://jupyter.org">Jupyter Notebook</a>, there is also the possibility of running the Classical Server or Jupyter Lab inside your project.</p>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last">Please read about various pros/cons and warnings regarding <a class="reference internal" href="../jupyter-classical-vs-cocalc.html#jupyter-classical-vs-cocalc"><span class="std std-ref">Classical Versus CoCalc Jupyter Notebooks</span></a> notebooks.</p>
+<p class="admonition-title">See also</p>
+<p>Please read about various pros/cons and warnings regarding <a class="reference internal" href="../jupyter-classical-vs-cocalc.html#jupyter-classical-vs-cocalc"><span class="std std-ref">Classical Versus CoCalc Jupyter Notebooks</span></a> notebooks.</p>
 </div>
 <div class="section" id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">¶</a></h2>
 <p>To enable an extension for your project you have to</p>
 <ol class="arabic simple">
-<li>Install the extension library for Python 3 (using <code class="docutils literal notranslate"><span class="pre">pip3</span></code>)</li>
-<li>Install the extension for Jupyter</li>
-<li>Enable it</li>
+<li><p>Install the extension library for Python 3 (using <code class="docutils literal notranslate"><span class="pre">pip3</span></code>)</p></li>
+<li><p>Install the extension for Jupyter</p></li>
+<li><p>Enable it</p></li>
 </ol>
 <p>The documentation of the extension you want to install might explain this in more detail.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">In essence, you have to replace switches like <code class="docutils literal notranslate"><span class="pre">--system</span></code> (which are for global installations)
+<p class="admonition-title">Note</p>
+<p>In essence, you have to replace switches like <code class="docutils literal notranslate"><span class="pre">--system</span></code> (which are for global installations)
 with <code class="docutils literal notranslate"><span class="pre">--user</span></code> (which are for installing in your user account, which is equivalent to a project).</p>
 </div>
 <p>For example, here are the steps to install <a class="reference external" href="https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/">contributed notebook extensions</a> and enable <a class="reference external" href="https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/equation-numbering/readme.html">equation numbering</a>.

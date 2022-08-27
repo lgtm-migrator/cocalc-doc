@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -89,7 +92,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -97,12 +100,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -120,7 +123,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -146,11 +149,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -224,10 +228,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="ssh-keys">
-<span id="account-ssh"></span><span id="index-0"></span><h1>SSH keys<a class="headerlink" href="#ssh-keys" title="Permalink to this headline">¶</a></h1>
+<span id="account-ssh"></span><span id="index-0"></span><h1>SSH keys<a class="headerlink" href="#ssh-keys" title="Permalink to this heading">¶</a></h1>
 <p>This section assumes you have created an SSH key pair as described in <a class="reference internal" href="../project-settings.html#ssh-keys"><span class="std std-ref">SSH Keys</span></a>.</p>
 <div class="section" id="add-ssh-public-keys-for-your-account">
-<span id="add-account-ssh-keys"></span><h2>Add SSH public keys for your account<a class="headerlink" href="#add-ssh-public-keys-for-your-account" title="Permalink to this headline">¶</a></h2>
+<span id="add-account-ssh-keys"></span><h2>Add SSH public keys for your account<a class="headerlink" href="#add-ssh-public-keys-for-your-account" title="Permalink to this heading">¶</a></h2>
 <p>To add SSH public keys for your CoCalc account you can either browse to <a class="reference external" href="https://cocalc.com/settings/ssh-keys">https://cocalc.com/settings/ssh-keys</a>, or open the <a class="reference internal" href="../account-dropdown.html"><span class="doc">Account Dropdown Menu</span></a> and select “SSH keys”:</p>
 <a class="reference internal image-reference" href="../_images/ssh-keys-in-dropdown.png"><img alt="account dropdown menu with SSH keys circled" class="align-center" src="../_images/ssh-keys-in-dropdown.png" style="width: 100%;" /></a>
 <p>Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example, “John’s CoCalc Key”.
@@ -240,21 +244,21 @@ Click “Add SSH Key”.</p>
 <a class="reference internal image-reference" href="../_images/add-ssh-keys.png"><img alt="enter title and public ssh key" class="align-center" src="../_images/add-ssh-keys.png" style="width: 50%;" /></a>
 <p>Your key is now saved for that account and will work for all projects for which that account has owner or collaborator status.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If you want to add an SSH key that applies to just one project, and not to all the projects your account has access to see: <a class="reference internal" href="../project-settings.html#project-settings-ssh-keys"><span class="std std-ref">Configuring SSH Keys for a Single Project</span></a>.</p>
+<p class="admonition-title">Note</p>
+<p>If you want to add an SSH key that applies to just one project, and not to all the projects your account has access to see: <a class="reference internal" href="../project-settings.html#project-settings-ssh-keys"><span class="std std-ref">Configuring SSH Keys for a Single Project</span></a>.</p>
 </div>
 </div>
 <div class="section" id="ssh-login-for-a-project">
-<h2>SSH login for a project<a class="headerlink" href="#ssh-login-for-a-project" title="Permalink to this headline">¶</a></h2>
+<h2>SSH login for a project<a class="headerlink" href="#ssh-login-for-a-project" title="Permalink to this heading">¶</a></h2>
 <p>To connect to a project from your local computer, use  the project id with hyphens removed for the user, followed by ‘ssh.cocalc.com’ as the hostname. This string can be found at under Project settings, as shown here: <a class="reference internal" href="../project-settings.html#ssh-user"><span class="std std-ref">ssh user</span></a>.</p>
 </div>
 <div class="section" id="view-account-ssh-keys">
-<h2>View account SSH keys<a class="headerlink" href="#view-account-ssh-keys" title="Permalink to this headline">¶</a></h2>
+<h2>View account SSH keys<a class="headerlink" href="#view-account-ssh-keys" title="Permalink to this heading">¶</a></h2>
 <p>To view SSH keys configured for your account, open the same screen that you would to add keys for your account: <a class="reference internal" href="#add-account-ssh-keys"><span class="std std-ref">Add SSH public keys for your account</span></a>.</p>
 <p>SSH keys configured for a single project are viewed under Project settings.</p>
 </div>
 <div class="section" id="display-local-public-key-fingerprints">
-<h2>Display local public key fingerprints<a class="headerlink" href="#display-local-public-key-fingerprints" title="Permalink to this headline">¶</a></h2>
+<h2>Display local public key fingerprints<a class="headerlink" href="#display-local-public-key-fingerprints" title="Permalink to this heading">¶</a></h2>
 <p>When you upload SSH public keys to your CoCalc account, CoCalc displays a fingerprint to identify the key. If you have a large number of public keys on your local computer, it may help to run a command to display the hexadecimal fingerprints locally, so that you can see which local public key file corresponds to a certain key fingerprint in your CoCalc account. Here is a command you can run if you have the OpenSSH tools installed, for example on Linux or macOS:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ssh-keygen -l -E md5 -f &lt;filename&gt;.pub
 </pre></div>

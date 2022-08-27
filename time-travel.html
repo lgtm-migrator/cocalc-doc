@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -89,7 +92,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
@@ -97,12 +100,12 @@
 <li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
@@ -125,7 +128,7 @@
 <li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project-toolbar.html">Project Toolbar</a></li>
@@ -136,11 +139,12 @@
 <li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
@@ -212,25 +216,25 @@
            <div itemprop="articleBody">
             
   <div class="section" id="time-travel">
-<span id="index-0"></span><h1>Time Travel<a class="headerlink" href="#time-travel" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1>Time Travel<a class="headerlink" href="#time-travel" title="Permalink to this heading">¶</a></h1>
 <p>CoCalc calls “Time Travel” the historic recording of all changes in a file.
 This works for all text-based documents in a <a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a> and also <a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebooks</span></a>, <a class="reference internal" href="sagews.html"><span class="doc">Sage Worksheets</span></a>, and <a class="reference internal" href="latex.html"><span class="doc">LaTeX Editor</span></a>.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#using-time-travel" id="id1">Using Time Travel</a></li>
-<li><a class="reference internal" href="#export-history" id="id2">Export History</a></li>
-<li><a class="reference internal" href="#who-changed-my-file" id="id3">Who Changed My File?</a></li>
+<li><p><a class="reference internal" href="#using-time-travel" id="id1">Using Time Travel</a></p></li>
+<li><p><a class="reference internal" href="#export-history" id="id2">Export History</a></p></li>
+<li><p><a class="reference internal" href="#who-changed-my-file" id="id3">Who Changed My File?</a></p></li>
 </ul>
 </div>
 <div class="section" id="using-time-travel">
-<h2><a class="toc-backref" href="#id1">Using Time Travel</a><a class="headerlink" href="#using-time-travel" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Using Time Travel</a><a class="headerlink" href="#using-time-travel" title="Permalink to this heading">¶</a></h2>
 <p>To open it, click on the light blue button with the reversed cirular arrow around a clock:</p>
 <img alt="_images/time-travel-button.png" class="align-center" src="_images/time-travel-button.png" />
 <p>Then you can see the underlying history, e.g. here for exactly this <code class="docutils literal notranslate"><span class="pre">time-travel.rst</span></code> file of the documentation in front of you.</p>
 <ul class="simple">
-<li><strong>(1)</strong> is the control knob of the slider</li>
-<li><strong>(2)</strong> to view changes between two revisions</li>
-<li><strong>(3)</strong> to revert the file back to the given revision. This doesn’t undo the history, but adds a <strong>new</strong> entry at the end. No changes get lost.</li>
+<li><p><strong>(1)</strong> is the control knob of the slider</p></li>
+<li><p><strong>(2)</strong> to view changes between two revisions</p></li>
+<li><p><strong>(3)</strong> to revert the file back to the given revision. This doesn’t undo the history, but adds a <strong>new</strong> entry at the end. No changes get lost.</p></li>
 </ul>
 <p>For very long histories, another button will show up to load the entire history.</p>
 <a class="reference internal image-reference" href="_images/time-travel-ui.png"><img alt="_images/time-travel-ui.png" src="_images/time-travel-ui.png" style="width: 100%;" /></a>
@@ -239,14 +243,14 @@ This works for all text-based documents in a <a class="reference internal" href=
 <p>For more information, read this <a class="reference external" href="http://blog.sagemath.com/2016/09/08/timetravel-diffs.html">blog post about time travel</a>.</p>
 </div>
 <div class="section" id="export-history">
-<h2><a class="toc-backref" href="#id2">Export History</a><a class="headerlink" href="#export-history" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Export History</a><a class="headerlink" href="#export-history" title="Permalink to this heading">¶</a></h2>
 <p>Clicking the <code class="docutils literal notranslate"><span class="pre">Export</span></code> button generates a machine-readable representation of all changes, summarizing who made them and when exactly.
 This can be used to track the depth of contributions to a specific file,
 e.g. students in the context of a group project.</p>
 <p>Note that the <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;:</span> <span class="pre">&quot;Project:</span> <span class="pre">...&quot;</span></code> is the backend process modifying the file, i.e. that’s not a human person. (See the next section for more information.)</p>
 </div>
 <div class="section" id="who-changed-my-file">
-<h2><a class="toc-backref" href="#id3">Who Changed My File?</a><a class="headerlink" href="#who-changed-my-file" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Who Changed My File?</a><a class="headerlink" href="#who-changed-my-file" title="Permalink to this heading">¶</a></h2>
 <p>Time Travel shows who made changes to a file. This is helpful when two or more users have edited a file.</p>
 <p>In the case that Time Travel says “The Project” made the change, that means that some process other than the CoCalc editor modified the file, and that version was newer than the version used by the editor at the time. This can happen for many reasons. For example, if the file is stored in git, then switching to a different branch could change the contents of the file. Another cause could be running a notebook with JupyterLab or Jupyter classic at the same time as CoCalc Jupyter.</p>
 <p>Make sure you save your file to disk when you’re finished working with it. A file is saved to disk when the “Save” button turns from a bright green to a disabled dull green.</p>

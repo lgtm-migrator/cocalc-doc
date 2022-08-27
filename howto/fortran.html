@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -87,7 +90,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,12 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -118,7 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -129,11 +132,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -205,9 +209,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="fortran-programming">
-<span id="index-0"></span><h1>Fortran Programming<a class="headerlink" href="#fortran-programming" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1>Fortran Programming<a class="headerlink" href="#fortran-programming" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="command-line">
-<h2>Command-line<a class="headerlink" href="#command-line" title="Permalink to this headline">¶</a></h2>
+<h2>Command-line<a class="headerlink" href="#command-line" title="Permalink to this heading">¶</a></h2>
 <p>CoCalc supports various ways to run <a class="reference external" href="https://en.wikipedia.org/wiki/Fortran">Fortran code</a>.
 They’re provided by GNU <code class="docutils literal notranslate"><span class="pre">gfortran</span></code> (<code class="docutils literal notranslate"><span class="pre">f95</span></code>) in the <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>.
 You can also view an <code class="docutils literal notranslate"><span class="pre">.f90</span></code> file next to a terminal,
@@ -215,13 +219,12 @@ by splitting the editor window and switching to a Terminal in a <a class="refere
 <p>Read more in the <a class="reference external" href="https://gcc.gnu.org/fortran/">GFortran doc page</a>.</p>
 </div>
 <div class="section" id="jupyter-notebook">
-<h2>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline">¶</a></h2>
+<h2>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this heading">¶</a></h2>
 <p>A more convenient way to explore Fortran is to mix it with Python by using the <code class="docutils literal notranslate"><span class="pre">f2py</span></code> wrapper.</p>
 <p>In a Jupyter Notebook running Python 3, there is also the <a class="reference external" href="https://github.com/mgaitan/fortran_magic">fortranmagic</a> extension available.</p>
 <ol class="arabic">
-<li><p class="first"><code class="docutils literal notranslate"><span class="pre">%load_ext</span> <span class="pre">fortranmagic</span></code></p>
-</li>
-<li><p class="first">Write a function in a cell like that:</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">%load_ext</span> <span class="pre">fortranmagic</span></code></p></li>
+<li><p>Write a function in a cell like that:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>%%fortran -v
 
 subroutine f1(x, y, z)
@@ -234,16 +237,15 @@ end subroutine f1
 </pre></div>
 </div>
 </li>
-<li><p class="first">Use that new function <code class="docutils literal notranslate"><span class="pre">f1</span></code> in Python, e.g. <code class="docutils literal notranslate"><span class="pre">f1(2.2,</span> <span class="pre">-1)</span></code> gives <code class="docutils literal notranslate"><span class="pre">-0.8305184841156006</span></code>.</p>
-</li>
+<li><p>Use that new function <code class="docutils literal notranslate"><span class="pre">f1</span></code> in Python, e.g. <code class="docutils literal notranslate"><span class="pre">f1(2.2,</span> <span class="pre">-1)</span></code> gives <code class="docutils literal notranslate"><span class="pre">-0.8305184841156006</span></code>.</p></li>
 </ol>
 <p>Here is an <a class="reference external" href="https://cocalc.com/share/public_paths/65db906b3df4e7b93ce47eceae2edcbe81722db3">example worksheet</a>:</p>
 <ol class="arabic simple">
-<li>Defining the function <code class="docutils literal notranslate"><span class="pre">f1</span></code></li>
+<li><p>Defining the function <code class="docutils literal notranslate"><span class="pre">f1</span></code></p></li>
 </ol>
 <a class="reference internal image-reference" href="../_images/fortranmagic-1.png"><img alt="../_images/fortranmagic-1.png" src="../_images/fortranmagic-1.png" style="width: 75%;" /></a>
 <ol class="arabic simple" start="2">
-<li>Using it in a plot:</li>
+<li><p>Using it in a plot:</p></li>
 </ol>
 <a class="reference internal image-reference" href="../_images/fortranmagic-2.png"><img alt="../_images/fortranmagic-2.png" src="../_images/fortranmagic-2.png" style="width: 75%;" /></a>
 </div>

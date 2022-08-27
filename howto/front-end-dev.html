@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -87,7 +90,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,12 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -118,7 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -129,11 +132,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -205,64 +209,65 @@
            <div itemprop="articleBody">
             
   <div class="section" id="front-end-web-development">
-<span id="front-end-dev"></span><span id="index-0"></span><h1>Front-end Web Development<a class="headerlink" href="#front-end-web-development" title="Permalink to this headline">¶</a></h1>
+<span id="front-end-dev"></span><span id="index-0"></span><h1>Front-end Web Development<a class="headerlink" href="#front-end-web-development" title="Permalink to this heading">¶</a></h1>
 <p>A CoCalc project is a convenient platform for learning the latest tools for front-end web development, including <a class="reference external" href="https://nodejs.org/en/">Node.js</a>, <a class="reference external" href="https://reactjs.org/">React</a>, and <a class="reference external" href="https://nextjs.org/">Next.js</a>.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#general-notes" id="id3">General Notes</a></li>
-<li><a class="reference internal" href="#simple-python-server" id="id4">Simple Python Server</a></li>
-<li><a class="reference internal" href="#id1" id="id5">Node.js</a></li>
-<li><a class="reference internal" href="#typescript" id="id6">Typescript</a></li>
-<li><a class="reference internal" href="#vscode" id="id7">VSCode</a></li>
-<li><a class="reference internal" href="#id2" id="id8">React</a></li>
-<li><a class="reference internal" href="#nextjs" id="id9">Nextjs</a></li>
-<li><a class="reference internal" href="#connecting-to-a-database" id="id10">Connecting to a database</a></li>
-<li><a class="reference internal" href="#modifying-cocalc-sources" id="id11">Modifying CoCalc Sources</a><ul>
-<li><a class="reference internal" href="#cocalc-docker-image" id="id12">CoCalc Docker Image</a></li>
-<li><a class="reference internal" href="#cocalc-com" id="id13">CoCalc.com</a></li>
+<li><p><a class="reference internal" href="#general-notes" id="id3">General Notes</a></p></li>
+<li><p><a class="reference internal" href="#simple-python-server" id="id4">Simple Python Server</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id5">Node.js</a></p></li>
+<li><p><a class="reference internal" href="#typescript" id="id6">Typescript</a></p></li>
+<li><p><a class="reference internal" href="#vscode" id="id7">VSCode</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id8">React</a></p></li>
+<li><p><a class="reference internal" href="#nextjs" id="id9">Nextjs</a></p></li>
+<li><p><a class="reference internal" href="#connecting-to-a-database" id="id10">Connecting to a database</a></p></li>
+<li><p><a class="reference internal" href="#modifying-cocalc-sources" id="id11">Modifying CoCalc Sources</a></p>
+<ul>
+<li><p><a class="reference internal" href="#cocalc-docker-image" id="id12">CoCalc Docker Image</a></p></li>
+<li><p><a class="reference internal" href="#cocalc-com" id="id13">CoCalc.com</a></p></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="general-notes">
-<h2><a class="toc-backref" href="#id3">General Notes</a><a class="headerlink" href="#general-notes" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">General Notes</a><a class="headerlink" href="#general-notes" title="Permalink to this heading">¶</a></h2>
 <p>Before starting</p>
 <ul class="simple">
-<li><strong>BaseURL.</strong></li>
-<li><strong>Security Model.</strong></li>
-<li><strong>Not for production.</strong></li>
+<li><p><strong>BaseURL.</strong></p></li>
+<li><p><strong>Security Model.</strong></p></li>
+<li><p><strong>Not for production.</strong></p></li>
 </ul>
 </div>
 <div class="section" id="simple-python-server">
-<h2><a class="toc-backref" href="#id4">Simple Python Server</a><a class="headerlink" href="#simple-python-server" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Simple Python Server</a><a class="headerlink" href="#simple-python-server" title="Permalink to this heading">¶</a></h2>
 <p>xxx</p>
 </div>
 <div class="section" id="id1">
-<h2><a class="toc-backref" href="#id5">Node.js</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Node.js</a><a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <p>xxx</p>
 </div>
 <div class="section" id="typescript">
-<h2><a class="toc-backref" href="#id6">Typescript</a><a class="headerlink" href="#typescript" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Typescript</a><a class="headerlink" href="#typescript" title="Permalink to this heading">¶</a></h2>
 </div>
 <div class="section" id="vscode">
-<h2><a class="toc-backref" href="#id7">VSCode</a><a class="headerlink" href="#vscode" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">VSCode</a><a class="headerlink" href="#vscode" title="Permalink to this heading">¶</a></h2>
 </div>
 <div class="section" id="id2">
-<h2><a class="toc-backref" href="#id8">React</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">React</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 </div>
 <div class="section" id="nextjs">
-<h2><a class="toc-backref" href="#id9">Nextjs</a><a class="headerlink" href="#nextjs" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Nextjs</a><a class="headerlink" href="#nextjs" title="Permalink to this heading">¶</a></h2>
 </div>
 <div class="section" id="connecting-to-a-database">
-<h2><a class="toc-backref" href="#id10">Connecting to a database</a><a class="headerlink" href="#connecting-to-a-database" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Connecting to a database</a><a class="headerlink" href="#connecting-to-a-database" title="Permalink to this heading">¶</a></h2>
 </div>
 <div class="section" id="modifying-cocalc-sources">
-<h2><a class="toc-backref" href="#id11">Modifying CoCalc Sources</a><a class="headerlink" href="#modifying-cocalc-sources" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Modifying CoCalc Sources</a><a class="headerlink" href="#modifying-cocalc-sources" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="cocalc-docker-image">
-<h3><a class="toc-backref" href="#id12">CoCalc Docker Image</a><a class="headerlink" href="#cocalc-docker-image" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12">CoCalc Docker Image</a><a class="headerlink" href="#cocalc-docker-image" title="Permalink to this heading">¶</a></h3>
 </div>
 <div class="section" id="cocalc-com">
-<h3><a class="toc-backref" href="#id13">CoCalc.com</a><a class="headerlink" href="#cocalc-com" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id13">CoCalc.com</a><a class="headerlink" href="#cocalc-com" title="Permalink to this heading">¶</a></h3>
 </div>
 </div>
 </div>

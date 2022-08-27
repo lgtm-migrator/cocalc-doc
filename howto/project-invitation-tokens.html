@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -87,7 +90,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,12 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -118,7 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -129,11 +132,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -205,7 +209,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="project-invitation-tokens">
-<span id="project-invitation"></span><span id="index-0"></span><h1>Project Invitation Tokens<a class="headerlink" href="#project-invitation-tokens" title="Permalink to this headline">¶</a></h1>
+<span id="project-invitation"></span><span id="index-0"></span><h1>Project Invitation Tokens<a class="headerlink" href="#project-invitation-tokens" title="Permalink to this heading">¶</a></h1>
 <p>Have you ever given a talk online and wanted to have everybody in
 the audience easily add themselves as collaborators on a CoCalc
 project, e.g. to watch you do some live coding or to chat in a
@@ -213,44 +217,44 @@ chatroom with math typesetting? Now you can. See below for creating
 a link you can send to your audience that will invite them into
 the project of your choice.</p>
 <div class="section" id="creating-project-invitation-token-or-link">
-<h2>Creating Project Invitation Token or Link<a class="headerlink" href="#creating-project-invitation-token-or-link" title="Permalink to this headline">¶</a></h2>
+<h2>Creating Project Invitation Token or Link<a class="headerlink" href="#creating-project-invitation-token-or-link" title="Permalink to this heading">¶</a></h2>
 <p>In Project Settings, at the bottom of the section for “+ Add new collaborators”, there is a link “Or invite people via a project invite token…”. Click this and a dialog opens:</p>
 <div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/invite-token-0.png"><img alt="../_images/invite-token-0.png" src="../_images/invite-token-0.png" style="width: 60%;" /></a>
-<p class="caption"><span class="caption-text">Creating a project invitation token</span></p>
+<p class="caption"><span class="caption-text">Creating a project invitation token</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <p>Click “Create token…” and then “Yes, create token” in the confirmation dialog that opens. You see that a new token has been created, and added to the list of tokens already created, if any.
 Click the clipboard icon to copy the token.</p>
 <div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/invite-token-05.png"><img alt="../_images/invite-token-05.png" src="../_images/invite-token-05.png" style="width: 60%;" /></a>
-<p class="caption"><span class="caption-text">Copying a project invitation token</span></p>
+<p class="caption"><span class="caption-text">Copying a project invitation token</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 <p>The link expires after 2 weeks. Click the “Expire” button and accept the confirmation dialog to make the token expire immediately, so that it cannot be used anymore.</p>
 <p>For a complete URL that includes the token, click the “+” to the left of the token and you will see a link. Click the clipboard icon to the right of the link to copy it.</p>
 <div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/invite-token-1.png"><img alt="../_images/invite-token-1.png" src="../_images/invite-token-1.png" style="width: 60%;" /></a>
-<p class="caption"><span class="caption-text">Creating a project invitation link</span></p>
+<p class="caption"><span class="caption-text">Creating a project invitation link</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="using-a-project-invitation-token">
-<span id="project-invitation-token"></span><span id="index-1"></span><h2>Using a Project Invitation Token<a class="headerlink" href="#using-a-project-invitation-token" title="Permalink to this headline">¶</a></h2>
+<span id="project-invitation-token"></span><span id="index-1"></span><h2>Using a Project Invitation Token<a class="headerlink" href="#using-a-project-invitation-token" title="Permalink to this heading">¶</a></h2>
 <p>Your audience can use the invitation token by opening the Projects list in CoCalc and pasting the token into the upper right in the area for “Project invite token”.
 They will be added as collaborators and the project will be opened for them.</p>
 <div class="figure align-center" id="id4">
 <a class="reference internal image-reference" href="../_images/enter-token.png"><img alt="../_images/enter-token.png" src="../_images/enter-token.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-text">Enter an invitation token in the Projects list</span></p>
+<p class="caption"><span class="caption-text">Enter an invitation token in the Projects list</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="using-a-project-invitation-link">
-<h2>Using a Project Invitation Link<a class="headerlink" href="#using-a-project-invitation-link" title="Permalink to this headline">¶</a></h2>
+<h2>Using a Project Invitation Link<a class="headerlink" href="#using-a-project-invitation-link" title="Permalink to this heading">¶</a></h2>
 <p>Anyone who clicks on the project invitation link will be added to the project as a collaborator. Persons who do not have an account will be signed in as anonymous users. They have the option of creating an account or continuing anonymously.</p>
 </div>
 <div class="section" id="no-limits">
-<h2>No Limits<a class="headerlink" href="#no-limits" title="Permalink to this headline">¶</a></h2>
+<h2>No Limits<a class="headerlink" href="#no-limits" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li>There is no limit on how many times a token can be used.</li>
-<li>Anonymous users are NOT automatically removed from the project.</li>
-<li>There is no limit on what users can see in the project. If you share an invitation link, be sure there is no private information in the project!</li>
+<li><p>There is no limit on how many times a token can be used.</p></li>
+<li><p>Anonymous users are NOT automatically removed from the project.</p></li>
+<li><p>There is no limit on what users can see in the project. If you share an invitation link, be sure there is no private information in the project!</p></li>
 </ul>
 <p>There’s some discussion about the implementation of invitation tokens and possible enhancements under the CoCalc GitHub issue: <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/885">Have a special url for projects… #885</a>.</p>
 </div>

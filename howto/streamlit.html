@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -87,7 +90,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,12 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -118,7 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -129,11 +132,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -205,16 +209,16 @@
            <div itemprop="articleBody">
             
   <div class="section" id="streamlit">
-<h1>Streamlit<a class="headerlink" href="#streamlit" title="Permalink to this headline">¶</a></h1>
+<h1>Streamlit<a class="headerlink" href="#streamlit" title="Permalink to this heading">¶</a></h1>
 <p><a class="reference external" href="https://streamlit.io/">Streamlit</a> is an open-source, python-based dashboard application for displaying data with minimal coding effort. See the References below for more information.</p>
 <p>Additional notes:</p>
 <ul class="simple">
-<li>Your project must have network access for Streamlit to work.</li>
-<li>The streamlit package must be in your computing environment.</li>
-<li>Streamlit supports displaying markdown and latex text formats.</li>
+<li><p>Your project must have network access for Streamlit to work.</p></li>
+<li><p>The streamlit package must be in your computing environment.</p></li>
+<li><p>Streamlit supports displaying markdown and latex text formats.</p></li>
 </ul>
 <div class="section" id="streamlit-package-availability">
-<h2>streamlit package availability<a class="headerlink" href="#streamlit-package-availability" title="Permalink to this headline">¶</a></h2>
+<h2>streamlit package availability<a class="headerlink" href="#streamlit-package-availability" title="Permalink to this heading">¶</a></h2>
 <p>In a linux terminal, run:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">which</span> <span class="n">streamlit</span>
 </pre></div>
@@ -225,7 +229,7 @@
 </div>
 </div>
 <div class="section" id="configuration-baseurlpath">
-<h2>Configuration: baseUrlPath<a class="headerlink" href="#configuration-baseurlpath" title="Permalink to this headline">¶</a></h2>
+<h2>Configuration: baseUrlPath<a class="headerlink" href="#configuration-baseurlpath" title="Permalink to this heading">¶</a></h2>
 <p>To run Streamlit in a CoCalc project, you need to configure <cite>baseUrlPath</cite>. Here are two ways to do this.</p>
 <p><strong>Environment variable.</strong></p>
 <p>In the Linux terminal you will use to run Streamlit, set shell environment variable as follows:</p>
@@ -241,7 +245,7 @@
 </div>
 </div>
 <div class="section" id="streamlit-hello-world">
-<h2>Streamlit “Hello world”<a class="headerlink" href="#streamlit-hello-world" title="Permalink to this headline">¶</a></h2>
+<h2>Streamlit “Hello world”<a class="headerlink" href="#streamlit-hello-world" title="Permalink to this heading">¶</a></h2>
 <p>Start the Streamlit welcome page by doing this. Be sure you have <cite>baseUrlPath</cite> set using one of the methods above:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">streamlit</span> <span class="n">hello</span>
 </pre></div>
@@ -254,7 +258,7 @@
 <p>If you get an “Email:” prompt in the new page that opens, you can ignore it. Just hit &lt;Enter&gt; when you see it.</p>
 </div>
 <div class="section" id="streamlit-python-script">
-<h2>Streamlit Python script<a class="headerlink" href="#streamlit-python-script" title="Permalink to this headline">¶</a></h2>
+<h2>Streamlit Python script<a class="headerlink" href="#streamlit-python-script" title="Permalink to this heading">¶</a></h2>
 <p>Create a Streamlit python script. Here is an example. Be sure you have <cite>baseUrlPath</cite> set using one of the methods above:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># file st-hello.py</span>
 <span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
@@ -276,7 +280,7 @@
 <p>If you make a change to file “st-hello.py”, you don’t have to restart the linux script. Simply refresh the browser tab showing the Streamlit display.</p>
 </div>
 <div class="section" id="streamlit-example">
-<h2>Streamlit Example<a class="headerlink" href="#streamlit-example" title="Permalink to this headline">¶</a></h2>
+<h2>Streamlit Example<a class="headerlink" href="#streamlit-example" title="Permalink to this heading">¶</a></h2>
 <p>Here is an example of a streamlit python script to display exoplanet counts:</p>
 <a class="reference internal image-reference" href="../_images/exoplanets-streamlit.png"><img alt="sample plot showing number of exoplanets discovered per year" src="../_images/exoplanets-streamlit.png" style="width: 100%;" /></a>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># file exoplanets-per-year.py</span>
@@ -313,10 +317,10 @@
 </div>
 </div>
 <div class="section" id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li>Docs at streamlit website: <a class="reference external" href="https://docs.streamlit.io/">Streamlit documentation</a></li>
-<li>Introductory article by Stephen Kilcommins: <a class="reference external" href="https://medium.datadriveninvestor.com/streamlit-everything-you-need-to-know-665eb90fcf4a#a7fe">Streamlit — Everything You Need To Know</a></li>
+<li><p>Docs at streamlit website: <a class="reference external" href="https://docs.streamlit.io/">Streamlit documentation</a></p></li>
+<li><p>Introductory article by Stephen Kilcommins: <a class="reference external" href="https://medium.datadriveninvestor.com/streamlit-everything-you-need-to-know-665eb90fcf4a#a7fe">Streamlit — Everything You Need To Know</a></p></li>
 </ul>
 </div>
 </div>

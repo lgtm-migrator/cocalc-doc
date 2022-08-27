@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -89,7 +92,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -97,12 +100,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -120,7 +123,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -144,11 +147,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -222,71 +226,71 @@
            <div itemprop="articleBody">
             
   <div class="section" id="custom-software">
-<h1>Custom Software<a class="headerlink" href="#custom-software" title="Permalink to this headline">¶</a></h1>
+<h1>Custom Software<a class="headerlink" href="#custom-software" title="Permalink to this heading">¶</a></h1>
 <p>Besides the <a class="reference internal" href="../software.html#default-software-environment"><span class="std std-ref">default software environment</span></a>,
 CoCalc also offers <a class="reference internal" href="../software.html#custom-software-environment"><span class="std std-ref">customizable software environments</span></a>.
 They bundle content for a specific purpose with software and libraries
 in order to form a runnable environment for them.</p>
 <div class="section" id="id1">
-<h2><a class="reference external" href="https://github.com/rougier/numpy-100">100 numpy exercises</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/rougier/numpy-100">100 numpy exercises</a><a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <p>This is a collection of numpy exercises from numpy mailing list, stack overflow, and numpy documentation.</p>
 </div>
 <div class="section" id="id2">
-<h2><a class="reference external" href="https://github.com/sagemathinc/csi-cmpy-dit">Computational Mechanics &amp; Discrete Information Theory</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/sagemathinc/csi-cmpy-dit">Computational Mechanics &amp; Discrete Information Theory</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>Computational Mechanics &amp; Discrete Information Theory</p>
 </div>
 <div class="section" id="id3">
-<h2><a class="reference external" href="https://github.com/dask/dask-examples">Dask Example Notebooks</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/dask/dask-examples">Dask Example Notebooks</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <p>This repository includes easy-to-run example notebooks for <a class="reference external" href="https://dask.org/">Dask</a>. They are intended to be educational and give users a start on common workflows.</p>
 </div>
 <div class="section" id="id4">
-<h2><a class="reference external" href="https://github.com/pacm/dl-workshop">Deep Learning Workshop</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/pacm/dl-workshop">Deep Learning Workshop</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <p>No description available</p>
 </div>
 <div class="section" id="id5">
-<h2><a class="reference external" href="https://github.com/ctb/2019-snakemake-ucdavis">Efficient Automated Data Analysis, using snakemake</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/ctb/2019-snakemake-ucdavis">Efficient Automated Data Analysis, using snakemake</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <p>No description available</p>
 </div>
 <div class="section" id="id6">
-<h2><a class="reference external" href="https://github.com/ageron/handson-ml2">Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow 2.0</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/ageron/handson-ml2">Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow 2.0</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <p>This project aims at teaching you the fundamentals of Machine Learning in python. It contains the example code and solutions to the exercises in the second edition of my O’Reilly book <a class="reference external" href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/">Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow</a>:</p>
 </div>
 <div class="section" id="id7">
-<h2><a class="reference external" href="https://github.com/scientificprogrammingUOS/lectures">Lectures in Scientific Computing in Python</a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/scientificprogrammingUOS/lectures">Lectures in Scientific Computing in Python</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
 <p>This repository contains all lectures from the course <em>Scientific programming in Python</em> that is part of the <em>Cognitive Science</em> program at the <em>University Osnabrück</em>. Each lecture is accompanied by a Jupyter notebook that explains each topic with a combination of code and text.</p>
 </div>
 <div class="section" id="id8">
-<h2><a class="reference external" href="https://github.com/mbeyeler/opencv-machine-learning">Machine Learning for OpenCV</a><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/mbeyeler/opencv-machine-learning">Machine Learning for OpenCV</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
 <p>This is the Jupyter notebook version of the following book:
 Michael Beyeler: <em>“Machine Learning for OpenCV: Intelligent Image Processing with Python”</em>, 14 July 2017, <em>Packt Publishing Ltd., London, England</em></p>
 </div>
 <div class="section" id="id9">
-<h2><a class="reference external" href="https://workshop.materialsproject.org/">Materials Project Workshop</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://workshop.materialsproject.org/">Materials Project Workshop</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
 <p>Assets for the Materials Project workshop.</p>
 </div>
 <div class="section" id="id10">
-<h2><a class="reference external" href="https://github.com/AllenDowney/ModSimPy">ModSimPython: Modeling and Simulation in Python</a><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/AllenDowney/ModSimPy">ModSimPython: Modeling and Simulation in Python</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
 <p><em>Modeling and Simulation in Python</em> is an introduction to physical modeling using a computational approach. It is organized in three parts:</p>
 <ul class="simple">
-<li>The first part presents discrete models, including a bikeshare system and world population growth.</li>
-<li>The second part introduces first-order systems, including models of infectious disease, thermal systems, and pharmacokinetics.</li>
-<li>The third part is about second-order systems, including mechanical systems like projectiles, celestial mechanics, and rotating rigid bodies.</li>
+<li><p>The first part presents discrete models, including a bikeshare system and world population growth.</p></li>
+<li><p>The second part introduces first-order systems, including models of infectious disease, thermal systems, and pharmacokinetics.</p></li>
+<li><p>The third part is about second-order systems, including mechanical systems like projectiles, celestial mechanics, and rotating rigid bodies.</p></li>
 </ul>
 </div>
 <div class="section" id="id11">
-<h2><a class="reference external" href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python Data Science Handbook</a><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python Data Science Handbook</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
 <p>No description available</p>
 </div>
 <div class="section" id="id12">
-<h2><a class="reference external" href="https://github.com/sagemathinc/csi-quantum-chemistry">Quantum Chemistry</a><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/sagemathinc/csi-quantum-chemistry">Quantum Chemistry</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
 <p>Quantum Chemistry on CoCalc. Includes  <a class="reference external" href="http://psicode.org/">Psi4</a> and <a class="reference external" href="https://qiskit.org/">Qiskit</a></p>
 </div>
 <div class="section" id="id13">
-<h2><a class="reference external" href="https://github.com/haraldschilly/riemann_book">Riemann Problems and Jupyter Solutions</a><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="https://github.com/haraldschilly/riemann_book">Riemann Problems and Jupyter Solutions</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
 <p>An interactive book about the Riemann problem for hyperbolic PDEs, using Jupyter notebooks. Work in progress.</p>
 </div>
 <div class="section" id="id14">
-<h2><a class="reference external" href="http://www.underworldcode.org">Underworld 2</a><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<h2><a class="reference external" href="http://www.underworldcode.org">Underworld 2</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference external" href="http://www.underworldcode.org">Underworld 2</a> is a Python API (Application Programming Interface) which provides functionality for the modelling of geodynamics processes.</p>
 </div>
 </div>

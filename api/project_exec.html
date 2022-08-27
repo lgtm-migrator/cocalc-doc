@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -89,7 +92,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -97,12 +100,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -120,7 +123,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -131,7 +134,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API v1</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="index.html#purpose">Purpose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#protocol-and-data-format">Protocol and Data Format</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#authentication">Authentication</a></li>
@@ -184,7 +188,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -234,7 +238,7 @@
     
       <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="index.html">API</a> &raquo;</li>
+          <li><a href="index.html">API v1</a> &raquo;</li>
         
       <li>project_exec</li>
     
@@ -258,25 +262,25 @@
            <div itemprop="articleBody">
             
   <div class="section" id="project-exec">
-<h1>project_exec<a class="headerlink" href="#project-exec" title="Permalink to this headline">¶</a></h1>
+<h1>project_exec<a class="headerlink" href="#project-exec" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
-<li><code class="docutils literal notranslate"><span class="pre">project_id</span></code>: id of project where command is to be executed
-(required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">path</span></code>: path of working directory for the command (default: ““)</li>
-<li><code class="docutils literal notranslate"><span class="pre">command</span></code>: command to be executed (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">args</span></code>: command line options for the command (default: [])</li>
-<li><code class="docutils literal notranslate"><span class="pre">timeout</span></code>: maximum allowed time, in seconds (default: 10)</li>
-<li><code class="docutils literal notranslate"><span class="pre">aggregate</span></code>: If there are multiple attempts to run the given
+<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">project_id</span></code>: id of project where command is to be executed
+(required)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">path</span></code>: path of working directory for the command (default: ““)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">command</span></code>: command to be executed (required)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">args</span></code>: command line options for the command (default: [])</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">timeout</span></code>: maximum allowed time, in seconds (default: 10)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">aggregate</span></code>: If there are multiple attempts to run the given
 command with the same time, they are all aggregated and run only one
 time by the project; if requests comes in with a greater value (time,
 sequence number, etc.), they all run in another group after the first
-one finishes. Meant for compiling code on save.</li>
-<li><code class="docutils literal notranslate"><span class="pre">max_output</span></code>: maximum number of characters in the output</li>
-<li><code class="docutils literal notranslate"><span class="pre">bash</span></code>: if true, args are ignored and command is run as a bash
-command (default: false)</li>
-<li><code class="docutils literal notranslate"><span class="pre">err_on_exit</span></code>: if exit code is nonzero send error return message
-instead of the usual output (default: true)</li>
+one finishes. Meant for compiling code on save.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_output</span></code>: maximum number of characters in the output</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bash</span></code>: if true, args are ignored and command is run as a bash
+command (default: false)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">err_on_exit</span></code>: if exit code is nonzero send error return message
+instead of the usual output (default: true)</p></li>
 </ul>
 <p>Execute a shell command in a given project.</p>
 <p>Examples:</p>

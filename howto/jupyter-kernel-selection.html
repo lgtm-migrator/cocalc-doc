@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -87,7 +90,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,12 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -118,7 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -129,11 +132,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -205,7 +209,7 @@
            <div itemprop="articleBody">
             
   <span class="target" id="index-0"></span><div class="section" id="jupyter-kernel-selection">
-<span id="jupyter-change-kernel"></span><span id="index-1"></span><h1>Jupyter Kernel Selection<a class="headerlink" href="#jupyter-kernel-selection" title="Permalink to this headline">¶</a></h1>
+<span id="jupyter-change-kernel"></span><span id="index-1"></span><h1>Jupyter Kernel Selection<a class="headerlink" href="#jupyter-kernel-selection" title="Permalink to this heading">¶</a></h1>
 <p><a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter notebooks</span></a> support more than a single programming language.
 The element which instantiates a session and runs the code of a cell is called the <strong>kernel</strong>.</p>
 <p>The currently active kernel’s display name is visible at the top right of the working area.
@@ -213,49 +217,49 @@ In most cases it also shows a logo, which helps identify it.</p>
 <p>When you start a new notebook, the default kernel will generally be whatever kernel you last explicitly selected.
 You can override this by creating your own <a class="reference internal" href="../plus-new.html#default-template"><span class="std std-ref">default notebook template</span></a>.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="admonition-title">Note</p>
 <p>Kernels of <em>existing</em> notebooks are only identified by their name.
 The actual meaning of it can change between environments,
 because kernels with the same name could be configured differently.
 There is no common scheme.</p>
-<p class="last">Therefore, after uploading any of your notebooks to CoCalc,
+<p>Therefore, after uploading any of your notebooks to CoCalc,
 you have to double-check which kernel it uses.</p>
 </div>
 <div class="section" id="cocalc-s-jupyter-notebook">
-<h2>CoCalc’s Jupyter Notebook<a class="headerlink" href="#cocalc-s-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
+<h2>CoCalc’s Jupyter Notebook<a class="headerlink" href="#cocalc-s-jupyter-notebook" title="Permalink to this heading">¶</a></h2>
 <p>To select the kernel in a CoCalc Jupyter notebook, click the “Kernel” button (usually in the middle toolbar, depending on your configuration).
 In the menu that opens, scroll down past interrupt and restart commands to see the choices for available kernels.</p>
 <div class="figure align-center" id="id1">
 <span id="jupyter-kernel-menu"></span><a class="reference internal image-reference" href="../_images/jupyter-kernel.png"><img alt="../_images/jupyter-kernel.png" src="../_images/jupyter-kernel.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">selecting the kernel with the kernel menu</span></p>
+<p class="caption"><span class="caption-text">selecting the kernel with the kernel menu</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <p id="jupyter-change-kernel-lg">You can view an expanded kernel selection dialog after opening a jupyter notebook by clicking the kernel at upper right.</p>
 <div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/jupyter-select-kernel-lg.png"><img alt="../_images/jupyter-select-kernel-lg.png" src="../_images/jupyter-select-kernel-lg.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">expanded kernel selection after clicking selected kernel at upper right</span></p>
+<p class="caption"><span class="caption-text">expanded kernel selection after clicking selected kernel at upper right</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 <p>You can also create a custom kernel if needed. See <a class="reference internal" href="custom-jupyter-kernel.html"><span class="doc">Custom Jupyter Kernel</span></a>.</p>
 </div>
 <div class="section" id="jupyter-classic">
-<h2>Jupyter Classic<a class="headerlink" href="#jupyter-classic" title="Permalink to this headline">¶</a></h2>
+<h2>Jupyter Classic<a class="headerlink" href="#jupyter-classic" title="Permalink to this heading">¶</a></h2>
 <p>Here is a sequence of steps depicted about how to change the Kernel in a notebook.
 The current selection is “SageMath”, and it is about to be change to “Python 3 (Ubuntu Linux)”.</p>
 <div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/jupyter-classic-change-kernel.png"><img alt="../_images/jupyter-classic-change-kernel.png" src="../_images/jupyter-classic-change-kernel.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">selecting the kernel in a Classical Jupyter notebook</span></p>
+<p class="caption"><span class="caption-text">selecting the kernel in a Classical Jupyter notebook</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="jupyter-lab">
-<h2>Jupyter Lab<a class="headerlink" href="#jupyter-lab" title="Permalink to this headline">¶</a></h2>
+<h2>Jupyter Lab<a class="headerlink" href="#jupyter-lab" title="Permalink to this heading">¶</a></h2>
 <p>When creating a new notebook in JupyterLab, the Launcher displays icons for the available kernels.</p>
 <div class="figure align-center" id="id4">
 <a class="reference internal image-reference" href="../_images/jlab-launcher.png"><img alt="../_images/jlab-launcher.png" src="../_images/jlab-launcher.png" style="width: 60%;" /></a>
-<p class="caption"><span class="caption-text">kernel choices when creating a notebook with JupyterLab</span></p>
+<p class="caption"><span class="caption-text">kernel choices when creating a notebook with JupyterLab</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 <p>Once you have opened a notebook in JupyterLab, you can change the kernel using the “kernel” button in the top row.</p>
 <div class="figure align-center" id="id5">
 <a class="reference internal image-reference" href="../_images/jlab-change-kernel.png"><img alt="../_images/jlab-change-kernel.png" src="../_images/jlab-change-kernel.png" style="width: 90%;" /></a>
-<p class="caption"><span class="caption-text">changing kernel of existing notebook with JupyterLab</span></p>
+<p class="caption"><span class="caption-text">changing kernel of existing notebook with JupyterLab</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>

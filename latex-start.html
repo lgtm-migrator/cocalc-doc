@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -89,7 +92,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
@@ -97,12 +100,12 @@
 <li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
@@ -129,7 +132,7 @@
 <li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project-toolbar.html">Project Toolbar</a></li>
@@ -140,11 +143,12 @@
 <li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
@@ -218,34 +222,37 @@
            <div itemprop="articleBody">
             
   <div class="section" id="getting-started-with-latex">
-<span id="latex-start"></span><span id="index-0"></span><h1>Getting started with LaTeX<a class="headerlink" href="#getting-started-with-latex" title="Permalink to this headline">¶</a></h1>
+<span id="latex-start"></span><span id="index-0"></span><h1>Getting started with LaTeX<a class="headerlink" href="#getting-started-with-latex" title="Permalink to this heading">¶</a></h1>
 <p>To use the LaTeX editor, open or create a file whose name ends in <code class="docutils literal notranslate"><span class="pre">.tex</span></code>. By default, you should see an editor similar to the one in the screenshot below:</p>
 <a class="reference internal image-reference" href="_images/latex-ui.png"><img alt="default CoCalc .tex file editing tab showing 4 panes" class="align-center" src="_images/latex-ui.png" style="width: 100%;" /></a>
 <p><strong>Building</strong> In general, you edit source code and compile it to a PDF document. Click the “Build” button (or hit shift+enter or alt+t) to build the tex file and produce a PDF.  You can also check “Build on save: build LaTex file whenever it is saved to disk” in account preferences, and a build will be triggered whenever your file is saved to disk.</p>
 <p><strong>Interface</strong> In the initial screen layout, the source is on the left and a preview of the compiled PDF is on the right.  Also, there are frames showing issues, warnings, errors, and the build log.  You can close any of these panels by clicking the x in the upper right of the panel.  You can also split them as much as you want, and change what is displayed in any panel.  If you close all the panels, the default layout is restored.</p>
 <ul class="simple">
-<li>The <strong>PDF Preview</strong> shows the PDF document.<ul>
-<li>You can easily position the preview by using the mouse to drag the preview around.</li>
-<li>There are buttons  for zooming, and expanding to the vertical and horizontal height.</li>
-<li>There are also buttons for printing and downloading the PDF.</li>
+<li><p>The <strong>PDF Preview</strong> shows the PDF document.</p>
+<ul>
+<li><p>You can easily position the preview by using the mouse to drag the preview around.</p></li>
+<li><p>There are buttons  for zooming, and expanding to the vertical and horizontal height.</p></li>
+<li><p>There are also buttons for printing and downloading the PDF.</p></li>
 </ul>
 </li>
-<li><strong>Errors and Warnings</strong><ul>
-<li>The <strong>Errors and Warnings</strong> frame lists all compilation errors and warnings, and other issues.
+<li><p><strong>Errors and Warnings</strong></p>
+<ul>
+<li><p>The <strong>Errors and Warnings</strong> frame lists all compilation errors and warnings, and other issues.
 Click on the line number link to jump to the corresponding line in the input code on the left and the preview on the right.
-<strong>LaTeX may fail to compile</strong> (or only partially or in a wrong way) <strong>if there are many errors</strong>.</li>
+<strong>LaTeX may fail to compile</strong> (or only partially or in a wrong way) <strong>if there are many errors</strong>.</p></li>
 </ul>
 </li>
-<li>The <strong>PDF - Native</strong> view (not shown by default) shows you an embedded view of the compiled PDF file, using   your browsers native PDF view. This might be broken if your browser has problems rendering the file inline – use the “PDF Preview” view instead.  Also, you can’t double click on the Native view to move back to jump   to the corresponding tex.</li>
-<li>The <strong>Build Control</strong> view gives you more control over how the compilation process works:<ul>
-<li>You can click in the build command line and edit it however you want, or select a different engine from the dropdown menu.
-By default, we compile using <a class="reference external" href="https://www.ctan.org/pkg/latexmk/">LatexMK</a>, which manages temporary files and BibTeX.</li>
-<li>Click <strong>Clean</strong> to delete autogenerated temporary files.</li>
+<li><p>The <strong>PDF - Native</strong> view (not shown by default) shows you an embedded view of the compiled PDF file, using   your browsers native PDF view. This might be broken if your browser has problems rendering the file inline – use the “PDF Preview” view instead.  Also, you can’t double click on the Native view to move back to jump   to the corresponding tex.</p></li>
+<li><p>The <strong>Build Control</strong> view gives you more control over how the compilation process works:</p>
+<ul>
+<li><p>You can click in the build command line and edit it however you want, or select a different engine from the dropdown menu.
+By default, we compile using <a class="reference external" href="https://www.ctan.org/pkg/latexmk/">LatexMK</a>, which manages temporary files and BibTeX.</p></li>
+<li><p>Click <strong>Clean</strong> to delete autogenerated temporary files.</p></li>
 </ul>
 </li>
 </ul>
 <div class="section" id="latex-101">
-<h2>LaTeX 101<a class="headerlink" href="#latex-101" title="Permalink to this headline">¶</a></h2>
+<h2>LaTeX 101<a class="headerlink" href="#latex-101" title="Permalink to this heading">¶</a></h2>
 <p>It is very easy to start with LaTeX.
 CoCalc guides your first document with a small default template.
 You start working between the <code class="docutils literal notranslate"><span class="pre">\begin{document}</span> <span class="pre">...</span> <span class="pre">\end{document}</span></code> instructions.</p>
@@ -255,10 +262,10 @@ You start working between the <code class="docutils literal notranslate"><span c
 <p>After saving (<code class="docutils literal notranslate"><span class="pre">[CTRL]</span></code> + <code class="docutils literal notranslate"><span class="pre">[s]</span></code> or click the green <code class="docutils literal notranslate"><span class="pre">Save</span></code> button at upper left), the file will build, and
 you should see an updated PDF preview.</p>
 <ul class="simple">
-<li><strong>New paragraphs</strong>: Single returns for new lines do not have any effect.
+<li><p><strong>New paragraphs</strong>: Single returns for new lines do not have any effect.
 Use them to keep new sentences in paragraphs at the beginning of a line for better overview.
-Two or more returns introduce a new paragraph.</li>
-<li><strong>Formulas</strong>: They’re either between <code class="docutils literal notranslate"><span class="pre">$</span></code> or <code class="docutils literal notranslate"><span class="pre">$$</span></code>, or in <code class="docutils literal notranslate"><span class="pre">\begin{equation}...\end{equation}</span></code> environments.</li>
+Two or more returns introduce a new paragraph.</p></li>
+<li><p><strong>Formulas</strong>: They’re either between <code class="docutils literal notranslate"><span class="pre">$</span></code> or <code class="docutils literal notranslate"><span class="pre">$$</span></code>, or in <code class="docutils literal notranslate"><span class="pre">\begin{equation}...\end{equation}</span></code> environments.</p></li>
 </ul>
 <p>You can also <strong>import your existing documents</strong> by
 <a class="reference internal" href="howto/upload.html#upload-files"><span class="std std-ref">uploading in “Files”</span></a> or <a class="reference internal" href="howto/overleaf.html"><span class="doc">importing from ShareLatex/Overleaf</span></a>.</p>

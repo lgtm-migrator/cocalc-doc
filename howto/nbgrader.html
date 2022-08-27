@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -89,7 +92,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -97,7 +100,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../teaching-create-course.html">Creating a New Course</a></li>
@@ -118,7 +121,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -136,7 +139,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -147,11 +150,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -225,17 +229,17 @@
            <div itemprop="articleBody">
             
   <div class="section" id="nbgrader-for-r">
-<span id="index-0"></span><h1>nbgrader for R<a class="headerlink" href="#nbgrader-for-r" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1>nbgrader for R<a class="headerlink" href="#nbgrader-for-r" title="Permalink to this heading">¶</a></h1>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
+<p class="admonition-title">Warning</p>
 <p>There are two “nbgrader” systems:</p>
-<ul class="last simple">
-<li>CoCalc’s “nbgrader” built-in system, which supports its core functionality and can’t be configured via that Python config file. Please check <a class="reference internal" href="../teaching-nbgrader.html"><span class="doc">Teaching with nbgrader</span></a> for more information about it.</li>
-<li>The “official” NBgrader utility, which is available as well. For the nbgrader official website and documentation, see: <a class="reference external" href="http://nbgrader.readthedocs.io">nbgrader</a>. This page explains roughly how to configure the official NBgrader utility.</li>
+<ul class="simple">
+<li><p>CoCalc’s “nbgrader” built-in system, which supports its core functionality and can’t be configured via that Python config file. Please check <a class="reference internal" href="../teaching-nbgrader.html"><span class="doc">Teaching with nbgrader</span></a> for more information about it.</p></li>
+<li><p>The “official” NBgrader utility, which is available as well. For the nbgrader official website and documentation, see: <a class="reference external" href="http://nbgrader.readthedocs.io">nbgrader</a>. This page explains roughly how to configure the official NBgrader utility.</p></li>
 </ul>
 </div>
 <div class="section" id="how-to-setup-nbgrader-for-cocalc-to-work-with-r">
-<h2>How to setup <code class="docutils literal notranslate"><span class="pre">nbgrader</span></code> for CoCalc to work with <code class="docutils literal notranslate"><span class="pre">R</span></code><a class="headerlink" href="#how-to-setup-nbgrader-for-cocalc-to-work-with-r" title="Permalink to this headline">¶</a></h2>
+<h2>How to setup <code class="docutils literal notranslate"><span class="pre">nbgrader</span></code> for CoCalc to work with <code class="docutils literal notranslate"><span class="pre">R</span></code><a class="headerlink" href="#how-to-setup-nbgrader-for-cocalc-to-work-with-r" title="Permalink to this heading">¶</a></h2>
 <p>There are plenty of examples of creating assignments for <code class="docutils literal notranslate"><span class="pre">Python</span></code>. For other languages, not so much.
 I couldn’t find any for <code class="docutils literal notranslate"><span class="pre">R</span></code>. To get <code class="docutils literal notranslate"><span class="pre">R</span></code> to work, you need to add one line to the default <code class="docutils literal notranslate"><span class="pre">nbgrader_config.py</span></code> file. Here is my file that I placed in <code class="docutils literal notranslate"><span class="pre">/etc/jupyter</span></code> (on my own computer - have not gotten this to work yet on CoCalc):</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>from nbgrader.utils import get_username
@@ -268,7 +272,7 @@ c.Exchange.root = os.path.expanduser(&#39;~/nbgrader_exchange&#39;)
 </div>
 </div>
 <div class="section" id="how-to-prepare-an-assignment-in-cocalc-for-r">
-<h2>How to prepare an assignment in CoCalc for <code class="docutils literal notranslate"><span class="pre">R</span></code><a class="headerlink" href="#how-to-prepare-an-assignment-in-cocalc-for-r" title="Permalink to this headline">¶</a></h2>
+<h2>How to prepare an assignment in CoCalc for <code class="docutils literal notranslate"><span class="pre">R</span></code><a class="headerlink" href="#how-to-prepare-an-assignment-in-cocalc-for-r" title="Permalink to this heading">¶</a></h2>
 <p>When you create an assignment for <code class="docutils literal notranslate"><span class="pre">nbgrader</span></code>, you create the instructor version that includes the solution and a code cell that tests the solution.
 When you create this version, you use the <code class="docutils literal notranslate"><span class="pre">View/Cell</span> <span class="pre">Toolbar/Create</span> <span class="pre">Assignment</span></code> pull down menu to add the metadata to the solution code cell and the test code cell.
 The Create Assignment view is an extension added by <code class="docutils literal notranslate"><span class="pre">nbgrader</span></code>.

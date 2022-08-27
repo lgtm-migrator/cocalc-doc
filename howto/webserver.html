@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -87,7 +90,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,12 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -118,7 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -129,11 +132,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -205,11 +209,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="run-a-webserver">
-<span id="webserver"></span><h1>Run A Webserver<a class="headerlink" href="#run-a-webserver" title="Permalink to this headline">¶</a></h1>
+<span id="webserver"></span><h1>Run A Webserver<a class="headerlink" href="#run-a-webserver" title="Permalink to this heading">¶</a></h1>
 <p>For testing and development, it is possible to run a small webserver inside a CoCalc project.
 Access to it is restricted to only the owner and all collaborators on the project, and nobody else.</p>
 <div class="section" id="webserver-proxy">
-<h2>Webserver proxy<a class="headerlink" href="#webserver-proxy" title="Permalink to this headline">¶</a></h2>
+<h2>Webserver proxy<a class="headerlink" href="#webserver-proxy" title="Permalink to this heading">¶</a></h2>
 <p>Given your project’s ID is [project_id] like <code class="docutils literal notranslate"><span class="pre">60f9ea81-5bd0-45ae-9965-76de986e101f</span></code>
 and the service is serving on [port],
 and it is serving to all ip addresses (<strong>not</strong> just localhost!), then use:</p>
@@ -220,7 +224,7 @@ and it is serving to all ip addresses (<strong>not</strong> just localhost!), th
 For example, you might have to start the service using <code class="docutils literal notranslate"><span class="pre">--ip=0.0.0.0</span></code> to serve all IPs
 (the exact flag depends on the service).</p>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
+<p class="admonition-title">Warning</p>
 <p>If the webserver directs the client to make additional requests to the backend for absolute URL’s, e.g., the service serves a file index.html like this</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;a href=&#39;/index.html&#39;&gt;HOME!&lt;/a&gt;
 </pre></div>
@@ -234,12 +238,12 @@ For example, you might have to start the service using <code class="docutils lit
 </pre></div>
 </div>
 <p>Obviously, this can’t possibly work.</p>
-<p class="last">Many webservers, e.g., tensorboard, work fine and do not do this.
+<p>Many webservers, e.g., tensorboard, work fine and do not do this.
 Others won’t work without modification.</p>
 </div>
 </div>
 <div class="section" id="using-the-port-proxy">
-<h2>Using the port proxy<a class="headerlink" href="#using-the-port-proxy" title="Permalink to this headline">¶</a></h2>
+<h2>Using the port proxy<a class="headerlink" href="#using-the-port-proxy" title="Permalink to this heading">¶</a></h2>
 <p>This is similar to above (<code class="docutils literal notranslate"><span class="pre">port</span></code> instead of <code class="docutils literal notranslate"><span class="pre">server</span></code>)</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/[project_id]/port/[port]/
 </pre></div>
@@ -248,7 +252,7 @@ Others won’t work without modification.</p>
 Otherwise, everything is the same, including the warning above.</p>
 </div>
 <div class="section" id="what-about-security">
-<h2>What about security?<a class="headerlink" href="#what-about-security" title="Permalink to this headline">¶</a></h2>
+<h2>What about security?<a class="headerlink" href="#what-about-security" title="Permalink to this heading">¶</a></h2>
 <p>Only the owner and collaborators on the given project can access the webserver via an SSL encrypted connection.
 Our proxy server will reject all other requests.
 This means you don’t have to worry about setting up logins/passwords on whatever webserver you run in your project.
@@ -256,7 +260,7 @@ On the other hand, it means that CoCalc is not useful as a platform if you want 
 If you need that, use some other service.</p>
 </div>
 <div class="section" id="what-about-dynamically-generated-subdomains">
-<h2>What about dynamically generated subdomains?<a class="headerlink" href="#what-about-dynamically-generated-subdomains" title="Permalink to this headline">¶</a></h2>
+<h2>What about dynamically generated subdomains?<a class="headerlink" href="#what-about-dynamically-generated-subdomains" title="Permalink to this heading">¶</a></h2>
 <p>Obviously, it would be nice if we could map a project_id and port to a subdomain like</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://[project id].project.cocalc.com
 </pre></div>
@@ -264,7 +268,7 @@ If you need that, use some other service.</p>
 <p>We have not implemented this.</p>
 </div>
 <div class="section" id="example-code">
-<h2>Example Code<a class="headerlink" href="#example-code" title="Permalink to this headline">¶</a></h2>
+<h2>Example Code<a class="headerlink" href="#example-code" title="Permalink to this heading">¶</a></h2>
 <p>Here’s a simple example of an HTTP server written using the Python SimpleHTTPServer class.
 Open a project and click “+New” then paste in this link, then click the “From Web” button (or use wget or copy/paste into a file):</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://gist.githubusercontent.com/DrXyzzy/91a70319d258e65dbd04a04f1e5e3b6d/raw/842875805c7876940937c6ab321f7498c203678d/py3server.py
@@ -276,7 +280,7 @@ Open a project and click “+New” then paste in this link, then click the “F
 </div>
 </div>
 <div class="section" id="raw-files-server">
-<h2>Raw Files Server<a class="headerlink" href="#raw-files-server" title="Permalink to this headline">¶</a></h2>
+<h2>Raw Files Server<a class="headerlink" href="#raw-files-server" title="Permalink to this heading">¶</a></h2>
 <p>If you just want an https view of your files, use the raw server, which is already available by default at <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/[project_id]/raw/</span></code>. The point of the above is that you could modify it to provide all sorts of interesting functionality.</p>
 </div>
 </div>

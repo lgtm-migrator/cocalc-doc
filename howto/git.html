@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
@@ -31,13 +33,14 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -87,7 +90,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,12 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
@@ -118,7 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
@@ -129,11 +132,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -205,10 +209,10 @@
            <div itemprop="articleBody">
             
   <span class="target" id="index-0"></span><span class="target" id="index-1"></span><span class="target" id="index-2"></span><div class="section" id="git-version-control">
-<span id="index-3"></span><h1>Git Version Control<a class="headerlink" href="#git-version-control" title="Permalink to this headline">¶</a></h1>
+<span id="index-3"></span><h1>Git Version Control<a class="headerlink" href="#git-version-control" title="Permalink to this heading">¶</a></h1>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">First, despite the fact that you are accessing CoCalc through the internet,
+<p class="admonition-title">Note</p>
+<p>First, despite the fact that you are accessing CoCalc through the internet,
 you are actually working in a highly restricted environment.
 Processes running inside a <em>free</em> project are not allowed to directly access the internet.
 (We do not allow such access for free users, since when we did,
@@ -216,7 +220,7 @@ malicious users launched attacks on other computers from CoCalc.)
 Enable internet access by adding the “internet access” quota.  See <a class="reference internal" href="../upgrade-guide.html"><span class="doc">Project Upgrades</span></a>.</p>
 </div>
 <div class="section" id="git-command-line">
-<span id="index-4"></span><h2>Git command-line<a class="headerlink" href="#git-command-line" title="Permalink to this headline">¶</a></h2>
+<span id="index-4"></span><h2>Git command-line<a class="headerlink" href="#git-command-line" title="Permalink to this heading">¶</a></h2>
 <p>CoCalc gives you full control over <a class="reference external" href="https://www.git-scm.org">Git</a> via a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> in the command-line.</p>
 <p>Once you have <em>enabled internet access for your project</em>, you can to connect to online Git services like
 <a class="reference external" href="https://www.github.com">GitHub</a>, <a class="reference external" href="https://about.gitlab.com/">GitLab</a> or <a class="reference external" href="https://bitbucket.org/">Bitbucket</a>.
@@ -224,19 +228,19 @@ You can immediately pull from a public repository.</p>
 <p>To access private repositories or to push your new commits,
 you need to create an SSH key and explicitly allow that account/key access to access the remove repository.</p>
 <ol class="arabic simple">
-<li>Create an SSH key public/private key pair by typing the command <cite>ssh-keygen</cite>. (consult <a class="reference internal" href="../project-settings.html#ssh-keys"><span class="std std-ref">Setup SSH Keys</span></a> for more information)</li>
-<li>Copy the content of <code class="docutils literal notranslate"><span class="pre">.ssh/id_rsa.pub</span></code> (could be named similarly, but has the ending <code class="docutils literal notranslate"><span class="pre">.pub</span></code>) to GitHub’s setting for setting up an additional key. To open that file quickly, you can run this in the Terminal: <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">~/.ssh/id_*.pub</span></code>.</li>
-<li>If necessary, <a class="reference external" href="https://ryanstutorials.net/linuxtutorial/navigation.php">navigate to a different directory</a>.</li>
-<li>Use <a class="reference external" href="https://www.git-scm.org">Git</a> as usual.</li>
+<li><p>Create an SSH key public/private key pair by typing the command <cite>ssh-keygen</cite>. (consult <a class="reference internal" href="../project-settings.html#ssh-keys"><span class="std std-ref">Setup SSH Keys</span></a> for more information)</p></li>
+<li><p>Copy the content of <code class="docutils literal notranslate"><span class="pre">.ssh/id_rsa.pub</span></code> (could be named similarly, but has the ending <code class="docutils literal notranslate"><span class="pre">.pub</span></code>) to GitHub’s setting for setting up an additional key. To open that file quickly, you can run this in the Terminal: <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">~/.ssh/id_*.pub</span></code>.</p></li>
+<li><p>If necessary, <a class="reference external" href="https://ryanstutorials.net/linuxtutorial/navigation.php">navigate to a different directory</a>.</p></li>
+<li><p>Use <a class="reference external" href="https://www.git-scm.org">Git</a> as usual.</p></li>
 </ol>
 </div>
 <div class="section" id="git-graphical-desktop-emulator">
-<span id="index-5"></span><h2>Git graphical desktop emulator<a class="headerlink" href="#git-graphical-desktop-emulator" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><h2>Git graphical desktop emulator<a class="headerlink" href="#git-graphical-desktop-emulator" title="Permalink to this heading">¶</a></h2>
 <p>You can use Git apps in an <a class="reference internal" href="../x11.html"><span class="doc">X11 Desktop</span></a>.
 Open an <code class="docutils literal notranslate"><span class="pre">.x11</span></code> file in CoCalc. There are launch buttons in the panel at lower left for <a class="reference external" href="https://wiki.gnome.org/Apps/Gitg/">gitg</a> and <a class="reference external" href="https://git-scm.com/docs/gitk">gitk</a>.</p>
 </div>
 <div class="section" id="host-a-git-repository-in-cocalc">
-<span id="index-6"></span><h2>Host a Git repository in CoCalc<a class="headerlink" href="#host-a-git-repository-in-cocalc" title="Permalink to this headline">¶</a></h2>
+<span id="index-6"></span><h2>Host a Git repository in CoCalc<a class="headerlink" href="#host-a-git-repository-in-cocalc" title="Permalink to this heading">¶</a></h2>
 <p>You can create a Git repository hosted inside a CoCalc project, and then access that repository remotely from any client computer that has <a class="reference internal" href="../project-settings.html#ssh-keys"><span class="std std-ref">SSH Access</span></a> to the project enabled. See “Hosting a git repository on CoCalc” in the blog article, <a class="reference external" href="http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html">Using SSH with CoCalc</a>.</p>
 </div>
 </div>

@@ -1,0 +1,404 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API v2 &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/api2/index.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="API v1" href="../api/index.html" />
+    <link rel="prev" title="Recovering a Deleted Project" href="../howto/missing-project.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/api2/index.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API v2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-an-api-key">Get an API Key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-v2-examples">API v2 Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#stop">stop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-query">user-query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#latex">latex</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>API v2</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api2/index.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-v2">
+<span id="index-0"></span><h1>API v2<a class="headerlink" href="#api-v2" title="Permalink to this heading">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#introduction" id="id1">Introduction</a></p></li>
+<li><p><a class="reference internal" href="#get-an-api-key" id="id2">Get an API Key</a></p></li>
+<li><p><a class="reference internal" href="#api-v2-examples" id="id3">API v2 Examples</a></p>
+<ul>
+<li><p><a class="reference internal" href="#stop" id="id4">stop</a></p></li>
+<li><p><a class="reference internal" href="#user-query" id="id5">user-query</a></p></li>
+<li><p><a class="reference internal" href="#latex" id="id6">latex</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h2><a class="toc-backref" href="#id1">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
+<p><em>New in April 2022</em></p>
+<p>With API v2, the CoCalc API is being improved and expanded.</p>
+<p>Source code for the API v2 implemention is in the <a class="reference external" href="https://github.com/sagemathinc/cocalc/tree/master/src/packages/next/pages/api/v2">CoCalc public GitHub repository under src/packages/next/pages/api/v2</a>. Each “.ts” file under the <code class="docutils literal notranslate"><span class="pre">v2</span></code> directory corresponds to an endpoint in the new API. For example, the “stop” endpoint, which allows you to stop a project, is at <a class="reference external" href="https://cocalc.com/api/v2/projects/stop">https://cocalc.com/api/v2/projects/stop</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For security reasons, <strong>API v2 calls must be made with the POST method</strong>. This policy supersedes any comments about the availability of GET that may appear in the source code.</p>
+</div>
+</div>
+<div class="section" id="get-an-api-key">
+<h2><a class="toc-backref" href="#id2">Get an API Key</a><a class="headerlink" href="#get-an-api-key" title="Permalink to this heading">¶</a></h2>
+<p>To get started with API v2, you will need a CoCalc account and an API key for that account. Visit the link <a class="reference external" href="https://cocalc.com/config/account/api">Account - API Key</a> under your account settings to create and view your API key. A CoCalc API key will be a text string beginning with the symbols “sk_”</p>
+</div>
+<div class="section" id="api-v2-examples">
+<h2><a class="toc-backref" href="#id3">API v2 Examples</a><a class="headerlink" href="#api-v2-examples" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="stop">
+<h3><a class="toc-backref" href="#id4">stop</a><a class="headerlink" href="#stop" title="Permalink to this heading">¶</a></h3>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">stop</span></code> endpoint to stop a CoCalc project, given its project_id. Note that this endpoint is in the <code class="docutils literal notranslate"><span class="pre">v2/projects/</span></code> subdirectory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span> <span class="c1"># your API key</span>
+
+<span class="c1"># project_id of the project you want to stop</span>
+<span class="nv">p</span><span class="o">=</span><span class="s1">&#39;304506b4-262e-11ed-a279-2f22f36cbe91&#39;</span>
+
+curl -sk <span class="se">\</span>
+  -u <span class="nv">$x</span>: <span class="se">\</span>
+  -d <span class="nv">project_id</span><span class="o">=</span><span class="nv">$p</span> <span class="se">\</span>
+  https://cocalc.com/api/v2/projects/stop
+
+<span class="c1">### output</span>
+<span class="o">{}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="user-query">
+<h3><a class="toc-backref" href="#id5">user-query</a><a class="headerlink" href="#user-query" title="Permalink to this heading">¶</a></h3>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">user-query</span></code> endpoint to get the email address and account_id for the owner of the API key. A request header is set because the query is a JSON string. The example sends output to the linux command “jq” to format the output nicely.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span> <span class="c1"># your API key</span>
+<span class="nv">q</span><span class="o">=</span><span class="s1">&#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:null,&quot;email_address&quot;:null}}}&#39;</span>
+
+curl -sk <span class="se">\</span>
+  -u <span class="nv">$x</span>: <span class="se">\</span>
+  -d <span class="nv">$q</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+  https://cocalc.com/api/v2/user-query <span class="p">|</span> jq
+
+<span class="nb">echo</span>
+
+<span class="c1">### sample output (not from a real account):</span>
+
+<span class="o">{</span>
+  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;accounts&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;account_id&quot;</span>: <span class="s2">&quot;e32a26f8-262c-11ed-8a33-8358017cec89&quot;</span>,
+      <span class="s2">&quot;email_address&quot;</span>: <span class="s2">&quot;jane.doe@example.com&quot;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="latex">
+<h3><a class="toc-backref" href="#id6">latex</a><a class="headerlink" href="#latex" title="Permalink to this heading">¶</a></h3>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">latex</span></code> endpoint to compile a latex document.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span> <span class="c1"># your API key</span>
+
+<span class="c1"># c is the latex document as a text string</span>
+<span class="nv">c</span><span class="o">=</span><span class="s1">&#39;\documentclass{article}\begin{document}\section{Main Section}Hello.\end{document}&#39;</span>
+
+curl -sk <span class="se">\</span>
+  -u <span class="nv">$x</span>: <span class="se">\</span>
+  -d <span class="nv">path</span><span class="o">=</span>/tmp/d.tex <span class="se">\</span>
+  -d <span class="nv">content</span><span class="o">=</span><span class="nv">$c</span> <span class="se">\</span>
+  https://cocalc.com/api/v2/latex <span class="p">|</span> jq <span class="s1">&#39;.url&#39;</span>
+
+<span class="nb">echo</span>
+
+<span class="c1">### sample output is a url</span>
+<span class="c1">### browse to this link to see the compiled pdf document</span>
+<span class="s2">&quot;https://cocalc.com/blobs/tmp/d.pdf?uuid=36862b42-2634-11ed-889d-3b8b6aedd65b&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../api/index.html" class="btn btn-neutral float-right" title="API v1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../howto/missing-project.html" class="btn btn-neutral float-left" title="Recovering a Deleted Project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please contact us for <a href="https://cocalc.com/support/new">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>
