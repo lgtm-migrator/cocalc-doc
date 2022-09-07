@@ -1,38 +1,18 @@
 
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jupyter Kernel Terminated &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/howto/jupyter-kernel-terminated.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/jupyter-kernel-terminated.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
@@ -41,10 +21,7 @@
         <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
         <script src="../_static/google_analytics_tracker.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="License Doesn’t Work" href="license-doesnt-work.html" />
@@ -58,15 +35,11 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
   <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
@@ -82,16 +55,7 @@
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
@@ -168,96 +132,55 @@
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="trouble.html">Troubleshooting</a> &raquo;</li>
-        
       <li>Jupyter Kernel Terminated</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/jupyter-kernel-terminated.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="section" id="jupyter-kernel-terminated">
-<span id="index-0"></span><span id="id1"></span><h1>Jupyter Kernel Terminated<a class="headerlink" href="#jupyter-kernel-terminated" title="Permalink to this heading">¶</a></h1>
+<span id="index-0"></span><span id="id1"></span><h1>Jupyter Kernel Terminated<a class="headerlink" href="#jupyter-kernel-terminated" title="Permalink to this heading"></a></h1>
 <p>This page is may be helpful if you see the message:</p>
 <blockquote>
 <div><p>Kernel terminated – this might be caused by running out of memory or hitting a bug in some library (e.g., forking too many processes, trying to access invalid memory, etc.). Consider restarting or upgrading your project or running the relevant code directly in a terminal to track down the cause.</p>
 </div></blockquote>
 <div class="section" id="is-it-caused-by-using-up-too-much-memory">
-<h2>Is it caused by using up too much memory?<a class="headerlink" href="#is-it-caused-by-using-up-too-much-memory" title="Permalink to this heading">¶</a></h2>
+<h2>Is it caused by using up too much memory?<a class="headerlink" href="#is-it-caused-by-using-up-too-much-memory" title="Permalink to this heading"></a></h2>
 <p>Jupyter kernels terminating, and calculations failing that previously worked, can be a sign that your project is running low on memory.</p>
 <p>Currently in CoCalc, if you open several Jupyter notebooks, they just sit there using memory. You have to explicitly <a class="reference internal" href="../jupyter-tips-and-tricks.html#jupyter-halt"><span class="std std-ref">halt running notebooks</span></a>, or kill them with <code class="docutils literal notranslate"><span class="pre">top</span></code>, or restart your project in order for them to go away.  This can be a significant problem if you are grading a dozens of assignments.  You can see the cpu and memory usage of a Jupyter notebook in the upper right.</p>
 <p>See <a class="reference internal" href="low-memory.html#low-memory"><span class="std std-ref">Low Memory Problems</span></a> for more information on how to detect and deal with low-memory situations.</p>
 </div>
 <div class="section" id="is-it-caused-by-something-else">
-<h2>Is it caused by something else?<a class="headerlink" href="#is-it-caused-by-something-else" title="Permalink to this heading">¶</a></h2>
+<h2>Is it caused by something else?<a class="headerlink" href="#is-it-caused-by-something-else" title="Permalink to this heading"></a></h2>
 <p>It’s possible, though by far the main source of trouble is lack of memory. If you suspect another problem, here are some things to try:</p>
 <div class="section" id="try-to-eliminate-jupyter-if-possible">
-<h3>1. Try to eliminate Jupyter if possible<a class="headerlink" href="#try-to-eliminate-jupyter-if-possible" title="Permalink to this heading">¶</a></h3>
+<h3>1. Try to eliminate Jupyter if possible<a class="headerlink" href="#try-to-eliminate-jupyter-if-possible" title="Permalink to this heading"></a></h3>
 <p>Open a terminal, type e.g., <code class="docutils literal notranslate"><span class="pre">anaconda3</span></code>, then copy and paste code in.</p>
 <p>Or put the code in a <code class="docutils literal notranslate"><span class="pre">.py</span></code> file and import it.  CoCalc is also very good for editing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files directly.</p>
 <p>Does it segmentation fault or otherwise crash in a way that is very difficult for Jupyter to report? Of course, if so, we want to know – <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
 </div>
 <div class="section" id="try-to-eliminate-the-cocalc-user-interface">
-<h3>2. Try to eliminate the CoCalc user interface<a class="headerlink" href="#try-to-eliminate-the-cocalc-user-interface" title="Permalink to this heading">¶</a></h3>
+<h3>2. Try to eliminate the CoCalc user interface<a class="headerlink" href="#try-to-eliminate-the-cocalc-user-interface" title="Permalink to this heading"></a></h3>
 <p>Another thing you might try is to eliminate the CoCalc user interface to see what happens.  First, <a class="reference internal" href="../jupyter-tips-and-tricks.html#jupyter-halt"><span class="std std-ref">close and halt</span></a> your notebook in the CoCalc interface. Then go to project settings and launch the <a class="reference internal" href="../project-settings.html#plain-jupyter-server"><span class="std std-ref">Plain Jupyter Server</span></a>.  You may have to refresh your browser after clicking.  Then navigate to your Jupyter notebook and open it.  If everything always works fine here, but not in CoCalc, there is some issue specifically with the CoCalc interface.  Let us know – <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
 </div>
 </div>
@@ -265,29 +188,19 @@
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="license-doesnt-work.html" class="btn btn-neutral float-right" title="License Doesn’t Work" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="sudo-make-install.html" class="btn btn-neutral float-left" title="Install compiled software" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sudo-make-install.html" class="btn btn-neutral float-left" title="Install compiled software" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="license-doesnt-work.html" class="btn btn-neutral float-right" title="License Doesn’t Work" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
@@ -302,37 +215,26 @@
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

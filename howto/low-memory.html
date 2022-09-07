@@ -1,38 +1,18 @@
 
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Low Memory Problems &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/howto/low-memory.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/low-memory.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
@@ -41,10 +21,7 @@
         <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
         <script src="../_static/google_analytics_tracker.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Program Seems Slow or Stuck" href="slow-worksheet.html" />
@@ -58,15 +35,11 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
   <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
@@ -82,16 +55,7 @@
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
@@ -178,77 +142,36 @@
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="trouble.html">Troubleshooting</a> &raquo;</li>
-        
       <li>Low Memory Problems</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/low-memory.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <span class="target" id="index-0"></span><div class="section" id="low-memory-problems">
-<span id="low-memory"></span><span id="index-1"></span><h1>Low Memory Problems<a class="headerlink" href="#low-memory-problems" title="Permalink to this heading">¶</a></h1>
+<span id="low-memory"></span><span id="index-1"></span><h1>Low Memory Problems<a class="headerlink" href="#low-memory-problems" title="Permalink to this heading"></a></h1>
 <div class="section" id="why-is-my-project-out-of-memory">
-<h2>Why is my project out of memory?<a class="headerlink" href="#why-is-my-project-out-of-memory" title="Permalink to this heading">¶</a></h2>
+<h2>Why is my project out of memory?<a class="headerlink" href="#why-is-my-project-out-of-memory" title="Permalink to this heading"></a></h2>
 <p>There are many possibilities.
 All computer programs need to allocate memory in order to work – even the smallest ones could use a huge amount of memory!
 Also, if you run several processes at the same time, their memory usage adds up.
@@ -270,7 +193,7 @@ for i in l:
 </div>
 </div>
 <div class="section" id="ways-to-clear-up-your-project-s-memory">
-<h2>Ways to clear up your project’s memory<a class="headerlink" href="#ways-to-clear-up-your-project-s-memory" title="Permalink to this heading">¶</a></h2>
+<h2>Ways to clear up your project’s memory<a class="headerlink" href="#ways-to-clear-up-your-project-s-memory" title="Permalink to this heading"></a></h2>
 <p><strong>Jupyter</strong>:</p>
 <blockquote>
 <div><ul class="simple">
@@ -298,31 +221,31 @@ for i in l:
 </div></blockquote>
 </div>
 <div class="section" id="inspect-in-detail-why-the-project-is-running-out-of-memory">
-<h2>Inspect in detail why the project is running out of memory<a class="headerlink" href="#inspect-in-detail-why-the-project-is-running-out-of-memory" title="Permalink to this heading">¶</a></h2>
+<h2>Inspect in detail why the project is running out of memory<a class="headerlink" href="#inspect-in-detail-why-the-project-is-running-out-of-memory" title="Permalink to this heading"></a></h2>
 <div class="section" id="processes">
-<h3>1. Processes<a class="headerlink" href="#processes" title="Permalink to this heading">¶</a></h3>
+<h3>1. Processes<a class="headerlink" href="#processes" title="Permalink to this heading"></a></h3>
 <p>You can click the “Processes” button in the Files toolbar to see a list of running processes and how much memory each is using. See <a class="reference internal" href="../files-toolbar.html#ft-info"><span class="std std-ref">Processes</span></a> for details.</p>
 </div>
 <div class="section" id="project-settings">
-<h3>2. Project settings<a class="headerlink" href="#project-settings" title="Permalink to this heading">¶</a></h3>
+<h3>2. Project settings<a class="headerlink" href="#project-settings" title="Permalink to this heading"></a></h3>
 <p>You can look in the Settings (wrench) tab of your project under “Shared RAM”, which will say how much is “currently” used.  This is only updated once every 30 seconds though, and may not show spikes in attempted memory allocation.</p>
 </div>
 <div class="section" id="use-top-htop-in-a-terminal">
-<h3>3. Use “top”/”htop” in a terminal<a class="headerlink" href="#use-top-htop-in-a-terminal" title="Permalink to this heading">¶</a></h3>
+<h3>3. Use “top”/”htop” in a terminal<a class="headerlink" href="#use-top-htop-in-a-terminal" title="Permalink to this heading"></a></h3>
 <p>Currently the easiest way to test this is to open a terminal in your project, then type <code class="docutils literal notranslate"><span class="pre">top</span></code>. Watch the processes listed there, especially the column labeled <cite>RES</cite>, which stands for “resident memory”.
 If your project has 1,000 MB of RAM, which is the default in CoCalc, and the sum of the RES entries is close to 1,000,000, then you should definitely expect a memory allocation failure soon.</p>
 <p>You can type “M” into top to make it sort processes by memory, which will help in seeing how much is used.  You can also hit the space bar a lot to make it update frequently.  Type “q” when you are done.  If you want to kill a process in top, type “k” then the process id (PID), which is in the first column.</p>
 <p><code class="docutils literal notranslate"><span class="pre">htop</span></code> is a more modern alternative to <code class="docutils literal notranslate"><span class="pre">top</span></code>. You can use the functional keys to issue commands or even use the mouse to point and click.</p>
 </div>
 <div class="section" id="use-smem-ntk-in-a-terminal">
-<h3>4. Use “smem -ntk” in a terminal<a class="headerlink" href="#use-smem-ntk-in-a-terminal" title="Permalink to this heading">¶</a></h3>
+<h3>4. Use “smem -ntk” in a terminal<a class="headerlink" href="#use-smem-ntk-in-a-terminal" title="Permalink to this heading"></a></h3>
 <p>This command gives a useful breakdown of memory usage.</p>
 <p>You may be able to work around a low-memory situation temporarily by killing selected processes or restarting your project.</p>
 <p>But if you’re hitting memory issues and just want more space, <a class="reference external" href="https://cocalc.com/settings/billing?session=default">upgrade your project</a>.</p>
 <p>The subscription are <a class="reference external" href="https://cocalc.com/policies/pricing.html">listed here</a>. For example, for $14/month, you can upgrade memory from 1 GB to 5 GB, and have a <strong>lot</strong> more elbow room!  If you’re confused or have questions about upgrading, just ask at <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
 </div>
 <div class="section" id="peak-memory-usage">
-<h3>5. Peak memory usage<a class="headerlink" href="#peak-memory-usage" title="Permalink to this heading">¶</a></h3>
+<h3>5. Peak memory usage<a class="headerlink" href="#peak-memory-usage" title="Permalink to this heading"></a></h3>
 <p>In a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>, you can check the peak memory usage of a utility this way:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ /usr/bin/time -v [tool] [arguments]
 [...]
@@ -332,13 +255,13 @@ Maximum resident set size (kbytes): ...
 </div>
 </div>
 <div class="section" id="software-specific">
-<h2>Software specific<a class="headerlink" href="#software-specific" title="Permalink to this heading">¶</a></h2>
+<h2>Software specific<a class="headerlink" href="#software-specific" title="Permalink to this heading"></a></h2>
 <div class="section" id="grading-jupyter-notebooks">
-<h3>Grading Jupyter Notebooks<a class="headerlink" href="#grading-jupyter-notebooks" title="Permalink to this heading">¶</a></h3>
+<h3>Grading Jupyter Notebooks<a class="headerlink" href="#grading-jupyter-notebooks" title="Permalink to this heading"></a></h3>
 <p>In case you’re grading a bunch of Jupyter Notebooks, use the <strong>“Halt” button</strong> to not only hide the worksheet, but also terminate the associated kernel session. Also, avoid opening many of them at once in the same project!</p>
 </div>
 <div class="section" id="matplotlib">
-<h3>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this heading">¶</a></h3>
+<h3>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this heading"></a></h3>
 <p>When you produce many graphics in a row and use the usual <em>pyplot</em> API, the intermediate graphics are not cleaned up. Run the following to clear up the memory:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import matplotlib.pyplot as plt
 plt.close(&#39;all&#39;)
@@ -346,7 +269,7 @@ plt.close(&#39;all&#39;)
 </div>
 </div>
 <div class="section" id="rstan">
-<h3>RSTAN<a class="headerlink" href="#rstan" title="Permalink to this heading">¶</a></h3>
+<h3>RSTAN<a class="headerlink" href="#rstan" title="Permalink to this heading"></a></h3>
 <p>In case you’re using <em>rstan</em> in R, you can try to switch the C++ compiler to clang++. Run the following in a cell to create appropriate config files in your project:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>dir.create(&quot;~/.R&quot;, showWarnings = FALSE)
 cat(&quot;CXX = clang++&quot;,
@@ -363,29 +286,19 @@ Sys.setenv(R_MAKEVARS_USER = normalizePath(&quot;~/.R/Makevars&quot;))
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="slow-worksheet.html" class="btn btn-neutral float-right" title="Program Seems Slow or Stuck" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="license-doesnt-work.html" class="btn btn-neutral float-left" title="License Doesn’t Work" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="license-doesnt-work.html" class="btn btn-neutral float-left" title="License Doesn’t Work" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="slow-worksheet.html" class="btn btn-neutral float-right" title="Program Seems Slow or Stuck" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
@@ -400,37 +313,26 @@ Sys.setenv(R_MAKEVARS_USER = normalizePath(&quot;~/.R/Makevars&quot;))
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

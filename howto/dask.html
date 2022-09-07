@@ -1,38 +1,18 @@
 
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dask cluster &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/howto/dask.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/dask.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
@@ -41,10 +21,7 @@
         <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
         <script src="../_static/google_analytics_tracker.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
    
@@ -56,15 +33,11 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
   <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
@@ -80,16 +53,7 @@
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
@@ -143,78 +107,38 @@
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Dask cluster</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/dask.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="section" id="dask-cluster">
-<span id="howto-dask"></span><span id="index-0"></span><h1>Dask cluster<a class="headerlink" href="#dask-cluster" title="Permalink to this heading">¶</a></h1>
+<span id="howto-dask"></span><span id="index-0"></span><h1>Dask cluster<a class="headerlink" href="#dask-cluster" title="Permalink to this heading"></a></h1>
 <p>Notes about running a small <a class="reference external" href="https://docs.dask.org/">Dask cluster</a>
 with <a class="reference external" href="https://distributed.dask.org/">Distributed workers</a>
 in your CoCalc project for prototyping and educational use.</p>
 <div class="section" id="start-cluster">
-<h2>Start cluster<a class="headerlink" href="#start-cluster" title="Permalink to this heading">¶</a></h2>
+<h2>Start cluster<a class="headerlink" href="#start-cluster" title="Permalink to this heading"></a></h2>
 <ol class="arabic">
 <li><p>Create a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>, e.g. <code class="docutils literal notranslate"><span class="pre">dask.term</span></code></p></li>
 <li><p>Use the split buttons at the top right to split it horizontally and vertically into 4 panels (see <a class="reference internal" href="../frame-editor.html"><span class="doc">Frame Editor</span></a> for more details).</p></li>
@@ -259,7 +183,7 @@ That way, your little cluster is always spun up when you work in your project. I
 </div>
 </div>
 <div class="section" id="connect-with-a-client">
-<h2>Connect with a client<a class="headerlink" href="#connect-with-a-client" title="Permalink to this heading">¶</a></h2>
+<h2>Connect with a client<a class="headerlink" href="#connect-with-a-client" title="Permalink to this heading"></a></h2>
 <ol class="arabic">
 <li><p>Create a Jupyter Notebook, e.g. <code class="docutils literal notranslate"><span class="pre">dask.ipynb</span></code>.</p></li>
 <li><p>Configure Dask to set the <strong>temporary directory to be in your project’s files</strong> (the <cite>/tmp</cite> directory is virtual and in memory).
@@ -295,7 +219,7 @@ client
 </div>
 </div>
 <div class="section" id="first-example">
-<h2>First example<a class="headerlink" href="#first-example" title="Permalink to this heading">¶</a></h2>
+<h2>First example<a class="headerlink" href="#first-example" title="Permalink to this heading"></a></h2>
 <p>To get started with a small example, let’s compute the sum of the first 1000 integers
 using <a class="reference external" href="https://docs.dask.org/en/latest/bag.html">Bags</a>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import dask.bag as db
@@ -309,7 +233,7 @@ nums.sum().compute()
 </div>
 </div>
 <div class="section" id="dashboard">
-<h2>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this heading">¶</a></h2>
+<h2>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this heading"></a></h2>
 <p>Once your cluster is running and the scheduler’s prefix is setup correctly (see above),
 open the dashboard’s URL in a new browser tab. Make sure to replace the placeholder with your project’s UUID:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/&lt;PROJECT UUID&gt;/port/8787/status
@@ -321,7 +245,7 @@ open the dashboard’s URL in a new browser tab. Make sure to replace the placeh
 </div>
 </div>
 <div class="section" id="multi-project-node-cluster">
-<h2>Multi-project/-node cluster<a class="headerlink" href="#multi-project-node-cluster" title="Permalink to this heading">¶</a></h2>
+<h2>Multi-project/-node cluster<a class="headerlink" href="#multi-project-node-cluster" title="Permalink to this heading"></a></h2>
 <p>This setup runs several workers inside the same project.
 This allows to scale up with the number of available cores and memory, but no further.
 Right now, it is not possible to define a cluster made of several projects on CoCalc.</p>
@@ -330,20 +254,16 @@ Right now, it is not possible to define a cluster made of several projects on Co
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
@@ -358,37 +278,26 @@ Right now, it is not possible to define a cluster made of several projects on Co
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

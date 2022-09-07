@@ -1,38 +1,18 @@
 
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RemarkJS Slideshow &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/howto/remarkjs-slideshow.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/remarkjs-slideshow.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
@@ -41,10 +21,7 @@
         <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
         <script src="../_static/google_analytics_tracker.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
    
@@ -56,15 +33,11 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
   <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
@@ -80,16 +53,7 @@
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
@@ -143,77 +107,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>RemarkJS Slideshow</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/remarkjs-slideshow.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="section" id="remarkjs-slideshow">
-<span id="index-0"></span><h1>RemarkJS Slideshow<a class="headerlink" href="#remarkjs-slideshow" title="Permalink to this heading">¶</a></h1>
+<span id="index-0"></span><h1>RemarkJS Slideshow<a class="headerlink" href="#remarkjs-slideshow" title="Permalink to this heading"></a></h1>
 <p>This guide explains how to use RemarkJS to create a slideshow using Markdown in CoCalc.</p>
 <p>A <a class="reference external" href="https://github.com/gnab/remark/wiki">RemarkJS Slideshow</a> lets you make nice browser-based slideshows using Markdown.</p>
 <div class="section" id="step-1-html-barebone">
-<h2>Step 1: HTML barebone<a class="headerlink" href="#step-1-html-barebone" title="Permalink to this heading">¶</a></h2>
+<h2>Step 1: HTML barebone<a class="headerlink" href="#step-1-html-barebone" title="Permalink to this heading"></a></h2>
 <p>Create a file named <code class="docutils literal notranslate"><span class="pre">remark.html</span></code> with this content:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -246,7 +170,7 @@
 </div>
 </div>
 <div class="section" id="step-2-markdown">
-<h2>Step 2: Markdown<a class="headerlink" href="#step-2-markdown" title="Permalink to this heading">¶</a></h2>
+<h2>Step 2: Markdown<a class="headerlink" href="#step-2-markdown" title="Permalink to this heading"></a></h2>
 <p>Create a file <code class="docutils literal notranslate"><span class="pre">remark.md</span></code> (in the same directory as <code class="docutils literal notranslate"><span class="pre">remark.html</span></code>) with this content:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>class: center, middle
 
@@ -268,19 +192,19 @@
 </div>
 </div>
 <div class="section" id="step-3-check">
-<h2>Step 3: Check<a class="headerlink" href="#step-3-check" title="Permalink to this heading">¶</a></h2>
+<h2>Step 3: Check<a class="headerlink" href="#step-3-check" title="Permalink to this heading"></a></h2>
 <p>Go back to the <code class="docutils literal notranslate"><span class="pre">remark.html</span></code> editor tab; you should show the slideshow on the right.
 Close the “Source code” frame of remark.html, to show only the rendered iframe.</p>
 </div>
 <div class="section" id="step-4-write-slideshow">
-<h2>Step 4: Write Slideshow<a class="headerlink" href="#step-4-write-slideshow" title="Permalink to this heading">¶</a></h2>
+<h2>Step 4: Write Slideshow<a class="headerlink" href="#step-4-write-slideshow" title="Permalink to this heading"></a></h2>
 <p>Switch to the <code class="docutils literal notranslate"><span class="pre">remark.md</span></code> file and make some changes.
 There are some <a class="reference external" href="https://github.com/gnab/remark/wiki/Markdown#slide-properties">important features beyond just markdown</a>
 for making slides.</p>
 <p>Switch back to <code class="docutils literal notranslate"><span class="pre">remark.html</span></code> any time to see the updated version.</p>
 </div>
 <div class="section" id="step-5-present">
-<h2>Step 5: Present<a class="headerlink" href="#step-5-present" title="Permalink to this heading">¶</a></h2>
+<h2>Step 5: Present<a class="headerlink" href="#step-5-present" title="Permalink to this heading"></a></h2>
 <p>For the actual presentation, click the checkbox to the left of <code class="docutils literal notranslate"><span class="pre">remark.html</span></code> in the main listing, then click “Download”, and click on the download link to open it in a tab of your browser.
 Press “P” to toggle presentation mode.</p>
 </div>
@@ -288,20 +212,16 @@ Press “P” to toggle presentation mode.</p>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
@@ -316,37 +236,26 @@ Press “P” to toggle presentation mode.</p>
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

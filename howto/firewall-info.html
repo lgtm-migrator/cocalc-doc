@@ -1,38 +1,18 @@
 
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Information for Firewall Admins &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/howto/firewall-info.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/firewall-info.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
@@ -41,10 +21,7 @@
         <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
         <script src="../_static/google_analytics_tracker.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
    
@@ -56,15 +33,11 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
   <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
@@ -80,16 +53,7 @@
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
@@ -143,80 +107,40 @@
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Information for Firewall Admins</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/firewall-info.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="section" id="information-for-firewall-admins">
-<h1>Information for Firewall Admins<a class="headerlink" href="#information-for-firewall-admins" title="Permalink to this heading">¶</a></h1>
+<h1>Information for Firewall Admins<a class="headerlink" href="#information-for-firewall-admins" title="Permalink to this heading"></a></h1>
 <div class="section" id="urls-and-port-numbers">
-<h2>URLs and Port Numbers<a class="headerlink" href="#urls-and-port-numbers" title="Permalink to this heading">¶</a></h2>
+<h2>URLs and Port Numbers<a class="headerlink" href="#urls-and-port-numbers" title="Permalink to this heading"></a></h2>
 <p>Q: What URLs and ports should I whitelist on my organization’s firewall to enable access to Cocalc.com services?</p>
 <p>A: Enable URLs to domain <cite>cocalc.com</cite> and its subdomains. Enable connections to TCP port 443 for HTTPS, and to port 22 to allow access via the SSH protocol. In the design of CoCalc.com, we have worked to ensure that all services are provided exclusively via port 443, plus SSH access when the user has properly configured encryption keys. Connections to CoCalc.com on port 80 are redirected to port 443, so you might want to enable that, too</p>
 </div>
 <div class="section" id="websockets">
-<h2>WebSockets<a class="headerlink" href="#websockets" title="Permalink to this heading">¶</a></h2>
+<h2>WebSockets<a class="headerlink" href="#websockets" title="Permalink to this heading"></a></h2>
 <p>Most of CoCalc’s services use websocket connections, so it’s necessary to allow this protocol over port 443.</p>
 <p>It may be helpful to test your configuration for websocket connections on a 3rd party website. See <a class="reference internal" href="connectivity-issues.html#websocket-test"><span class="std std-ref">Do WebSocket connections work?</span></a> in the CoCalc troubleshooting guide for more info.</p>
 <p>Browser tools can help to analyze websocket traffic. See for example
@@ -228,20 +152,16 @@ and
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
@@ -256,37 +176,26 @@ and
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"
