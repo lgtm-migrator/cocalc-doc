@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>(+) New &mdash; CoCalc Manual  documentation</title>
+  <title>Display Options &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/plus-new.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/display-options.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -24,13 +24,13 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Project Log" href="project-log.html" />
-    <link rel="prev" title="Project Files" href="project-files.html" />
+    <link rel="next" title="Account Dropdown Menu" href="account-dropdown.html" />
+    <link rel="prev" title="Shared Files" href="share.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/plus-new.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/display-options.html"/>
   
 
 </head>
@@ -70,19 +70,8 @@
 <li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Features</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="project.html">Projects</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="project-files.html">Project Files</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">(+) New</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#default-contents-for-new-files">Default contents for new files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project-log.html">Project Log</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project-settings.html">Project Settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrade-guide.html">Project Upgrades</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project-library.html">Project Library</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project-init.html">Project Initialization Scripts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project-faq.html">Projects FAQ</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
@@ -99,8 +88,20 @@
 <li class="toctree-l1"><a class="reference internal" href="share.html">Shared Files</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Platform</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="display-options.html">Display Options</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Display Options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fullscreen">fullscreen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#kiosk">kiosk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project">project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#default">default</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#session">session</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#no-session">no session</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project-toolbar.html">Project Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="files-toolbar.html">Files Toolbar</a></li>
@@ -136,10 +137,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="project.html">Projects</a> &raquo;</li>
-      <li>(+) New</li>
+      <li>Display Options</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/plus-new.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/display-options.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -147,31 +147,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="new">
-<span id="plusnew"></span><span id="index-0"></span><h1>(+) New<a class="headerlink" href="#new" title="Permalink to this heading"></a></h1>
-<p><a class="reference internal" href="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/plus-circle.png"><img alt="plus-circle" src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/plus-circle.png" style="width: 16px;" /></a> Create new files</p>
-<p>This tab gives you numerous options for file creation. There are also buttons to launch <a class="reference internal" href="jupyter-classical-vs-cocalc.html#jupyter-server-alternatives"><span class="std std-ref">Jupyter Classic and JupyterLab servers</span></a>, <a class="reference external" href="https://code.visualstudio.com/">VS Code</a> server, and <a class="reference internal" href="howto/pluto.html"><span class="doc">Pluto server</span></a>.</p>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="_images/plus-new.jpg"><img alt="dialog for new file name and type and drag-and-drop upload" src="_images/plus-new.jpg" style="width: 80%;" /></a>
+  <div class="section" id="display-options">
+<span id="index-0"></span><span id="id1"></span><h1>Display Options<a class="headerlink" href="#display-options" title="Permalink to this heading"></a></h1>
+<p>The following options allow you to change how CoCalc appears in your browser, and what information it restores when you return to the site after leaving it.</p>
+<div class="toctree-wrapper compound">
 </div>
-<span class="target" id="index-1"></span><span class="target" id="default-template"><span id="index-2"></span></span></div>
-<div class="section" id="default-contents-for-new-files">
-<span id="index-3"></span><h1>Default contents for new files<a class="headerlink" href="#default-contents-for-new-files" title="Permalink to this heading"></a></h1>
-<p>For any file type, e.g. <code class="docutils literal notranslate"><span class="pre">.md</span></code>, <code class="docutils literal notranslate"><span class="pre">.tex</span></code>, <code class="docutils literal notranslate"><span class="pre">ipynb</span></code>, you can create a template in a given project so that opening a new file of that type starts with a copy of the template. The templates all go in a folder in the project home directory called <code class="docutils literal notranslate"><span class="pre">templates/linux</span></code> and start with filename <code class="docutils literal notranslate"><span class="pre">default</span></code>.</p>
-<p>For example, to create a default Jupyter notebook, do this in a terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cd<span class="p">;</span> mkdir -p templates/linux/<span class="p">;</span> open templates/linux
-</pre></div>
+<div class="section" id="fullscreen">
+<h2>fullscreen<a class="headerlink" href="#fullscreen" title="Permalink to this heading"></a></h2>
+<div class="section" id="kiosk">
+<h3>kiosk<a class="headerlink" href="#kiosk" title="Permalink to this heading"></a></h3>
+<p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=kiosk</cite> offers a limited user interface suitable for embedding in an iframe. The user won’t be able to use the UI to open files. The Project toolbar and Files toolbar are not displayed. The button for side chat while editing a file is not displayed.</p>
 </div>
-<p>then create a file <code class="docutils literal notranslate"><span class="pre">default.ipynb</span></code>. In the case of Jupyter notebooks, you can cause all new notebooks to use your preferred kernel by setting the kernel
-in the default file, as well as specifying initial content.</p>
+<div class="section" id="project">
+<h3>project<a class="headerlink" href="#project" title="Permalink to this heading"></a></h3>
+<p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=project</cite> hides the functionality for switching between projects, viewing
+account settings, etc., and focused on <em>one single project</em>.
+However, unlike fullscreen=kiosk, users can
+still use the Files page to download/upload and navigate files,
+and other useful tabs like Find and Log.</p>
+<p>You might use “fullscreen=project” in combination with the “session” query parameter (see below) as follows: <a class="reference external" href="https://cocalc.com/projects/project-id/files/main.ipynb?fullscreen=project&amp;session=">https://cocalc.com/projects/project-id/files/main.ipynb?fullscreen=project&amp;session=</a></p>
+</div>
+<div class="section" id="default">
+<h3>default<a class="headerlink" href="#default" title="Permalink to this heading"></a></h3>
+<p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=default</cite>  presents the full user interface. It is the same as using a query string of <cite>?fullscreen=</cite> and the same as not providing any “fullscreen” query parameter at all.</p>
+</div>
+</div>
+<div class="section" id="session">
+<h2>session<a class="headerlink" href="#session" title="Permalink to this heading"></a></h2>
+<p>By default, CoCalc remembers your session with a specific browser, that is, if you have certain projects open, and certain file tabs displayed within those projects when you close your browser, they will normally be restored when you visit CoCalc again with that browser.</p>
+<p>Limitations:</p>
+<ul class="simple">
+<li><p>CoCalc sessions are totally client-side They are not remembered across different browsers.</p></li>
+<li><p>Browser refresh does not open a file until you click the tab. The session feature just remembers the tabs and their order, not which files were open.</p></li>
+</ul>
+<div class="section" id="no-session">
+<h3>no session<a class="headerlink" href="#no-session" title="Permalink to this heading"></a></h3>
+<p>If you visit CoCalc with a query string of <cite>session=</cite>, then the link is loaded and the “session=” parameter is removed from the displayed URL. In this case, there is no session at all. No project or files tabs will be remembered the next time you visit CoCalc with that browser.</p>
+</div>
+</div>
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="project-files.html" class="btn btn-neutral float-left" title="Project Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="project-log.html" class="btn btn-neutral float-right" title="Project Log" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="share.html" class="btn btn-neutral float-left" title="Shared Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="account-dropdown.html" class="btn btn-neutral float-right" title="Account Dropdown Menu" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
