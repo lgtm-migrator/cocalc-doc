@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Display Options &mdash; CoCalc Manual  documentation</title>
+  <title>Adding Capacity to an Existing License &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/display-options.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/add-capacity.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -24,13 +24,11 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Account Dropdown Menu" href="account-dropdown.html" />
-    <link rel="prev" title="Shared Files" href="share.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/display-options.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/add-capacity.html"/>
   
 
 </head>
@@ -88,21 +86,8 @@
 <li class="toctree-l1"><a class="reference internal" href="share.html">Shared Files</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Platform</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Display Options</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#fullscreen">fullscreen</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#kiosk">kiosk</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#project">project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#default">default</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#session">session</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">default</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#no-session">no session</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="display-options.html">Display Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project-toolbar.html">Project Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="files-toolbar.html">Files Toolbar</a></li>
@@ -138,9 +123,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Display Options</li>
+      <li>Adding Capacity to an Existing License</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/display-options.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/add-capacity.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -148,56 +133,64 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="display-options">
-<span id="index-0"></span><span id="id1"></span><h1>Display Options<a class="headerlink" href="#display-options" title="Permalink to this heading"></a></h1>
-<p>The following options allow you to change how CoCalc appears in your browser, and what information it restores when you return to the site after leaving it.</p>
-<div class="toctree-wrapper compound">
-</div>
-<div class="section" id="fullscreen">
-<h2>fullscreen<a class="headerlink" href="#fullscreen" title="Permalink to this heading"></a></h2>
-<div class="section" id="kiosk">
-<h3>kiosk<a class="headerlink" href="#kiosk" title="Permalink to this heading"></a></h3>
-<p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=kiosk</cite> offers a limited user interface suitable for embedding in an iframe. The user won’t be able to use the UI to open files. The Project toolbar and Files toolbar are not displayed. The button for side chat while editing a file is not displayed.</p>
-</div>
-<div class="section" id="project">
-<h3>project<a class="headerlink" href="#project" title="Permalink to this heading"></a></h3>
-<p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=project</cite> hides the functionality for switching between projects, viewing
-account settings, etc., and focused on <em>one single project</em>.
-However, unlike fullscreen=kiosk, users can
-still use the Files page to download/upload and navigate files,
-and other useful tabs like Find and Log.</p>
-<p>You might use “fullscreen=project” in combination with the “session” query parameter (see below) as follows: <a class="reference external" href="https://cocalc.com/projects/project-id/files/main.ipynb?fullscreen=project&amp;session=">https://cocalc.com/projects/project-id/files/main.ipynb?fullscreen=project&amp;session=</a></p>
-</div>
-<div class="section" id="default">
-<h3>default<a class="headerlink" href="#default" title="Permalink to this heading"></a></h3>
-<p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=default</cite>  presents the full user interface. It is the same as using a query string of <cite>?fullscreen=</cite> and the same as not providing any “fullscreen” query parameter at all.</p>
-</div>
-</div>
-<div class="section" id="session">
-<h2>session<a class="headerlink" href="#session" title="Permalink to this heading"></a></h2>
-<div class="section" id="id2">
-<h3>default<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
-<p>By default, CoCalc remembers your session with a specific browser, that is, if you have certain projects open, and certain file tabs displayed within those projects when you close your browser, they will normally be restored when you visit CoCalc again with that browser.</p>
-<p>Limitations:</p>
+  <div class="section" id="adding-capacity-to-an-existing-license">
+<h1>Adding Capacity to an Existing License<a class="headerlink" href="#adding-capacity-to-an-existing-license" title="Permalink to this heading"></a></h1>
+<p>You may want to increase the amount of resources provided with an existing CoCalc license. Possible situations include:</p>
 <ul class="simple">
-<li><p>CoCalc sessions are totally client-side They are not remembered across different browsers.</p></li>
-<li><p>Browser refresh does not open a file until you click the tab. The session feature just remembers the tabs and their order, not which files were open.</p></li>
+<li><p>exceeding expected utilization on an individual project</p></li>
+<li><p>an expected short-term increase in use, for example during exam week with a course</p></li>
+</ul>
+<p>The approaches discussed below are also applicable if you already have more than one license applied to a project or course.</p>
+<p>There are two solutions, depending on what resources need to be increased.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#boost-licenses" id="id2">Boost Licenses</a></p></li>
+<li><p><a class="reference internal" href="#stacked-licenses" id="id3">Stacked Licenses</a></p></li>
 </ul>
 </div>
-<div class="section" id="no-session">
-<h3>no session<a class="headerlink" href="#no-session" title="Permalink to this heading"></a></h3>
-<p>If you visit CoCalc with a query string of <cite>session=</cite>, then the link is loaded and the “session=” parameter is removed from the displayed URL. In this case, there is no session at all. No project or files tabs will be remembered the next time you visit CoCalc with that browser.</p>
+<div class="section" id="boost-licenses">
+<h2><a class="toc-backref" href="#id2">Boost Licenses</a><a class="headerlink" href="#boost-licenses" title="Permalink to this heading"></a></h2>
+<p>If all you need is an increase in CPU, RAM, or disk capacity, a boost license will cost significantly less than buying an additional ordinary license. To buy a boost license, use the self-service form at <a class="reference external" href="https://cocalc.com/store/boost">https://cocalc.com/store/boost</a>.</p>
+<p><em>Boost licenses cannot be used to add to the run limit or idle timeout of an existing license, or to add member hosting to a license that does not already have it.</em></p>
+<p>Example: you have a course configured with a “Student” quota license and you want to add 2 GB of RAM to all student projects. Do the following:</p>
+<ol class="arabic">
+<li><p>Browse to <a class="reference external" href="https://cocalc.com/store/boost">https://cocalc.com/store/boost</a>.</p></li>
+<li><p>Select the Start and End Dates you need for the boost.</p></li>
+<li><p>Under “Select license”, select the existing license you would like to boost. This step ensures compatibility between your existing license and the boost license you’re about to buy.</p></li>
+<li><p>Select 2 G RAM.</p>
+<blockquote>
+<div><div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/boost-add-2GB.png"><img alt="2GB RAM boost" src="_images/boost-add-2GB.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">adding 2 GB of RAM in boost dialog</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </div>
+</div></blockquote>
+</li>
+<li><p>After buying the license, open the course file and select the Configuration tab. Add the new boost license to the course.</p></li>
+<li><p>Under License strategy, select “Maximize upgrades to each project”.</p></li>
+<li><p>The increase in capacity will happen in each student project the next time that project is (re)started.</p></li>
+</ol>
+</div>
+<div class="section" id="stacked-licenses">
+<h2><a class="toc-backref" href="#id3">Stacked Licenses</a><a class="headerlink" href="#stacked-licenses" title="Permalink to this heading"></a></h2>
+<p>For any other capacity increase, buy an additional ordinary license for only the capacity you want to add. When adding capacity to a course, be sure to select the appropriate <a class="reference internal" href="teaching-upgrade-course.html#license-strategy"><span class="std std-ref">license strategy</span></a>.</p>
+<p>Example: you have a course configured with a “Student” quota license and you want to add 3 more students. Do the following:</p>
+<ol class="arabic simple">
+<li><p>Browse to <a class="reference external" href="https://cocalc.com/store/site-license">https://cocalc.com/store/site-license</a>.</p></li>
+<li><p>Select the Start and End Dates needed.</p></li>
+<li><p>Set run limit to 3 because you are adding 3 students.</p></li>
+<li><p>Choose the “Student” quota preset. In general, you want to match all the parameters other than dates and run limit to your existing license.</p></li>
+<li><p>After buying the license, open the course file and select the Configuration tab. Add the new license to the course.</p></li>
+<li><p>Under License strategy, select “Maximize number of covered students”.</p></li>
+<li><p>In the course file under the Students tab, add email addresses for the student accounts to be added.</p></li>
+<li><p>The increase in capacity will happen in each student project the next time that project is (re)started. It may also be necessary to open the course Configuration tab and click “Reconfigure all projects” at lower right.</p></li>
+</ol>
 </div>
 </div>
 
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="share.html" class="btn btn-neutral float-left" title="Shared Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="account-dropdown.html" class="btn btn-neutral float-right" title="Account Dropdown Menu" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 
