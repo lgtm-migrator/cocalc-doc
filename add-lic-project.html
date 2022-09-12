@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Licenses &mdash; CoCalc Manual  documentation</title>
+  <title>Add a License to a Project &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/licenses.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/add-lic-project.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -24,13 +24,13 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Add a License to a Project" href="add-lic-project.html" />
-    <link rel="prev" title="Getting Started" href="getting-started.html" />
+    <link rel="next" title="Add Capacity to an Existing License" href="add-capacity.html" />
+    <link rel="prev" title="Licenses" href="licenses.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/licenses.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/add-lic-project.html"/>
   
 
 </head>
@@ -60,16 +60,15 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Licenses</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#order-just-what-you-need">Order Just What You Need</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#dynamic-allocation">Dynamic Allocation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#buy-a-license">Buy a License</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#add-a-license-to-a-course">Add a License to a Course</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#view-your-license-information">View Your License Information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#additional-license-topics">Additional License Topics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="add-lic-project.html">Add a License to a Project</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="licenses.html">Licenses</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="licenses.html#order-just-what-you-need">Order Just What You Need</a></li>
+<li class="toctree-l2"><a class="reference internal" href="licenses.html#dynamic-allocation">Dynamic Allocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="licenses.html#buy-a-license">Buy a License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="licenses.html#add-a-license-to-a-course">Add a License to a Course</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="licenses.html#additional-license-actions">Additional License Actions</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Add a License to a Project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="add-capacity.html">Add Capacity to an Existing License</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api/index.html">View license entry points in the CoCalc API v1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api/index.html">see license entry points in the CoCalc API</a></li>
 </ul>
 </li>
 </ul>
@@ -138,9 +137,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Licenses</li>
+          <li><a href="licenses.html">Licenses</a> &raquo;</li>
+      <li>Add a License to a Project</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/licenses.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/add-lic-project.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -148,44 +148,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="licenses">
-<span id="license-info"></span><span id="index-0"></span><h1>Licenses<a class="headerlink" href="#licenses" title="Permalink to this heading"></a></h1>
-<div class="section" id="order-just-what-you-need">
-<h2>Order Just What You Need<a class="headerlink" href="#order-just-what-you-need" title="Permalink to this heading"></a></h2>
-<p>CoCalc licenses allow improved flexibility over the older CoCalc plans in allowing you to order exactly the resources you need.
-You can order a license for any number of projects, with arbitrary start and end dates, and have detailed control over the upgrades per project.</p>
+  <span class="target" id="project-add-license"></span><span class="target" id="index-0"></span><div class="section" id="add-a-license-to-a-project">
+<span id="index-1"></span><h1>Add a License to a Project<a class="headerlink" href="#add-a-license-to-a-project" title="Permalink to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you just bought a license and want to apply your license to a project that is showing the red trial banner, then this section is for you.</p>
+<p>In case you don’t have a license but instead quota upgrades via a subscription (older mechanism), then
+<a class="reference internal" href="project-settings.html#apply-project-upgrades"><span class="std std-ref">adjust the project quotas</span></a> directly.</p>
 </div>
-<div class="section" id="dynamic-allocation">
-<h2>Dynamic Allocation<a class="headerlink" href="#dynamic-allocation" title="Permalink to this heading"></a></h2>
-<p>You can apply a license to any number of projects. Projects are upgraded as they start, until the maximum number of concurrent running projects for that license is reached. Any project with the license that starts while the maximum concurrent number is running will be started without upgrades from that license. When a project using a license stops, its upgrades are released and can be used by the next  project to start that is configured for that license.</p>
+<p>To apply a license to a project</p>
+<ol class="arabic simple">
+<li><p>Open the project and click “Settings” (wrench icon).</p></li>
+<li><p>Scroll down to the <strong>Licenses</strong> section.</p></li>
+<li><p>Click the button marked “Upgrade using a license key…”.</p></li>
+<li><p>Enter your license key in the box that opens and click Save.</p></li>
+<li><p>Then start or restart the project in order to activate the license.</p></li>
+</ol>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/proj-lic-before-add.png"><img alt="dialog to add a license key, before key is added" src="_images/proj-lic-before-add.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Before adding a license key.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </div>
-<div class="section" id="buy-a-license">
-<h2>Buy a License<a class="headerlink" href="#buy-a-license" title="Permalink to this heading"></a></h2>
-<p>To buy a license, or to just get pricing information, visit the link <a class="reference external" href="https://cocalc.com/store/site-license">https://cocalc.com/store/site-license</a>.</p>
-</div>
-<div class="section" id="add-a-license-to-a-course">
-<h2>Add a License to a Course<a class="headerlink" href="#add-a-license-to-a-course" title="Permalink to this heading"></a></h2>
-<p>See <a class="reference internal" href="teaching-upgrade-course.html#install-course-license"><span class="std std-ref">Install your license(s) in the course file</span></a>.</p>
-</div>
-<div class="section" id="view-your-license-information">
-<h2>View Your License Information<a class="headerlink" href="#view-your-license-information" title="Permalink to this heading"></a></h2>
-<p>See <a class="reference external" href="https://cocalc.com/licenses">https://cocalc.com/licenses</a> for information about your licenses and licensed projects, including the following (note that each topic has its own dedicated URL):</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://cocalc.com/licenses/managed">licenses you manage</a></p></li>
-<li><p><a class="reference external" href="https://cocalc.com/licenses/projects">licensed projects you collaborate on</a></p></li>
-<li><p><a class="reference external" href="https://cocalc.com/licenses/how-used">how a specific site license is being used</a></p></li>
-<li><p><a class="reference external" href="https://cocalc.com/billing/subscriptions">subscriptions</a> (includes how to cancel a license subscription)</p></li>
-</ul>
-</div>
-<div class="section" id="additional-license-topics">
-<h2>Additional License Topics<a class="headerlink" href="#additional-license-topics" title="Permalink to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="add-lic-project.html">Add a License to a Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add-capacity.html">Add Capacity to an Existing License</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/index.html">View license entry points in the CoCalc API v1</a></li>
-</ul>
-</div>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/proj-lic-after-add.png"><img alt="dialog to add a license key, after key is added" src="_images/proj-lic-after-add.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">After adding license key. You can add several keys.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </div>
 </div>
 
@@ -193,8 +178,8 @@ You can order a license for any number of projects, with arbitrary start and end
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="getting-started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="add-lic-project.html" class="btn btn-neutral float-right" title="Add a License to a Project" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="licenses.html" class="btn btn-neutral float-left" title="Licenses" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="add-capacity.html" class="btn btn-neutral float-right" title="Add Capacity to an Existing License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
