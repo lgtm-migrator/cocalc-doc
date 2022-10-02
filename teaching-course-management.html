@@ -249,8 +249,10 @@ Simply click on the <strong>Open</strong> icon corresponding to the student you 
 <div class="section" id="manual-grading">
 <h2><a class="toc-backref" href="#id7">Manual Grading</a><a class="headerlink" href="#manual-grading" title="Permalink to this heading"></a></h2>
 <p>You may annotate the student’s assignment by modifying the collected file(s) in any way you like. The student will get a copy of everything you do after you return it.</p>
-<p>When working with Jupyter notebooks, it can be useful to make annotations in Markdown cells and surround comments in HTML tags that color the text red. This allows students to quickly identify comments.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;font color=&quot;red&quot;&gt;Great work!&lt;/font&gt;
+<p>When working with Jupyter notebooks, it can be useful to make annotations in markdown cells and set the color of the annotations to stand out.</p>
+<p>You can change the font color in a markdown cell in Text edit mode using the font options toolbar, as explained in the section on <a class="reference internal" href="rich-text.html#font-options"><span class="std std-ref">Font options</span></a>.</p>
+<p>Or you can edit the cell in Markdown edit mode and enter the HTML tags for desired color explicitly:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;span style=&#39;color:red&#39;&gt;Great work!&lt;/span&gt;
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="_images/feedback.png"><img alt="highlighting instructor remark using html in a jupyter notebook markdown cell" src="_images/feedback.png" style="width: 50%;" /></a>
