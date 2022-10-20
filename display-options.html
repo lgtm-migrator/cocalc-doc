@@ -90,18 +90,18 @@
 <p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Display Options</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#fullscreen">fullscreen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fullscreen-options">Fullscreen Options</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#kiosk">kiosk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#project">project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#default">default</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#session">session</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sessions">Sessions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id2">default</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#no-session">no session</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#cocalc-desktop-application">CoCalc desktop application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#desktop-application">Desktop Application</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
@@ -154,8 +154,8 @@
 <p>The following options allow you to change how CoCalc appears in your browser, and what information it restores when you return to the site after leaving it.</p>
 <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="fullscreen">
-<h2>fullscreen<a class="headerlink" href="#fullscreen" title="Permalink to this heading"></a></h2>
+<div class="section" id="fullscreen-options">
+<h2>Fullscreen Options<a class="headerlink" href="#fullscreen-options" title="Permalink to this heading"></a></h2>
 <div class="section" id="kiosk">
 <h3>kiosk<a class="headerlink" href="#kiosk" title="Permalink to this heading"></a></h3>
 <p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=kiosk</cite> offers a limited user interface suitable for embedding in an iframe. The user won’t be able to use the UI to open files. The Project toolbar and Files toolbar are not displayed. The button for side chat while editing a file is not displayed.</p>
@@ -174,8 +174,8 @@ and other useful tabs like Find and Log.</p>
 <p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=default</cite>  presents the full user interface. It is the same as using a query string of <cite>?fullscreen=</cite> and the same as not providing any “fullscreen” query parameter at all.</p>
 </div>
 </div>
-<div class="section" id="session">
-<h2>session<a class="headerlink" href="#session" title="Permalink to this heading"></a></h2>
+<div class="section" id="sessions">
+<h2>Sessions<a class="headerlink" href="#sessions" title="Permalink to this heading"></a></h2>
 <div class="section" id="id2">
 <h3>default<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
 <p>By default, CoCalc remembers your session with a specific browser, that is, if you have certain projects open, and certain file tabs displayed within those projects when you close your browser, they will normally be restored when you visit CoCalc again with that browser.</p>
@@ -190,9 +190,9 @@ and other useful tabs like Find and Log.</p>
 <p>If you visit CoCalc with a query string of <cite>session=</cite>, then the link is loaded and the “session=” parameter is removed from the displayed URL. In this case, there is no session at all. No project or files tabs will be remembered the next time you visit CoCalc with that browser.</p>
 </div>
 </div>
-<div class="section" id="cocalc-desktop-application">
-<h2>CoCalc desktop application<a class="headerlink" href="#cocalc-desktop-application" title="Permalink to this heading"></a></h2>
-<p>The CoCalc desktop application provides a lightweight wrapper around the latest version of the website. (So it’s always up to date from the point of view of CoCalc. The main advantages of the desktop application are:</p>
+<div class="section" id="desktop-application">
+<h2>Desktop Application<a class="headerlink" href="#desktop-application" title="Permalink to this heading"></a></h2>
+<p>The CoCalc desktop application provides a lightweight wrapper around the latest version of the website. (So it’s always up to date from the point of view of CoCalc.) The main advantages of the desktop application are:</p>
 <ul class="simple">
 <li><p>You can use emacs/vim keyboard shortcuts without accidentally triggering browser actions.</p></li>
 <li><p>No extensions: by omitting browser extensions and other browser configuration, CoCalc performance in the desktop app may be improved, and some connectivity issues seen in the full browser (such as problems arising from ad blockers) can be eliminated.</p></li>
